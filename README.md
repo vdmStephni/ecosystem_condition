@@ -1,9 +1,8 @@
 ## Ecosystem condition assessments
 
-### Website Content
+### Website Content for Ecosystem Condition Assessments in South Africa
 
-Author: Stephni van der Merwe
 
 January 2026
 
-Repo organised by Stephni van der Merwe
+Repository organised by Stephni van der Merwe
