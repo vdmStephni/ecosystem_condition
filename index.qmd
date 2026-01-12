@@ -1,0 +1,9 @@
+---
+title: "Ecosystem Condition Assessments in South Africa"
+---
+
+Welcome. This website documents a biome-specific approach to assessing ecosystem condition in South Africa.
+
+Use the menu to explore: - **Overview** (definitions, scope) - **Workflow** (general approach) - **Thicket** and **Grassland** (biome sections)
+
+> Note: This is a living resource and will be updated as additional biomes, case studies and indicators are added.

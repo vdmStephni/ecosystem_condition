@@ -1,0 +1,5 @@
+---
+title: "General workflow"
+---
+
+This page summarises the general, biome-adapted workflow used to assess ecosystem condition.

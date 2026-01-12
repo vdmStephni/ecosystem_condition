@@ -1,0 +1,96 @@
+project:
+  type: website
+  # If you later want GitHub Pages from /docs, uncomment:
+  # output-dir: docs
+
+editor: visual
+
+csl: sanbi.csl
+footnotes-hover: true
+reference-location: document
+link-external-newwindow: true
+callout-icon: false
+
+language:
+  section-title-footnotes: Notes
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  # If you start running lots of code chunks and want caching:
+  # freeze: auto
+
+website:
+  title: "Ecosystem Condition Assessments"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Overview
+        href: content/overview/index.qmd
+      - text: Workflow
+        href: content/workflow/index.qmd
+      - text: Thicket
+        menu:
+          - text: Intro
+            href: content/thicket/index.qmd
+          # - text: Methods
+          #   href: content/thicket/methods.qmd
+          # - text: Results
+          #   href: content/thicket/results.qmd
+      - text: Grassland
+        menu:
+          - text: Intro
+            href: content/grassland/index.qmd
+          # - text: Methods
+          #   href: content/grassland/methods.qmd
+          # - text: Results
+          #   href: content/grassland/results.qmd
+
+format:
+  html:
+    # If you DO have these partial files, keep this on.
+    # If you DON'T, comment out template-partials or Quarto will fail to render.
+    #template-partials:
+     # - partials/title-metadata.html
+      #- partials/_title-meta-author.html
+
+    theme:
+      - default
+      - custom.scss
+
+    crossref:
+      fig-prefix: Figure
+      fig-title: Figure
+      tbl-prefix: Table
+      tbl-title: Table
+      ref-hyperlink: true
+      fig-labels: arabic
+      tbl-labels: arabic
+      subref-labels: alpha a
+      title-delim: \.
+
+    include-after-body:
+      text: |
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+              document.querySelectorAll("figcaption").forEach(e => {
+                  const text = e.innerHTML.trim();
+                  // Only proceed if it starts with "Figure" or "Table"
+                  if (/^(Figure|Table)\b/.test(text)) {
+                    const match = text.match(/^([^<]*?\.)\s*(.*)$/s); // Match up to first period before any tag
+                  if (match) {
+                    const strongPart = `<strong>${match[1]}</strong>`;
+                    const rest = match[2];
+                    e.innerHTML = `${strongPart} ${rest}`;
+                  }
+                }
+              });
+          });
+        </script>
+
+    toc: true
+    toc-location: right
+    toc-depth: 4
+    toc-expand: true
