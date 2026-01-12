@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ecosystem Condition Assessments in South Africa",
+    "section": "",
+    "text": "Welcome. This website documents a biome-specific approach to assessing ecosystem condition in South Africa.\nUse the menu to explore: - Overview (definitions, scope) - Workflow (general approach) - Thicket and Grassland (biome sections)\n\nNote: This is a living resource and will be updated as additional biomes, case studies and indicators are added."
+  },
+  {
+    "objectID": "content/thicket/index.html",
+    "href": "content/thicket/index.html",
+    "title": "Albany Thicket",
+    "section": "",
+    "text": "Thicket content goes here. Start with 5–10 bullets: indicators, reference sites, outputs."
+  },
+  {
+    "objectID": "content/grassland/index.html",
+    "href": "content/grassland/index.html",
+    "title": "Grassland",
+    "section": "",
+    "text": "Grassland content goes here. Start with: what “degradation” means in grasslands and the first indicators you’ll test."
+  },
+  {
+    "objectID": "content/overview/index.html",
+    "href": "content/overview/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "This section explains what we mean by ecosystem condition, why it matters, and how we interpret condition across South Africa’s biomes."
+  },
+  {
+    "objectID": "content/overview/index.html#what-is-ecosystem-condition",
+    "href": "content/overview/index.html#what-is-ecosystem-condition",
+    "title": "Overview",
+    "section": "What is ecosystem condition?",
+    "text": "What is ecosystem condition?\n(Write 5–10 lines here to start.)"
+  },
+  {
+    "objectID": "content/workflow/index.html",
+    "href": "content/workflow/index.html",
+    "title": "General workflow",
+    "section": "",
+    "text": "This page summarises the general, biome-adapted workflow used to assess ecosystem condition."
+  }
+]
