@@ -1,5 +1,75 @@
 ---
 title: "General workflow"
+toc: true
+toc-location: left
+page-layout: article
 ---
 
-This page summarises the general, biome-adapted workflow used to assess ecosystem condition.
+## Goal of the workflow
+
+This workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).
+
+## The general workflow
+
+### Step 1 — Define assessment units and identify relevant experts
+
+Choose ecologically meaningful units (e.g., ecosystem types or functional groups) and involve experts who can co-define reference condition, key pressures, and interpret indicators.
+
+Effective condition assessments require maps of the ecosystem extent to select units of assessments. Defining these units *a priori* is critical because they serve two purposes in the assessment: (1) they provide a consistent framework to delineate and describe the area of interest, and (2) they form the basis for interpreting ecological metrics in a meaningful way. The defined units should not span functionally dissimilar ecosystems, as it can obscure degradation patterns. In South Africa, the National Vegetation Map (NVM) is used as the primary terrestrial ecosystem typology and map, which classified South Africa’s diverse vegetation hierarchically into vegetation types nested within vegetation units, bioregions and nine biomes (Mucina and Rutherford, 2006). The NVM is iteratively updated and refined (Dayaram et al., 2019), and serves as a representation of the potential extent of vegetation types (pre-1750), providing a foundation for understanding the form and function of South African landscapes and its ecological processes, and a baseline for detecting ecological change (Dayaram et al., 2019). The vegetation types in the NVM (Mucina & Rutherford, 2006; Dayaram et al. in prep) are used interchangeably as ecosystem types, since vegetation types were classified not only based on floristics but also abiotic conditions, such as geology, soil type and climate. These ecosystem types can intuitively be cross-referenced to the GET ecosystem types (Keith et al., 2020) with ecosystems being nested within broader-level biomes that correspond to specific geographic space. For countries without a national ecosystem classification system, the GET provides an ideal starting point as the typology for this workflow (see e.g. Wells et al., 2025), although the accompanying map, the Global Ecosystem Atlas, is not available for all countries yet.
+
+### Step 2 — Identify key pressures and change pathways
+
+Screen threats and agree on the main pressures that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes, erosion). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.
+
+### Step 3 — Define a reference condition
+
+Define what “intact” (or benchmark) condition means for the unit, ideally across natural variability (seasonality, disturbance/recovery cycles, rainfall gradients). Reference sites should be documented and defensible.
+
+### Step 4 — Select ecosystem-specific indicators of condition
+
+Translate ecological understanding into measurable indicators (structure/function and—where feasible—composition). Indicators should be linked to the pressures in Step 2 and be interpretable to end users.
+
+### Step 5 — Choose remote-sensing metrics and data sources
+
+Select satellite/sensor data and metrics that are capable of detecting the chosen indicators at appropriate spatial and temporal scales. Time-series and phenology-based measures are often essential in seasonal systems.
+
+### Step 6 — Set thresholds (if discrete classes are needed)
+
+Even if condition is mapped continuously, many applications require severity classes (e.g., intact / moderate / severe). Thresholds should be guided by the metric distributions, expert definitions, and (where available) state-and-transition understanding.
+
+### Step 7 — Produce maps and validate (iteratively)
+
+Generate spatial outputs, validate against field/expert evidence, quantify uncertainty, and iterate with expert review until the product is ecologically defensible. Outputs can be continuous (0–1) or categorical depending on the use case.
+
+------------------------------------------------------------------------
+
+## Two complementary mapping approaches (used in Step 5)
+
+::: callout-note
+### A) Deviation-from-reference (reference-based)
+
+A simple, interpretable approach: measure how far each pixel deviates from the spectral/phenological signature of intact reference sites, then scale to a condition index.
+:::
+
+::: callout-note
+### B) Spatial modelling (predictive)
+
+Use expert/field-labelled training data and predictor layers (RS metrics + environment) to model and predict condition across space (e.g., using Random Forests). This is powerful in heterogeneous landscapes but needs careful validation and uncertainty reporting.
+:::
+
+Both approaches can be appropriate; we generally choose based on data availability, the ecosystem, pressure signals, training data availability, and interpretability requirements.
+
+------------------------------------------------------------------------
+
+## Known challenges 
+
+-   **Natural variability vs degradation**: seasonal cycles, rainfall variability, fire recovery and disturbance history can mimic degradation signals. We prefer time-series and phenology metrics and interpret everything relative to reference expectations.
+-   **Unit definition matters**: if the ecosystem unit is mapped too broadly, condition signals get blurred. We document the chosen units and revise if experts disagree.
+-   **Remote sensing is proxy-based**: we lean heavily on expert interpretation and transparent assumptions, and we treat uncertainty as a first-class output.
+
+------------------------------------------------------------------------
+
+## Where to go next
+
+-   If you want the general concept: read the **Overview** page.
+-   If you want implementation detail: start with **Thicket** (completed example) and then **Grassland** (in progress).

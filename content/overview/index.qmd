@@ -1,9 +1,85 @@
 ---
 title: "Overview"
+toc: true
+toc-location: left
+page-layout: article
 ---
 
-This section explains what we mean by ecosystem condition, why it matters, and how we interpret condition across South Africa’s biomes.
+## The SBAPP project
 
-## What is ecosystem condition?
+This research forms part of a regional project called the Spatial Biodiversity Assessment, Prioritization, and Planning (SBAPP) in South Africa, Namibia, Malawi and Mozambique. Objective 4 of this project aims to map ecosystem condition and this website provides the workflows and first case studies produced during this project.
 
-(Write 5–10 lines here to start.)
+Overall, ecological condition and land degradation data can be used to provide relevant information for decision-makers, planners, and researchers to make informed decisions regarding the sustainable use of ecosystems and conservation thereof to ensure they are not further degraded and remain intact.
+
+The SBAPP project distinguishes itself from other mapping initiatives related to ecological condition and land degradation in southern Africa, such as the Biodiversity Intactness Index (BII) for Africa. The BII is based on ecosystem extent, species richness and abundance measures to map the state of biodiversity. While the BII focuses solely on biodiversity as an indicator, the SBAPP project will focus on the states and processes at the biome level and will also consider various physical, chemical, and biological indicators related to ecological condition. These include the presence of invasive alien plants, fire regime disruptions, and the occurrence of soil erosion, for example, providing a more holistic view of ecosystem health and functionality, as well as the deterioration in land quality.
+
+## Why map ecosystem condition?
+
+South Africa has excellent ecosystem maps and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural areas*—for example, unsustainable grazing, woody encroachment, invasive species, altered fire regimes, and erosion. These pressures can reduce ecosystem integrity even when land cover still looks “natural” on a map.\
+This project develops a **repeatable, context-specific approach** to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting.
+
+## What we mean by “ecosystem condition”
+
+Following Keith et al. (2020), who expanded on the SEEA EA definition of ecosystem condition, we define ecosystem condition as the “quality of an ecosystem that may reflect multiple values, measured in terms of its abiotic and biotic characteristics across a range of temporal and spatial scales. Quality is assessed with respect to ecosystem structure, function and composition, which underpin the ecological integrity of the ecosystem”. In practice, remote sensing is currently strongest for detecting *structure and function* (e.g., cover, biomass proxies, phenology, productivity), while composition usually needs field data and expert interpretation to anchor the remote-sensing signals.\
+Condition is interpreted as a **continuum** from intact to transformed, rather than a set of rigid categories.
+
+::: callout-note
+### Important: condition is ecosystem-specific
+
+A “low NDVI” pixel is not automatically degraded—it might be naturally open, seasonal, or disturbance-driven. That’s why we start with ecosystem units and local ecological expertise before selecting metrics.
+:::
+
+## How this website is organised
+
+This site has two levels:
+
+1.  **General workflow** (applies across biomes)\
+    A seven-step, expert-guided remote-sensing based workflow to make condition mapping transparent and comparable.
+
+2.  **Biome pages** (biome-specific implementation)\
+    For each biome, we document:
+
+    -   the main pressures and plausible degradation pathways
+    -   the reference concept (what “intact” means there)
+    -   the indicators and remote sensing metrics chosen
+    -   the mapping method and outputs
+    -   known limitations and uncertainty
+
+## What’s available right now
+
+-   **Thicket biome**: methods and first wall-to-wall condition layers (case study implementation).
+-   **Grassland biome**: initial scoping and method development.
+
+We will add additional biomes iteratively, using the same workflow but tailoring indicators and metrics to each system.
+
+## What makes this approach different?
+
+Many condition layers either (a) map *pressures* (e.g., human modification), or (b) map *ecosystem properties* (structure/function) without diagnosing which pressures matter most in a particular ecosystem. We use a **hybrid** approach: - first identify key pressures and how they change ecosystems - then choose indicators and remote-sensing metrics that can realistically detect those changes - finally validate and refine with expert review and (where possible) field evidence.
+
+## How experts can use (and critique) this work
+
+If you are reviewing this work, the most helpful feedback is:
+
+\- Are the key pressures correct for this biome/ecosystem unit?
+
+\- Do our reference definitions match what you would call intact?
+
+\- Are the chosen indicators ecologically meaningful and interpretable?
+
+\- Where do the maps look wrong, and what process explains the error?
+
+\- What should we treat as high uncertainty, and why?
+
+::: callout-warning
+### A note on uncertainty
+
+Remote-sensing condition metrics are proxies. We will always report (and where possible map) uncertainty and data limitations, and we prefer transparency over overconfidence.
+:::
+
+## How to cite this work
+
+A peer-reviewed workflow paper is in preparation. Until then, please cite this website as a project resource (citation guidance will be added here).
+
+## Contact
+
+If you’d like to contribute expertise, data, or review time, please contact Stephni van der Merwe (stephni.vdm\@gmail.com).

@@ -33,15 +33,15 @@ website:
         href: content/workflow/index.qmd
       - text: Thicket
         menu:
-          - text: Intro
+          - text: Introduction
             href: content/thicket/index.qmd
-          # - text: Methods
-          #   href: content/thicket/methods.qmd
-          # - text: Results
-          #   href: content/thicket/results.qmd
+          - text: Methods
+            href: content/thicket/methods.qmd
+          - text: Results
+            href: content/thicket/results.qmd
       - text: Grassland
         menu:
-          - text: Intro
+          - text: Introduction
             href: content/grassland/index.qmd
           # - text: Methods
           #   href: content/grassland/methods.qmd

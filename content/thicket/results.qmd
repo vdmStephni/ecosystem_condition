@@ -1,0 +1,9 @@
+## Key results
+
+The models capture the well-known general degradation patterns of the Thicket biome. Fence-line contrasts show the impact of unsustainable grazing.
+
+Case study
+
+## **Google Earth Engine App**
+
+The ecosystem condition maps are available in a Google Earth Engine App (link).
