@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -106,7 +106,15 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-thicket">    
         <li>
     <a class="dropdown-item" href="../../content/thicket/index.html">
- <span class="dropdown-text">Intro</span></a>
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/thicket/methods.html">
+ <span class="dropdown-text">Methods</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/thicket/results.html">
+ <span class="dropdown-text">Results</span></a>
   </li>  
     </ul>
   </li>
@@ -117,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-grassland">    
         <li>
     <a class="dropdown-item" href="../../content/grassland/index.html">
- <span class="dropdown-text">Intro</span></a>
+ <span class="dropdown-text">Introduction</span></a>
   </li>  
     </ul>
   </li>
@@ -131,9 +139,31 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#goal-of-the-workflow" id="toc-goal-of-the-workflow" class="nav-link active" data-scroll-target="#goal-of-the-workflow">Goal of the workflow</a></li>
+  <li><a href="#the-general-workflow" id="toc-the-general-workflow" class="nav-link" data-scroll-target="#the-general-workflow">The general workflow</a>
+  <ul>
+  <li><a href="#step-1-define-assessment-units-and-identify-relevant-experts" id="toc-step-1-define-assessment-units-and-identify-relevant-experts" class="nav-link" data-scroll-target="#step-1-define-assessment-units-and-identify-relevant-experts">Step 1 — Define assessment units and identify relevant experts</a></li>
+  <li><a href="#step-2-identify-key-pressures-and-change-pathways" id="toc-step-2-identify-key-pressures-and-change-pathways" class="nav-link" data-scroll-target="#step-2-identify-key-pressures-and-change-pathways">Step 2 — Identify key pressures and change pathways</a></li>
+  <li><a href="#step-3-define-a-reference-condition" id="toc-step-3-define-a-reference-condition" class="nav-link" data-scroll-target="#step-3-define-a-reference-condition">Step 3 — Define a reference condition</a></li>
+  <li><a href="#step-4-select-ecosystem-specific-indicators-of-condition" id="toc-step-4-select-ecosystem-specific-indicators-of-condition" class="nav-link" data-scroll-target="#step-4-select-ecosystem-specific-indicators-of-condition">Step 4 — Select ecosystem-specific indicators of condition</a></li>
+  <li><a href="#step-5-choose-remote-sensing-metrics-and-data-sources" id="toc-step-5-choose-remote-sensing-metrics-and-data-sources" class="nav-link" data-scroll-target="#step-5-choose-remote-sensing-metrics-and-data-sources">Step 5 — Choose remote-sensing metrics and data sources</a></li>
+  <li><a href="#step-6-set-thresholds-if-discrete-classes-are-needed" id="toc-step-6-set-thresholds-if-discrete-classes-are-needed" class="nav-link" data-scroll-target="#step-6-set-thresholds-if-discrete-classes-are-needed">Step 6 — Set thresholds (if discrete classes are needed)</a></li>
+  <li><a href="#step-7-produce-maps-and-validate-iteratively" id="toc-step-7-produce-maps-and-validate-iteratively" class="nav-link" data-scroll-target="#step-7-produce-maps-and-validate-iteratively">Step 7 — Produce maps and validate (iteratively)</a></li>
+  </ul></li>
+  <li><a href="#two-complementary-mapping-approaches-used-in-step-5" id="toc-two-complementary-mapping-approaches-used-in-step-5" class="nav-link" data-scroll-target="#two-complementary-mapping-approaches-used-in-step-5">Two complementary mapping approaches (used in Step 5)</a></li>
+  <li><a href="#known-challenges" id="toc-known-challenges" class="nav-link" data-scroll-target="#known-challenges">Known challenges</a></li>
+  <li><a href="#where-to-go-next" id="toc-where-to-go-next" class="nav-link" data-scroll-target="#where-to-go-next">Where to go next</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -157,9 +187,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page summarises the general, biome-adapted workflow used to assess ecosystem condition.</p>
+<section id="goal-of-the-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="goal-of-the-workflow">Goal of the workflow</h2>
+<p>This workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).</p>
+</section>
+<section id="the-general-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="the-general-workflow">The general workflow</h2>
+<section id="step-1-define-assessment-units-and-identify-relevant-experts" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-define-assessment-units-and-identify-relevant-experts">Step 1 — Define assessment units and identify relevant experts</h3>
+<p>Choose ecologically meaningful units (e.g., ecosystem types or functional groups) and involve experts who can co-define reference condition, key pressures, and interpret indicators.</p>
+<p>Effective condition assessments require maps of the ecosystem extent to select units of assessments. Defining these units <em>a priori</em> is critical because they serve two purposes in the assessment: (1) they provide a consistent framework to delineate and describe the area of interest, and (2) they form the basis for interpreting ecological metrics in a meaningful way. The defined units should not span functionally dissimilar ecosystems, as it can obscure degradation patterns. In South Africa, the National Vegetation Map (NVM) is used as the primary terrestrial ecosystem typology and map, which classified South Africa’s diverse vegetation hierarchically into vegetation types nested within vegetation units, bioregions and nine biomes (Mucina and Rutherford, 2006). The NVM is iteratively updated and refined (Dayaram et al., 2019), and serves as a representation of the potential extent of vegetation types (pre-1750), providing a foundation for understanding the form and function of South African landscapes and its ecological processes, and a baseline for detecting ecological change (Dayaram et al., 2019). The vegetation types in the NVM (Mucina &amp; Rutherford, 2006; Dayaram et al.&nbsp;in prep) are used interchangeably as ecosystem types, since vegetation types were classified not only based on floristics but also abiotic conditions, such as geology, soil type and climate. These ecosystem types can intuitively be cross-referenced to the GET ecosystem types (Keith et al., 2020) with ecosystems being nested within broader-level biomes that correspond to specific geographic space. For countries without a national ecosystem classification system, the GET provides an ideal starting point as the typology for this workflow (see e.g.&nbsp;Wells et al., 2025), although the accompanying map, the Global Ecosystem Atlas, is not available for all countries yet.</p>
+</section>
+<section id="step-2-identify-key-pressures-and-change-pathways" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-identify-key-pressures-and-change-pathways">Step 2 — Identify key pressures and change pathways</h3>
+<p>Screen threats and agree on the main pressures that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes, erosion). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.</p>
+</section>
+<section id="step-3-define-a-reference-condition" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-define-a-reference-condition">Step 3 — Define a reference condition</h3>
+<p>Define what “intact” (or benchmark) condition means for the unit, ideally across natural variability (seasonality, disturbance/recovery cycles, rainfall gradients). Reference sites should be documented and defensible.</p>
+</section>
+<section id="step-4-select-ecosystem-specific-indicators-of-condition" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-select-ecosystem-specific-indicators-of-condition">Step 4 — Select ecosystem-specific indicators of condition</h3>
+<p>Translate ecological understanding into measurable indicators (structure/function and—where feasible—composition). Indicators should be linked to the pressures in Step 2 and be interpretable to end users.</p>
+</section>
+<section id="step-5-choose-remote-sensing-metrics-and-data-sources" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-choose-remote-sensing-metrics-and-data-sources">Step 5 — Choose remote-sensing metrics and data sources</h3>
+<p>Select satellite/sensor data and metrics that are capable of detecting the chosen indicators at appropriate spatial and temporal scales. Time-series and phenology-based measures are often essential in seasonal systems.</p>
+</section>
+<section id="step-6-set-thresholds-if-discrete-classes-are-needed" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-set-thresholds-if-discrete-classes-are-needed">Step 6 — Set thresholds (if discrete classes are needed)</h3>
+<p>Even if condition is mapped continuously, many applications require severity classes (e.g., intact / moderate / severe). Thresholds should be guided by the metric distributions, expert definitions, and (where available) state-and-transition understanding.</p>
+</section>
+<section id="step-7-produce-maps-and-validate-iteratively" class="level3">
+<h3 class="anchored" data-anchor-id="step-7-produce-maps-and-validate-iteratively">Step 7 — Produce maps and validate (iteratively)</h3>
+<p>Generate spatial outputs, validate against field/expert evidence, quantify uncertainty, and iterate with expert review until the product is ecologically defensible. Outputs can be continuous (0–1) or categorical depending on the use case.</p>
+<hr>
+</section>
+</section>
+<section id="two-complementary-mapping-approaches-used-in-step-5" class="level2">
+<h2 class="anchored" data-anchor-id="two-complementary-mapping-approaches-used-in-step-5">Two complementary mapping approaches (used in Step 5)</h2>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A) Deviation-from-reference (reference-based)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A simple, interpretable approach: measure how far each pixel deviates from the spectral/phenological signature of intact reference sites, then scale to a condition index.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+B) Spatial modelling (predictive)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use expert/field-labelled training data and predictor layers (RS metrics + environment) to model and predict condition across space (e.g., using Random Forests). This is powerful in heterogeneous landscapes but needs careful validation and uncertainty reporting.</p>
+</div>
+</div>
+<p>Both approaches can be appropriate; we generally choose based on data availability, the ecosystem, pressure signals, training data availability, and interpretability requirements.</p>
+<hr>
+</section>
+<section id="known-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="known-challenges">Known challenges</h2>
+<ul>
+<li><strong>Natural variability vs degradation</strong>: seasonal cycles, rainfall variability, fire recovery and disturbance history can mimic degradation signals. We prefer time-series and phenology metrics and interpret everything relative to reference expectations.</li>
+<li><strong>Unit definition matters</strong>: if the ecosystem unit is mapped too broadly, condition signals get blurred. We document the chosen units and revise if experts disagree.</li>
+<li><strong>Remote sensing is proxy-based</strong>: we lean heavily on expert interpretation and transparent assumptions, and we treat uncertainty as a first-class output.</li>
+</ul>
+<hr>
+</section>
+<section id="where-to-go-next" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-go-next">Where to go next</h2>
+<ul>
+<li>If you want the general concept: read the <strong>Overview</strong> page.</li>
+<li>If you want implementation detail: start with <strong>Thicket</strong> (completed example) and then <strong>Grassland</strong> (in progress).</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -252,7 +365,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/vdmStephni\.github\.io\/ecosystem_condition\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
