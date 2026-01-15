@@ -43,8 +43,8 @@ website:
         menu:
           - text: Introduction
             href: content/grassland/index.qmd
-          # - text: Methods
-          #   href: content/grassland/methods.qmd
+          - text: Methods
+            href: content/grassland/approach.qmd
           # - text: Results
           #   href: content/grassland/results.qmd
 

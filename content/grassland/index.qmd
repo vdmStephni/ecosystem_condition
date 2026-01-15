@@ -2,4 +2,12 @@
 title: "Grassland"
 ---
 
-Grassland content goes here. Start with: what “degradation” means in grasslands and the first indicators you’ll test.
+## Vegetation units
+
+For the description of the ecological charachteristics, the ecosystem types have been grouped into five broader "ecosystem groups". Descriptions for each ecosystem type are available at [the National Vegetation Map project wesbite](https://bgis.sanbi.org/Projects/Detail/101) and thus not duplicated here.
+
+## Key pressures
+
+Fire and grazing are the two most important factors that drive grassland ecology in South Africa. A disruption or change in fire or grazing regime may significantly alter species composition and vegetation structure. Alien invasive densification and soil erosion are
+
+These factors can not be

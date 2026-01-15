@@ -7,7 +7,9 @@ page-layout: article
 
 ## Goal of the workflow
 
-This workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).
+A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for condition assessment, many produce outputs that can be used directly or adapted for this purpose. However, because the field is broad and methods vary by context, there is no single, widely accepted guide on which tools and platforms to use. Synthesising guidance from applied use cases, such as ecosystem accounting (SEEA EA), and the IUCN Red List of Ecosystems (RLE), helps clarify the requirements for robust condition assessment and highlights emerging best practices.
+
+This workflow was developed for the SBAPP project to facilitate effeicient assessment of ecosystem condition within the project timeline. There are numerous ways to approach this probem, but our workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).
 
 ## The general workflow
 
@@ -31,6 +33,8 @@ Translate ecological understanding into measurable indicators (structure/functio
 
 ### Step 5 — Choose remote-sensing metrics and data sources
 
+A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for quantifying ecosystem condition, many generate outputs that can be applied directly or readily adapted for that purpose. Clear guidance on which tools and modelling platforms to use in ecosystem condition quanitification is not yet available, given the breath of the topic. Bringing together the guidance from specific use cases such as how ecosystem condition is used in ecosystem accounts and in the RLE, improves the understanding of the requirements and best practices.
+
 Select satellite/sensor data and metrics that are capable of detecting the chosen indicators at appropriate spatial and temporal scales. Time-series and phenology-based measures are often essential in seasonal systems.
 
 ### Step 6 — Set thresholds (if discrete classes are needed)
@@ -39,7 +43,7 @@ Even if condition is mapped continuously, many applications require severity cla
 
 ### Step 7 — Produce maps and validate (iteratively)
 
-Generate spatial outputs, validate against field/expert evidence, quantify uncertainty, and iterate with expert review until the product is ecologically defensible. Outputs can be continuous (0–1) or categorical depending on the use case.
+Generate spatial outputs, validate against field/expert evidence, quantify uncertainty, and iterate with expert review until the product is ecologically defensible. Outputs can be continuous (0–1) or categorical depending on the use case. While maps are needed for communication, these should ideally be "Schrodinger's maps", where the meaning of the data is user-defined, therefore providing interactive maps where users select thresholds of condition based on their study sites is ideal.
 
 ------------------------------------------------------------------------
 
@@ -61,13 +65,17 @@ Both approaches can be appropriate; we generally choose based on data availabili
 
 ------------------------------------------------------------------------
 
-## Known challenges 
+## Known challenges
 
 -   **Natural variability vs degradation**: seasonal cycles, rainfall variability, fire recovery and disturbance history can mimic degradation signals. We prefer time-series and phenology metrics and interpret everything relative to reference expectations.
 -   **Unit definition matters**: if the ecosystem unit is mapped too broadly, condition signals get blurred. We document the chosen units and revise if experts disagree.
 -   **Remote sensing is proxy-based**: we lean heavily on expert interpretation and transparent assumptions, and we treat uncertainty as a first-class output.
 
 ------------------------------------------------------------------------
+
+## Key resources
+
+The UN SEEA EA provides substantial resources for guiding biophysical modelling for ecosystem accounts. Readers are referred to the following resources for guidance on approaches to assess ecosystem condition:
 
 ## Where to go next
 

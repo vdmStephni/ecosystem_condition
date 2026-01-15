@@ -2,8 +2,8 @@
 title: "Ecosystem Condition Assessments in South Africa"
 ---
 
-This website documents a biome-specific approach to assessing ecosystem condition in South Africa.
+The intention for this website is to provide a public interface for information and case studies about ecological condition.
 
 Use the menu to explore: - **Overview** (definitions, scope) - **Workflow** (general approach) - **Thicket** and **Grassland** (biome sections)
 
-> Note: This is a living resource and will be updated as additional biomes, case studies and analyses are completed.
+> Note: This is a living resource and will be updated as information becomes available. Since this resource is only possible through collaboration, and most ecologists in South Africa are familiar with R or Pyhton, we chose Quarto as the publishing system for this website, since it is compatible with both.

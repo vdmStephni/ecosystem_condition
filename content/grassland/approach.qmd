@@ -1,0 +1,5 @@
+## Planned approach
+
+Fractional vegetation cover (FVG) can be used to assess ecosystem condition in grassy biomes. Using the fraction of tree, shrub, photosynthetically active herbaceous vegetation and bare soil, we can estimate grassland or savanna integrity, if calibrated to each ecoregion. The calibration is necessary, because the spectral signature of the vegetation may be different in the different eocregions. For instance, the spectral signature of a mesic grassland dominated by x, may be significantly different to a dry highveld grassland dominated by y.
+
+## **Key resources**
