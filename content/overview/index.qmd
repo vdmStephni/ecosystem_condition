@@ -15,8 +15,11 @@ The SBAPP project distinguishes itself from other mapping initiatives related to
 
 ## Why map ecosystem condition?
 
-South Africa has excellent ecosystem maps and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural areas*—for example, unsustainable grazing, woody encroachment, invasive species, altered fire regimes, and erosion. These pressures can reduce ecosystem integrity even when land cover still looks “natural” on a map.\
-This project develops a **repeatable, context-specific approach** to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting.
+To accurately assess the state of biodiversity, we need to monitor the expansion and contractions of natural habitat. Therefore, the spatial extent is the contextual container for understanding ecological condition. Once we have the reamaining extent, the unit of which is ecosystem type for our purposes, we can assess and monitor the integrity of the natural remnants.
+
+South Africa has excellent ecosystem maps and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural areas*—for example, unsustainable grazing, woody encroachment, invasive species, altered fire regimes, and erosion. These pressures can reduce ecosystem integrity even when land cover still looks “natural” on a map.
+
+We thus developed a **repeatable, context-specific approach** to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting (see General Workflow).
 
 ## What we mean by “ecological condition”
 

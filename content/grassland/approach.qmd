@@ -1,5 +1,9 @@
 ## Planned approach
 
-Fractional vegetation cover (FVG) can be used to assess ecosystem condition in grassy biomes. Using the fraction of tree, shrub, photosynthetically active herbaceous vegetation and bare soil, we can estimate grassland or savanna integrity, if calibrated to each ecoregion. The calibration is necessary, because the spectral signature of the vegetation may be different in the different eocregions. For instance, the spectral signature of a mesic grassland dominated by x, may be significantly different to a dry highveld grassland dominated by y.
+Key indicators
+
+Herbaceous biomass is also the key predictor of herbivore biomass and the key indicators of overgrazing in rangelands in Grassland are woody increase, such as *Seriphium plumosum* density increase, or bare soil increase (which may lead to soil erosion). Therefore, knowing the proportions of land covered by herbaceous vegetation, trees/shrubs and bare soil, already brings us a step closer to more accurately assessing ecosystem condition. Calibrating the spectral sigantures to each bioregion's unique species composition (and thus potentially unique colours) then improves the accuracy of assessing ecosystem condition.
+
+Fractional vegetation cover (FVG) can be used to assess ecosystem condition in grassy biomes. Using the fraction of tree, shrub, photosynthetically active herbaceous vegetation and bare soil, we can estimate grassland or savanna integrity, if calibrated to each ecoregion. The calibration is necessary, because the spectral signature of the vegetation may be different in the different eocregions, due to species composition. For instance, the spectral signature of a mesic grassland dominated by x, may be significantly different to a dry highveld grassland dominated by y.
 
 ## **Key resources**
