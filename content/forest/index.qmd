@@ -1,0 +1,8 @@
+---
+title: "Forest"
+bibliography: references.bib
+---
+
+## Introduction
+
+This is a placeholder for the Forest biome section.

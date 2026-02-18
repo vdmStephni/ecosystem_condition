@@ -1,0 +1,8 @@
+---
+title: "Fynbos"
+bibliography: references.bib
+---
+
+## Introduction
+
+This is a placeholder for the Fynbos biome section.

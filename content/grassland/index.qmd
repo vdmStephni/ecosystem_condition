@@ -1,5 +1,6 @@
 ---
 title: "Grassland"
+bibliography: references.bib
 ---
 
 ## Vegetation units

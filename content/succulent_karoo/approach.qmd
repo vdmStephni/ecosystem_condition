@@ -1,0 +1,8 @@
+---
+title: "Succulent Karoo Approach"
+bibliography: references.bib
+---
+
+## Methods
+
+This is a placeholder for the Succulent Karoo approach/methods.

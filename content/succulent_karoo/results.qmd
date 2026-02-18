@@ -1,0 +1,8 @@
+---
+title: "Succulent Karoo Results"
+bibliography: references.bib
+---
+
+## Findings
+
+This is a placeholder for the Succulent Karoo results.

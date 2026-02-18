@@ -1,0 +1,12 @@
+---
+title: "Grassland Results"
+bibliography: references.bib
+---
+
+## Findings
+
+This is a placeholder for the grassland results.
+
+<!--
+![Example results figure](imgs/results_placeholder.png)
+-->

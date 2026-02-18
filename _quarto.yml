@@ -9,7 +9,7 @@ csl: sanbi.csl
 footnotes-hover: true
 reference-location: document
 link-external-newwindow: true
-callout-icon: false
+callout-icon: true
 
 language:
   section-title-footnotes: Notes
@@ -31,34 +31,29 @@ website:
         href: content/overview/index.qmd
       - text: Workflow
         href: content/workflow/index.qmd
-      - text: Thicket
+      - text: Biomes
         menu:
-          - text: Introduction
+          - text: Thicket
             href: content/thicket/index.qmd
-          - text: Methods
-            href: content/thicket/methods.qmd
-          - text: Results
-            href: content/thicket/results.qmd
-      - text: Grassland
-        menu:
-          - text: Introduction
+          - text: Grassland
             href: content/grassland/index.qmd
-          - text: Methods
-            href: content/grassland/approach.qmd
-          # - text: Results
-          #   href: content/grassland/results.qmd
-
+          - text: Nama Karoo
+            href: content/nama_karoo/index.qmd
+          - text: Succulent Karoo
+            href: content/succulent_karoo/index.qmd
+          - text: Fynbos
+            href: content/fynbos/index.qmd
+          - text: Forest
+            href: content/forest/index.qmd
+          - text: Savanna
+            href: content/savanna/index.qmd
 format:
   html:
-    # If you DO have these partial files, keep this on.
-    # If you DON'T, comment out template-partials or Quarto will fail to render.
-    #template-partials:
-     # - partials/title-metadata.html
-      #- partials/_title-meta-author.html
-
     theme:
       - default
       - custom.scss
+    
+    css: custom.scss
 
     crossref:
       fig-prefix: Figure

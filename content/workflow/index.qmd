@@ -1,83 +1,47 @@
 ---
-title: "General workflow"
-toc: true
-toc-location: left
-page-layout: article
+title: "Workflow"
+bibliography: references.bib
 ---
 
-## Goal of the workflow
+## General Approach
 
-A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for condition assessment, many produce outputs that can be used directly or adapted for this purpose. However, because the field is broad and methods vary by context, there is no single, widely accepted guide on which tools and platforms to use. Synthesising guidance from applied use cases, such as ecosystem accounting (SEEA EA), and the IUCN Red List of Ecosystems (RLE), helps clarify the requirements for robust condition assessment and highlights emerging best practices.
+This section outlines the workflow used for the assessments.
 
-This workflow was developed for the SBAPP project to facilitate effeicient assessment of ecosystem condition within the project timeline. There are numerous ways to approach this probem, but our workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).
+::: callout-tip
+## Process
 
-## The general workflow
-
-### Step 1 — Define assessment units and identify relevant experts
-
-Choose ecologically meaningful units (e.g., ecosystem types or functional groups) and involve experts who can co-define reference condition, key pressures, and interpret indicators.
-
-Effective condition assessments require maps of the ecosystem extent to select units of assessments. Defining these units *a priori* is critical because they serve two purposes in the assessment: (1) they provide a consistent framework to delineate and describe the area of interest, and (2) they form the basis for interpreting ecological metrics in a meaningful way. The defined units should not span functionally dissimilar ecosystems, as it can obscure degradation patterns. In South Africa, the National Vegetation Map (NVM) is used as the primary terrestrial ecosystem typology and map, which classified South Africa’s diverse vegetation hierarchically into vegetation types nested within vegetation units, bioregions and nine biomes (Mucina and Rutherford, 2006). The NVM is iteratively updated and refined (Dayaram et al., 2019), and serves as a representation of the potential extent of vegetation types (pre-1750), providing a foundation for understanding the form and function of South African landscapes and its ecological processes, and a baseline for detecting ecological change (Dayaram et al., 2019). The vegetation types in the NVM (Mucina & Rutherford, 2006; Dayaram et al. in prep) are used interchangeably as ecosystem types, since vegetation types were classified not only based on floristics but also abiotic conditions, such as geology, soil type and climate. These ecosystem types can intuitively be cross-referenced to the GET ecosystem types (Keith et al., 2020) with ecosystems being nested within broader-level biomes that correspond to specific geographic space. For countries without a national ecosystem classification system, the GET provides an ideal starting point as the typology for this workflow (see e.g. Wells et al., 2025), although the accompanying map, the Global Ecosystem Atlas, is not available for all countries yet.
-
-### Step 2 — Identify key pressures and change pathways
-
-Screen threats and agree on the main pressures that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes, erosion). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.
-
-### Step 3 — Define a reference condition
-
-Define what “intact” (or benchmark) condition means for the unit, ideally across natural variability (seasonality, disturbance/recovery cycles, rainfall gradients). Reference sites should be documented and defensible.
-
-### Step 4 — Select ecosystem-specific indicators of condition
-
-Translate ecological understanding into measurable indicators (structure/function and—where feasible—composition). Indicators should be linked to the pressures in Step 2 and be interpretable to end users.
-
-### Step 5 — Choose remote-sensing metrics and data sources
-
-A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for quantifying ecosystem condition, many generate outputs that can be applied directly or readily adapted for that purpose. Clear guidance on which tools and modelling platforms to use in ecosystem condition quanitification is not yet available, given the breath of the topic. Bringing together the guidance from specific use cases such as how ecosystem condition is used in ecosystem accounts and in the RLE, improves the understanding of the requirements and best practices.
-
-Select satellite/sensor data and metrics that are capable of detecting the chosen indicators at appropriate spatial and temporal scales. Time-series and phenology-based measures are often essential in seasonal systems.
-
-### Step 6 — Set thresholds (if discrete classes are needed)
-
-Even if condition is mapped continuously, many applications require severity classes (e.g., intact / moderate / severe). Thresholds should be guided by the metric distributions, expert definitions, and (where available) state-and-transition understanding.
-
-### Step 7 — Produce maps and validate (iteratively)
-
-Generate spatial outputs, validate against field/expert evidence, quantify uncertainty, and iterate with expert review until the product is ecologically defensible. Outputs can be continuous (0–1) or categorical depending on the use case. While maps are needed for communication, these should ideally be "Schrodinger's maps", where the meaning of the data is user-defined, therefore providing interactive maps where users select thresholds of condition based on their study sites is ideal.
-
-------------------------------------------------------------------------
-
-## Two complementary mapping approaches (used in Step 5)
-
-::: callout-note
-### A) Deviation-from-reference (reference-based)
-
-A simple, interpretable approach: measure how far each pixel deviates from the spectral/phenological signature of intact reference sites, then scale to a condition index.
+1.  Steps workflow diagram
 :::
 
-::: callout-note
-### B) Spatial modelling (predictive)
+### Conceptual models
 
-Use expert/field-labelled training data and predictor layers (RS metrics + environment) to model and predict condition across space (e.g., using Random Forests). This is powerful in heterogeneous landscapes but needs careful validation and uncertainty reporting.
+Overall the conceptual models in each bioregion helps to interpret and identify the ecological drivers of different stable states, to differentiate intact vegetation states from degraded states.
+
+Palatability has been a key concept for decades used to inform degradation of natural vegetation in most biomes, especially in the Grassland and Nama Karoo. Continued selective grazing often leads to a transition from palatable perennial species to unpalatable and short-lived species. In some cases, this change may be detected with satellite imagery as colour or phenological shifts, if the altered species composition is markedly different.
+
+Depending on the biome, different analytical steps are taken.
+
+```{=html}
+<!-- 
+![Workflow Chart](imgs/workflow_chart.png)
+-->
+```
+### Key pressures
+
+The guidelines were used to prioritise the key pressures and degradation processes most relevant to assessing the ecological condition in each biome.
+
+This section outlines the workflow used for the assessments.
+
+::: callout-tip
+## History of mapping degradation in South Africa
+
+The utility of using remote sensing to map degradation was recognised as soon as the images became available in the 1970s. Several studies aimed to relate vegetation indices derived from satellite images, especially NDVI, to field-observed contrasts in rangeland condition. Analyses transitioned to time series as more satellite data were released and by the 2000s vegetation productivity trends became widely used proxies for degradation. Some recent mapping attempts have made significant progress toward mapping ecological condition. Most global products' resolution is inappropriate for relating it to ecological condition at the local scale needed for heterogenous ecosystems in South Africa. Though 1m products are now emerging, the accuracy remains low for South Africa, due to lack of ground truthing, which limits the use for land-use decision making. Therefore, we often still have to create our own condition data that is developed with the intention of conducting condition assessments from the outset.
 :::
 
-Both approaches can be appropriate; we generally choose based on data availability, the ecosystem, pressure signals, training data availability, and interpretability requirements.
+::: callout-tip
+## The contentious nature of selecting a baseline condition
 
-------------------------------------------------------------------------
+Ecologists rarely define baseline condition due to human influences being present for centuries, making it near impossible to observe a truly intact state of vegetation. In practice however, environmental impact assessment and restoration practitioners must have reference states to compare to. Similarly, to conduct spatial biodiversity assessments, a reference state is needed for relative coparison. Therefore, it is ideal to select the closest possible modern manifestation of an ecosystem type, based on consensus views. Conservation areas that have been protected for decades are often the only remnants left as intact examples of ecosystem types.
+:::
 
-## Known challenges
-
--   **Natural variability vs degradation**: seasonal cycles, rainfall variability, fire recovery and disturbance history can mimic degradation signals. We prefer time-series and phenology metrics and interpret everything relative to reference expectations.
--   **Unit definition matters**: if the ecosystem unit is mapped too broadly, condition signals get blurred. We document the chosen units and revise if experts disagree.
--   **Remote sensing is proxy-based**: we lean heavily on expert interpretation and transparent assumptions, and we treat uncertainty as a first-class output.
-
-------------------------------------------------------------------------
-
-## Key resources
-
-The UN SEEA EA provides substantial resources for guiding biophysical modelling for ecosystem accounts. Readers are referred to the following resources for guidance on approaches to assess ecosystem condition:
-
-## Where to go next
-
--   If you want the general concept: read the **Overview** page.
--   If you want implementation detail: start with **Thicket** (completed example) and then **Grassland** (in progress).
+### 
