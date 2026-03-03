@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Andrew Skowno">
+<meta name="author" content="Stephni van der Merwe">
 
-<title>Thicket Biome – Ecosystem Condition Assessments</title>
+<title>Savanna – Ecosystem Condition Assessments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,12 +153,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link active" data-scroll-target="#ecological-context">Ecological Context</a>
-  <ul>
+  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link active" data-scroll-target="#ecological-context">Ecological Context</a></li>
   <li><a href="#vegetation-units" id="toc-vegetation-units" class="nav-link" data-scroll-target="#vegetation-units">Vegetation units</a></li>
-  <li><a href="#key-pressures-in-thicket" id="toc-key-pressures-in-thicket" class="nav-link" data-scroll-target="#key-pressures-in-thicket">Key pressures in Thicket</a></li>
-  <li><a href="#thicket-collaborators" id="toc-thicket-collaborators" class="nav-link" data-scroll-target="#thicket-collaborators"><strong>Thicket collaborators</strong></a></li>
-  </ul></li>
+  <li><a href="#key-pressures" id="toc-key-pressures" class="nav-link" data-scroll-target="#key-pressures">Key pressures</a></li>
+  <li><a href="#remote-sensing-approaches" id="toc-remote-sensing-approaches" class="nav-link" data-scroll-target="#remote-sensing-approaches">Remote sensing approaches</a></li>
+  <li><a href="#key-resources" id="toc-key-resources" class="nav-link" data-scroll-target="#key-resources">Key resources</a></li>
   </ul>
 </nav>
     </div>
@@ -165,14 +166,41 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Thicket Biome</h1>
+<h1 class="title">Savanna</h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Andrew Skowno <a href="https://orcid.org/0000-0002-2726-7886" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            South African National Biodiversity Institute
+          </p>
+        <p class="affiliation">
+            University of Cape Town
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Stephni van der Merwe <a href="https://orcid.org/0000-0002-6385-8536" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            South African National Biodiversity Institute
+          </p>
+        <p class="affiliation">
+            University of Cape Town
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -184,25 +212,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="ecological-context" class="level2">
 <h2 class="anchored" data-anchor-id="ecological-context">Ecological Context</h2>
-<section id="vegetation-units" class="level3">
-<h3 class="anchored" data-anchor-id="vegetation-units">Vegetation units</h3>
-<p>The Thicket Biome is a structurally complex and compositionally diverse vegetation that occupies a transitional zone between the country’s arid interior and its more mesic coastal regions (Vlok et al.&nbsp;2003; Hoare et al.&nbsp;2006). Thicket vegetation varies along key environmental gradients of moisture availability, soil type, topography, and rainfall seasonality, giving rise to a variety of growth forms occurring in a mosaic of distinct vegetation clumps (Vlok et al., 2003). At the EFG level, along the coastal fringe, Dune Thicket occurs on aeolian sands with high wind exposure and saline influences. This vegetation is characterised by a dense woody canopy, low succulent presence, and species adapted to sand stabilisation and frequent disturbance (SANBI, 2021; Strydom et al., 2022). Inland from the coast, Valley Thicket is found along major river systems and in topographic hollows with elevated soil moisture and fertile, shale-derived soils (Vlok et al.&nbsp;2003). These systems support a rich assemblage of woody and succulent species and are notable for their resistance to seasonal climatic fluctuations (Rutherford et al., 2014; SANBI 2021). In regions with moderate, year-round rainfall, Mesic Thicket occupies fire-protected topographic refugia such as deep valleys and southern slopes. It forms a dense, stratified canopy of evergreen and weakly deciduous shrubs and trees similar to forest vegetation, and plays a critical role in soil retention and carbon sequestration (Lechmere-Oertel et al., 2005; SANBI, 2021). By contrast, Arid Thicket dominates the interior valleys and escarpment foothills, where rainfall is low and erratic, and vegetation is shaped by chronic water deficit, nutrient-poor soils, and intense grazing pressure (van Luijk et al., 2013; Rutherford et al., 2014). Arid Thicket is distinguished from other thicket forms by a poorly developed woody component and a prominent succulent layer, with communities being either dominated by <em>Portulacaria afra</em> (eg. in Spekboomveld) or by other succulents (eg. in Noorsveld). All the EFGs also occur in mosaics with other biomes.</p>
-<p>Intact solid Thicket vegetation, i.e.&nbsp;untransformed and not in mosaics or bush clumps, is characterised by its resilience to certain disturbances, such as fire and herbivory, due to its dense near-impenetrable canopy and thorny structure (Vlok et al., 2003). However, this resilience comes at a cost: once disturbed, Thicket vegetation exhibits a low regenerative capacity, often failing to return to its original stable state or requiring decades for recovery of the slow-growing species (Lechmere-Oertel et al., 2005; Carvalho et al., 2022). This has significant implications for conservation, as the remaining intact Thicket needs to be prioritised for protection, and degraded sites actively restored where possible (Lechmere-Oertel, 2023). Indeed, restoration efforts in the Thicket has shown remarkable success when given space and time for recovery in protected sites (Mills &amp; Cowling, 2006; del Rio-Mena et al., 2021; Galuszynski, 2023).</p>
 </section>
-<section id="key-pressures-in-thicket" class="level3">
-<h3 class="anchored" data-anchor-id="key-pressures-in-thicket">Key pressures in Thicket</h3>
-<p>The degradation of Thicket has been ongoing for over a century. Historical accounts of vast areas of dense, thorny and impenetrable vegetation (Hoare et al., 2006; Reardon, 2021), are rarely seen today. Other than outright habitat loss due to urban development and croplands, the replacement of indigenous megaherbivores (like elephants) with high densities of domestic stock has caused severe degradation of the natural landscapes (Lechmere-Oertel et al., 2005; Rutherford et al., 2014)​. Historical overstocking of livestock has thus likely been the primary driver of vegetation change in the arid parts of this biome over the past 200 years, outweighing natural climatic fluctuations (Thompson et al., 2009)​. Inside protected areas such as Addo Elephant National Park, browsing by elephants also impacts thicket structure (e.g.&nbsp;converting tall thicket to a shorter, more open state), but it is a more localised effect compared to the widespread clearing for citrus planting or unsustainable herbivory in rangelands. Outside these refuges, many thicket landscapes are in various stages of degradation, with reduced shrub or succulent cover, altered species composition, and diminished ecological function (lower carbon stocks and soil stability), often being indicators of degradation (van Luijk et al., 2013; Rutherford et al., 2014)​.</p>
-<p>The Thicket biome faces increasing pressure from anthropogenic activities, particularly overgrazing/browsing by livestock such as goats or extralimital game species, which has led to severe degradation, such as loss of key plant species and canopy cover, increasing grass cover and soil erosion in many areas (Lechmere-Oertel, 2023). A recent study found that structural changes to Arid Thicket are linked to functional changes to new vegetation states with differing herbivory regimes (Schmidt &amp; Kerley, 2024). Soil erosion, largely driven by unsustainable herbivory, contributes to the loss of topsoil and further diminishes the ecological integrity of these areas by reducing regenerative capacity (Lechmere-Oertel et al., 2005), ultimately resulting in carbon loss (Mills &amp; Cowling, 2006). Invasive alien species, such as <em>Opuntia</em> species and Australian wattles, further exacerbate this degradation by outcompeting native vegetation and changing ecosystem processes through altered nutrient cycling, hydrology and fire regimes (Veldtman et al., 2010; Kraaij et al., 2022). Additionally, climate change poses a long-term threat to the Thicket biome, with shifts in temperature and precipitation patterns potentially altering the distribution and composition of vegetation, as climatic niches shift. Droughts in particular are predicted to increase in South Africa, and pose a major threat to the ecological condition of Thicket. These change drivers interact in complex ways, often exacerbating the impacts on Thicket ecosystems and making conservation and restoration efforts more challenging (Lloyd et al.&nbsp;2002). However, understanding and mitigating these drivers are crucial for preserving the ecological integrity of Thicket&nbsp;vegetation.</p>
+<section id="vegetation-units" class="level2">
+<h2 class="anchored" data-anchor-id="vegetation-units">Vegetation units</h2>
 </section>
-<section id="thicket-collaborators" class="level3">
-<h3 class="anchored" data-anchor-id="thicket-collaborators"><strong>Thicket collaborators</strong></h3>
-<p>Alastair Potts, Anthony Palmer and Michael Powell assisted the SBAPP project team for the Albany Thicket biome.</p>
-<!-- 
-![Thicket Landscape](imgs/thicket_landscape.png)
--->
+<section id="key-pressures" class="level2">
+<h2 class="anchored" data-anchor-id="key-pressures">Key pressures</h2>
+</section>
+<section id="remote-sensing-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="remote-sensing-approaches">Remote sensing approaches</h2>
+</section>
+<section id="key-resources" class="level2">
+<h2 class="anchored" data-anchor-id="key-resources">Key resources</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
