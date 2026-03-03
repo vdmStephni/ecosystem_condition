@@ -1,5 +1,5 @@
 ---
-title: "Ecosystem Condition Assessments"
+#title: "Ecosystem Condition Assessments"
 ---
 
 Welcome to the Ecosystem Condition Assessments website. This resource provides information and case studies about ecological condition in South Africa.
