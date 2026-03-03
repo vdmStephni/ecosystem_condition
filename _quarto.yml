@@ -1,7 +1,7 @@
 project:
   type: website
   # If you later want GitHub Pages from /docs, uncomment:
-  # output-dir: docs
+  output-dir: docs
 
 editor: visual
 
