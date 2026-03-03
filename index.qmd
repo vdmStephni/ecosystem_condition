@@ -2,25 +2,31 @@
 #title: "Ecosystem Condition Assessments"
 ---
 
-Welcome to the Ecosystem Condition Assessments website. This resource provides information and case studies about ecological condition in South Africa.
+Welcome to the Ecosystem Condition Assessments website. This resource provides information, resources and case studies about how we assess ecological condition in South Africa.
 
 ::: grid
 ::: g-col-4
 ### [Overview](content/overview/index.qmd)
 
 Understand the scope, definitions, and key concepts of ecosystem condition.
+
+![](imgs/2025-06-08 15.07.27.jpg){width="495"}
 :::
 
 ::: g-col-4
 ### [Workflow](content/workflow/index.qmd)
 
 Explore the general approach and analytical steps used in the assessments.
+
+![](imgs/Workflow diagrams.jpg){width="496"}
 :::
 
 ::: g-col-4
 ### [Biomes](content/thicket/index.qmd)
 
-Dive into specific biome assessments, including Thicket, Grassland, and others.
+Explore specific biomes or case studies.
+
+![](imgs/2025-07-14 13.48.52.jpg){width="501"}
 :::
 :::
 

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Ecosystem Condition Assessments",
     "section": "",
-    "text": "Welcome to the Ecosystem Condition Assessments website. This resource provides information and case studies about ecological condition in South Africa.\n\n\nOverview\nUnderstand the scope, definitions, and key concepts of ecosystem condition.\n\n\nWorkflow\nExplore the general approach and analytical steps used in the assessments.\n\n\nBiomes\nDive into specific biome assessments, including Thicket, Grassland, and others.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a living resource and will be updated as information becomes available. While the content for this website is collated and edited by Stephni van der Merwe, many researchers contributed to content creation and are cited in each page. The views expressed are not necessarily those of the affiliated institutions."
+    "text": "Welcome to the Ecosystem Condition Assessments website. This resource provides information, resources and case studies about how we assess ecological condition in South Africa.\n\n\nOverview\nUnderstand the scope, definitions, and key concepts of ecosystem condition.\n\n\n\nWorkflow\nExplore the general approach and analytical steps used in the assessments.\n\n\n\nBiomes\nExplore specific biomes or case studies.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a living resource and will be updated as information becomes available. While the content for this website is collated and edited by Stephni van der Merwe, many researchers contributed to content creation and are cited in each page. The views expressed are not necessarily those of the affiliated institutions."
   },
   {
     "objectID": "content/thicket/results.html",
@@ -294,18 +294,32 @@
     "text": "This is a placeholder for the grassland results."
   },
   {
-    "objectID": "content/nama_karoo/index.html",
-    "href": "content/nama_karoo/index.html",
+    "objectID": "content/nama_karoo/index.html#vegetation-units",
+    "href": "content/nama_karoo/index.html#vegetation-units",
     "title": "Nama Karoo",
-    "section": "",
-    "text": "This is a placeholder for the Nama Karoo biome section."
+    "section": "Vegetation units",
+    "text": "Vegetation units"
   },
   {
-    "objectID": "content/nama_karoo/index.html#introduction",
-    "href": "content/nama_karoo/index.html#introduction",
+    "objectID": "content/nama_karoo/index.html#key-pressures",
+    "href": "content/nama_karoo/index.html#key-pressures",
     "title": "Nama Karoo",
-    "section": "",
-    "text": "This is a placeholder for the Nama Karoo biome section."
+    "section": "Key pressures",
+    "text": "Key pressures"
+  },
+  {
+    "objectID": "content/nama_karoo/index.html#remote-sensing-approaches",
+    "href": "content/nama_karoo/index.html#remote-sensing-approaches",
+    "title": "Nama Karoo",
+    "section": "Remote sensing approaches",
+    "text": "Remote sensing approaches"
+  },
+  {
+    "objectID": "content/nama_karoo/index.html#key-resources",
+    "href": "content/nama_karoo/index.html#key-resources",
+    "title": "Nama Karoo",
+    "section": "Key resources",
+    "text": "Key resources"
   },
   {
     "objectID": "content/overview/index.html",
@@ -455,10 +469,10 @@
     "text": "Known challenges\n\nNatural variability vs degradation: seasonal cycles, rainfall variability, fire recovery and disturbance history can mimic degradation signals. We prefer time-series and phenology metrics and interpret everything relative to reference expectations.\nUnit definition matters: if the ecosystem unit is mapped too broadly, condition signals get blurred. We document the chosen units and revise if experts disagree.\nRemote sensing is proxy-based: we lean heavily on expert interpretation and transparent assumptions, and we treat uncertainty as a first-class output."
   },
   {
-    "objectID": "content/workflow/index.html#key-resources",
-    "href": "content/workflow/index.html#key-resources",
+    "objectID": "content/workflow/index.html#references",
+    "href": "content/workflow/index.html#references",
     "title": "Workflow",
-    "section": "Key resources",
-    "text": "Key resources\nThe UN SEEA EA provides substantial resources for guiding biophysical modelling for ecosystem accounts. Readers are referred to the following resources for guidance on approaches to assess ecosystem condition:"
+    "section": "References",
+    "text": "References"
   }
 ]

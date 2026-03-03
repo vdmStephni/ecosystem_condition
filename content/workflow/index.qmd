@@ -11,7 +11,7 @@ A growing range of models and tools for estimating ecosystem condition has emerg
 
 ## The general workflow
 
-![](imgs/Workflow diagrams.jpg){width="775"}
+![](imgs/Workflow%20diagrams.jpg){width="775"}
 
 ### Step 1 — Define assessment units and identify relevant experts
 
@@ -69,8 +69,7 @@ Both approaches can be appropriate; we generally choose based on data availabili
 
 ------------------------------------------------------------------------
 
-## Key resources
+## References
 
-The UN SEEA EA provides substantial resources for guiding biophysical modelling for ecosystem accounts. Readers are referred to the following resources for guidance on approaches to assess ecosystem condition:
-
-## 
+::: {#refs}
+:::
