@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -151,8 +170,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#key-concepts-and-definitions" id="toc-key-concepts-and-definitions" class="nav-link active" data-scroll-target="#key-concepts-and-definitions">Key concepts and Definitions</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts</a></li>
+  <li><a href="#what-we-mean-by-ecological-condition" id="toc-what-we-mean-by-ecological-condition" class="nav-link active" data-scroll-target="#what-we-mean-by-ecological-condition">What we mean by “ecological condition”</a></li>
+  <li><a href="#why-map-ecosystem-condition" id="toc-why-map-ecosystem-condition" class="nav-link" data-scroll-target="#why-map-ecosystem-condition">Why map ecosystem condition?</a></li>
+  <li><a href="#what-makes-this-approach-different" id="toc-what-makes-this-approach-different" class="nav-link" data-scroll-target="#what-makes-this-approach-different">What makes this approach different?</a></li>
+  <li><a href="#the-sbapp-project" id="toc-the-sbapp-project" class="nav-link" data-scroll-target="#the-sbapp-project">The SBAPP project</a></li>
+  <li><a href="#key-international-standards-we-use" id="toc-key-international-standards-we-use" class="nav-link" data-scroll-target="#key-international-standards-we-use">Key international standards we use</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -178,32 +201,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="key-concepts-and-definitions" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts-and-definitions">Key concepts and Definitions</h2>
-<p>This section provides an overview of the scope, key concepts and definitions used in this website. Due to the broad nature of ecological condition research, we clearly define what ecosystem condition, degradation and related terms, but are aware that often these terms are used interchangeably in the literature.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This page is a placeholder. Content describing the definitions and scope will be added here. <!-- 
-Placeholder for future image:
-![Overview Diagram](imgs/overview_placeholder.png)
---></p>
-</div>
-</div>
+<section id="what-we-mean-by-ecological-condition" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-mean-by-ecological-condition">What we mean by “ecological condition”</h2>
+<p>Understanding ecological condition at any scale requires the inclusion of both the pressures and the natural, following Keith et al.&nbsp;(2020)<span class="citation" data-cites="keith2020"><sup><a href="#ref-keith2020" role="doc-biblioref">1</a></sup></span>, who expanded on the SEEA EA definition of ecosystem condition, we define ecosystem condition as the “quality of an ecosystem that may reflect multiple values, measured in terms of its abiotic and biotic characteristics across a range of temporal and spatial scales. Quality is assessed with respect to ecosystem structure, function and composition, which underpin the ecological integrity of the ecosystem”. In practice, remote sensing is currently strongest for detecting <em>structure and function</em> (e.g., cover, biomass proxies, phenology, productivity), while composition usually needs field data and expert interpretation. Condition is interpreted as a <strong>continuum</strong> from intact to transformed, rather than a set of rigid categories.</p>
 </section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts</h2>
+<section id="why-map-ecosystem-condition" class="level2">
+<h2 class="anchored" data-anchor-id="why-map-ecosystem-condition">Why map ecosystem condition?</h2>
+<p>To accurately assess the state of biodiversity, we need to monitor the expansion and contractions of natural habitat. Therefore, the spatial extent is the contextual unit for understanding ecological condition. Once we have the reamaining extent, the unit of which is ecosystem type for our purposes, we can assess and monitor the integrity of the natural remnants. South Africa has a longstanding ecosystem map and land-cover products for tracking <strong>habitat loss</strong>, but many pressures occur <em>within remaining natural areas</em>—for example, unsustainable grazing, woody encroachment, invasive species or altered fire regimes. These pressures can reduce ecosystem integrity even when land cover still looks “natural” on a map.</p>
+<p>We thus developed a <strong>repeatable, context-specific approach</strong> to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting (see General Workflow).</p>
+</section>
+<section id="what-makes-this-approach-different" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-this-approach-different">What makes this approach different?</h2>
+<p>Many condition layers either (a) map <em>pressures</em> (e.g., human modification), or (b) map <em>ecosystem properties</em> (structure/function) without diagnosing which pressures matter most in a particular ecosystem. We use a <strong>hybrid</strong> approach: - first identify key pressures and how they change ecosystems - then choose indicators and remote-sensing metrics that can realistically detect those changes - finally validate and refine with expert review and (where possible) field evidence.</p>
+</section>
+<section id="the-sbapp-project" class="level2">
+<h2 class="anchored" data-anchor-id="the-sbapp-project">The SBAPP project</h2>
+<p>This research forms part of a regional project called the Spatial Biodiversity Assessment, Prioritization, and Planning (SBAPP) in South Africa, Namibia, Malawi and Mozambique. Objective 4 of this project aims to map ecosystem condition and this website provides the workflows and first case studies produced during this project. For more information, visit the <a href="https://science.uct.ac.za/seec/sbapp-ecological-condition">SBAPP website</a>.</p>
+<p>These databases will be used to inform how we monitor and report on:</p>
 <ul>
-<li><strong>Condition</strong>: The state of the ecosystem relative to a reference intact state.</li>
-<li><strong>Assessment</strong>: The process of evaluating condition.</li>
+<li><p><a href="https://iucnrle.org/">The IUCN Red List of Ecosystems</a>;</p></li>
+<li><p><a href="https://www.post-2020indicators.org/">Targets for the Kunming – Montreal Global Biodiversity Framework</a>.</p></li>
+<li><p>Achieving Land Degradation Neutrality targets of the UNCCD.</p></li>
+<li><p>Identifying areas for restoration.</p></li>
 </ul>
+</section>
+<section id="key-international-standards-we-use" class="level2">
+<h2 class="anchored" data-anchor-id="key-international-standards-we-use">Key international standards we use</h2>
+<p>Two complementary global standards, the International Union for Conservation of Nature (IUCN) Red List of Ecosystems<span class="citation" data-cites="keith2024"><sup><a href="#ref-keith2024" role="doc-biblioref">2</a></sup></span> (RLE) and United Nations System of Environmental-Economic Accounting Ecosystem Accounting<span class="citation" data-cites="edens2022"><sup><a href="#ref-edens2022" role="doc-biblioref">3</a></sup></span> (SEEA EA), provide internationally recognised frameworks for recording and interpreting changes to ecosystems. Both rely on the IUCN Global Ecosystem Typology<span class="citation" data-cites="iucnglo2020"><sup><a href="#ref-iucnglo2020" role="doc-biblioref">4</a></sup></span> (GET) as their foundational ecosystem classification and maps. The GET classifies ecosystem types hierarchically based on shared ecological processes, environmental drivers, and/or characteristic biota, with level 5 in the hierarchy representing regional ecosystem types and Level 6 delineates more fine-scaled ecological communities. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards . In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds”. These criteria are central to risk classification but are applied less often than extent-based assessments. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. Therefore, while both the RLE and SEEA EA explicitly recommend and/or require ecosystem condition data to accurately assess the state of ecosystems, in practise it is rarely included. A clear research gap thus remains the lack of a reproducible workflow for assessing ecological condition that translate consistently across ecosystems and reporting frameworks.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-keith2020" class="csl-entry" role="listitem">
+1. Keith, H. et al. 2020. A conceptual framework and practical structure for implementing ecosystem condition accounts. <em>One Ecosystem</em> 5: e58216. <a href="https://doi.org/10.3897/oneeco.5.e58216">https://doi.org/10.3897/oneeco.5.e58216</a>
+</div>
+<div id="ref-keith2024" class="csl-entry" role="listitem">
+2. Keith, D.A. et al. 2024. <em>Guidelines for the application of IUCN red list of ecosystems categories and criteria. Version 2.0</em>. IUCN, Gland, Switzerland.
+</div>
+<div id="ref-edens2022" class="csl-entry" role="listitem">
+3. Edens, B. et al. 2022. Establishing the SEEA ecosystem accounting as a global standard. <em>Ecosystem Services</em> 54: 101413. <a href="https://doi.org/10.1016/j.ecoser.2022.101413">https://doi.org/10.1016/j.ecoser.2022.101413</a>
+</div>
+<div id="ref-iucnglo2020" class="csl-entry" role="listitem">
+4. Keith, D.A. et al. (eds). 2020. <em>IUCN Global Ecosystem Typology 2.0: descriptive profiles for biomes and ecosystem functional groups</em>. IUCN, International Union for Conservation of Nature. <a href="https://doi.org/10.2305/IUCN.CH.2020.13.en">https://doi.org/10.2305/IUCN.CH.2020.13.en</a>
+</div>
+</div>
 
 
 </section>
