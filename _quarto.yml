@@ -22,7 +22,7 @@ execute:
   # freeze: auto
 
 website:
-  title: "Ecosystem Condition Assessments"
+  title: "Ecosystem Condition"
   navbar:
     left:
       - text: Home

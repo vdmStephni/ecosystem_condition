@@ -100,7 +100,10 @@ strong, b {
   font-weight: 600;
   font-size: 36px;
 }
-
+/* push the nav links (Home, Overview, Workflow, Biomes) to the right */
+.navbar .navbar-nav {
+  margin-left: auto !important;
+}
 
 /* Custom overrides for small screens */
 @media (max-width: 1100px) {
