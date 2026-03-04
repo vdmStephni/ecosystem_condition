@@ -88,9 +88,9 @@ The Thicket biome faces increasing pressure from anthropogenic activities, parti
 
 Because of the evergreen nature of intact Thicket vegetation, remote sensing approaches to ecosystem condition mapping is a feasible option. The legacy of degradation research in the biome provides a strong foundation for ecosystem condition assessments. Coupled with the recent demand for condition data to prioristise restoration activities, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 1).
 
-The results can be browsed in this [Google Earth Engine App](https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition).
+The results can be browsed in this [Google Earth Engine App](https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition), although it is still under review.
 
-![Figure 1. Ecological condition of Arid Thicket vegetation demonstrated by a fence-line contrast where vegetation has been heavily overbrowsed. The map in a) shows the location of the proof-of-concept site in South Africa, b) shows a drone photograph of the same site, with c) showing satellite imagery (ESRI basemap) and d) the ecological condition for the same area.](images/clipboard-2565633155.png){width="705"}
+![Figure 1. Ecological condition of Arid Thicket vegetation demonstrated by a fence-line contrast where vegetation has been heavily overbrowsed. The map in a) shows the location of the proof-of-concept site in South Africa, b) shows a drone photograph of the same site, with c) showing satellite imagery (ESRI basemap) and d) the ecological condition for the same area.](imgs/condition.png)
 
 ## Methods
 

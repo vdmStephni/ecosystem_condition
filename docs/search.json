@@ -144,21 +144,14 @@
     "href": "content/grassland/index.html",
     "title": "Grassland",
     "section": "",
-    "text": "For the description of the ecological charachteristics, the ecosystem types have been grouped into five broader “ecosystem groups”. Descriptions for each ecosystem type are available at the National Vegetation Map project wesbite and thus not duplicated here."
+    "text": "This is a placeholder for the Grassland biome section."
   },
   {
-    "objectID": "content/grassland/index.html#vegetation-units",
-    "href": "content/grassland/index.html#vegetation-units",
+    "objectID": "content/grassland/index.html#introduction",
+    "href": "content/grassland/index.html#introduction",
     "title": "Grassland",
     "section": "",
-    "text": "For the description of the ecological charachteristics, the ecosystem types have been grouped into five broader “ecosystem groups”. Descriptions for each ecosystem type are available at the National Vegetation Map project wesbite and thus not duplicated here."
-  },
-  {
-    "objectID": "content/grassland/index.html#key-pressures",
-    "href": "content/grassland/index.html#key-pressures",
-    "title": "Grassland",
-    "section": "Key pressures",
-    "text": "Key pressures\nFire and grazing are the two most important factors that drive grassland ecology in South Africa. A disruption or change in fire or grazing regime may significantly alter species composition and vegetation structure. Alien invasive densification and soil erosion are\nThese factors can not be"
+    "text": "This is a placeholder for the Grassland biome section."
   },
   {
     "objectID": "content/fynbos/results.html",
@@ -294,6 +287,20 @@
     "text": "This is a placeholder for the grassland results."
   },
   {
+    "objectID": "content/grassland/results.html#vegetation-units",
+    "href": "content/grassland/results.html#vegetation-units",
+    "title": "Grassland Results",
+    "section": "Vegetation units",
+    "text": "Vegetation units\nFor the description of the ecological charachteristics, the ecosystem types have been grouped into five broader “ecosystem groups”. Descriptions for each ecosystem type are available at the National Vegetation Map project wesbite and thus not duplicated here."
+  },
+  {
+    "objectID": "content/grassland/results.html#key-pressures",
+    "href": "content/grassland/results.html#key-pressures",
+    "title": "Grassland Results",
+    "section": "Key pressures",
+    "text": "Key pressures\nFire and grazing are the two most important factors that drive grassland ecology in South Africa. A disruption or change in fire or grazing regime may significantly alter species composition and vegetation structure. Alien invasive densification and soil erosion are\nThese factors can not be"
+  },
+  {
     "objectID": "content/nama_karoo/index.html#vegetation-units",
     "href": "content/nama_karoo/index.html#vegetation-units",
     "title": "Nama Karoo",
@@ -417,7 +424,7 @@
     "href": "content/thicket/index.html#case-study",
     "title": "Albany Thicket Biome",
     "section": "Case study",
-    "text": "Case study\nBecause of the evergreen nature of intact Thicket vegetation, remote sensing approaches to ecosystem condition mapping is a feasible option. The legacy of degradation research in the biome provides a strong foundation for ecosystem condition assessments. Coupled with the recent demand for condition data to prioristise restoration activities, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 1).\nThe results can be browsed in this Google Earth Engine App.\n\n\n\nFigure 1. Ecological condition of Arid Thicket vegetation demonstrated by a fence-line contrast where vegetation has been heavily overbrowsed. The map in a) shows the location of the proof-of-concept site in South Africa, b) shows a drone photograph of the same site, with c) showing satellite imagery (ESRI basemap) and d) the ecological condition for the same area."
+    "text": "Case study\nBecause of the evergreen nature of intact Thicket vegetation, remote sensing approaches to ecosystem condition mapping is a feasible option. The legacy of degradation research in the biome provides a strong foundation for ecosystem condition assessments. Coupled with the recent demand for condition data to prioristise restoration activities, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 1).\nThe results can be browsed in this Google Earth Engine App, although it is still under review.\n\n\n\nFigure 1. Ecological condition of Arid Thicket vegetation demonstrated by a fence-line contrast where vegetation has been heavily overbrowsed. The map in a) shows the location of the proof-of-concept site in South Africa, b) shows a drone photograph of the same site, with c) showing satellite imagery (ESRI basemap) and d) the ecological condition for the same area."
   },
   {
     "objectID": "content/thicket/index.html#methods",
