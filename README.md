@@ -1,6 +1,6 @@
 ## Ecosystem condition assessments
 
-### Website Content for Ecosystem Condition Assessments in South Africa
+### Website content for ecosystem condition assessments in South Africa
 
 
 January 2026
