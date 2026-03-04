@@ -5,21 +5,29 @@ bibliography: references.bib
 
 ## What we mean by “ecological condition” and "ecosystem condition"
 
-While there are various interpretations, "ecological condition" is a general ecological term for the state or quality of an ecosystem, habitat or site, based on how its species, communities, and ecological processes, compare to expected natural patterns for that unit. "Ecosystem condition" usually refers to the same concept, but has an inherent spatial unit of "ecosystem type". Following Keith et al. (2020)[@keith2020], who expanded on the SEEA EA definition of ecosystem condition, we define ecosystem condition as the “quality of an ecosystem that may reflect multiple values, measured in terms of its abiotic and biotic characteristics across a range of temporal and spatial scales. Quality is assessed with respect to ecosystem structure, function and composition, which underpin the ecological integrity of the ecosystem”. In practice, remote sensing is currently strongest for detecting *structure and function* (e.g., cover, biomass proxies, phenology, productivity), while composition usually needs field data and expert interpretation. 
+While there are various interpretations, "ecological condition" is a general ecological term for the state or quality of an ecosystem, habitat or site, based on how its species, communities, and ecological processes, compare to expected natural patterns for that unit. "Ecosystem condition" usually refers to the same concept, but has an inherent spatial unit of "ecosystem type". Following Keith et al. (2020)[@keith2020], who expanded on the SEEA EA definition of ecosystem condition, we define ecosystem condition as the “quality of an ecosystem that may reflect multiple values, measured in terms of its abiotic and biotic characteristics across a range of temporal and spatial scales. Quality is assessed with respect to ecosystem structure, function and composition, which underpin the ecological integrity of the ecosystem”. In practice, remote sensing is currently strongest for detecting *structure and function* (e.g., cover, biomass proxies, phenology, productivity), while composition usually needs field data and expert interpretation.
 
 ## Why map ecosystem condition?
 
-To accurately assess the state of biodiversity, we need to monitor the expansion and contractions of natural habitat. Therefore, the spatial extent is the contextual unit for understanding ecological condition. Once we have the reamaining extent, the unit of which is ecosystem type for our purposes, we can assess and monitor the integrity of the natural remnants. South Africa has a longstanding ecosystem map and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural areas*—for example, unsustainable grazing, woody encroachment, invasive species or altered fire regimes. These pressures can reduce ecosystem integrity even when land cover still looks “natural” on a map.
+To accurately assess the state of biodiversity, we need to monitor the expansion and contractions of natural habitat. Therefore, the spatial extent is the contextual unit for understanding ecological condition. Once we have the remaining extent, the unit of which is ecosystem type for our purposes, we can assess and monitor the integrity of the natural remnants. South Africa has a longstanding ecosystem map and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural area.* For example, unsustainable grazing, woody encroachment, invasive species or altered fire regimes which can reduce ecosystem integrity even when land cover still looks “natural” on a map.
 
-We thus developed a **repeatable, context-specific approach** to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting (see General Workflow).
+We thus developed a general repeatable, context-specific approach to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting (see Workflow).
 
-## What makes this approach different?
+## Key guidelines for this work
 
-Many attempts to map ecosystem condition either (a) map *pressures* (e.g., human modification), or (b) map *ecosystem properties* (structure/function) without diagnosing which pressures matter most in a particular ecosystem. We use a **hybrid** approach: - first identify key pressures and how they change ecosystems - then choose indicators and remote-sensing metrics that can realistically detect those changes - finally validate and refine with expert review and (where possible) field evidence (see workflow for more detail).
+While this research extends beyond developing data for ecosystem risk assessments and ecosystem accounting, there are useful guidelines available to navigate the broad subject matter of ecosystem condition. Two complementary global standards provide internationally recognised frameworks for recording and interpreting changes to ecosystems:
+
+-   The [IUCN Red List of Ecosystems](https://iucnrle.org/)[@keith2024] (RLE) and
+
+-   [UN System of Environmental-Economic Accounting Ecosystem Accounting](https://seea.un.org/)[@edens2022] (SEEA EA),
+
+Both rely on the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/)[@iucnglo2020] (GET) as their foundational ecosystem classification and maps. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds” (Fig. 1).
+
+![Figure 1. Conceptualisation of the Red List of Ecosystems Criterion C and D. For example woody invasive species cover might be at high density in 80% of the extent of an ecosystem, triggering a critically endangered threat status. ](rle.jpg){width="503"}
 
 ## The SBAPP project
 
-This research forms part of a regional project called the [Spatial Biodiversity Assessment, Prioritization, and Planning (SBAPP)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/the-sbapp-regional-project/) in South Africa, Namibia, Malawi and Mozambique. Objective 4 of this project aims to map ecosystem condition and this website provides the workflows and first case studies produced during this project. For more information, visit the [SBAPP website](https://science.uct.ac.za/seec/sbapp-ecological-condition).
+This research was initiated as part of a regional project that ends in 2027 called the [Spatial Biodiversity Assessment, Prioritization, and Planning (SBAPP)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/the-sbapp-regional-project/) in South Africa, Namibia, Malawi and Mozambique. Objective 4 of this project aims to map ecosystem condition and this website provides the workflows and first case studies produced during this project.
 
 These databases will be used to inform how we monitor and report on:
 
@@ -27,21 +35,19 @@ These databases will be used to inform how we monitor and report on:
 
 -   [Targets for the Kunming – Montreal Global Biodiversity Framework](https://www.post-2020indicators.org/).
 
--   Achieving Land Degradation Neutrality targets of the UNCCD.
+-   Land Degradation Neutrality targets of the UNCCD.
 
--   Identifying areas for restoration.
+-   Restoration prioritisation.
 
-## Key international standards we use
+-   Strategic conservation planning
 
-Two complementary global standards, the International Union for Conservation of Nature (IUCN) Red List of Ecosystems[@keith2024] (RLE) and United Nations System of Environmental-Economic Accounting Ecosystem Accounting[@edens2022] (SEEA EA), provide internationally recognised frameworks for recording and interpreting changes to ecosystems. Both rely on the IUCN Global Ecosystem Typology[@iucnglo2020] (GET) as their foundational ecosystem classification and maps. The GET classifies ecosystem types hierarchically based on shared ecological processes, environmental drivers, and/or characteristic biota, with level 5 in the hierarchy representing regional ecosystem types and Level 6 delineates more fine-scaled ecological communities. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards . In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds”. These criteria are central to risk classification but are applied less often than extent-based assessments. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. Therefore, while both the RLE and SEEA EA explicitly recommend and/or require ecosystem condition data to accurately assess the state of ecosystems, in practise it is rarely included. A clear research gap thus remains the lack of a reproducible workflow for assessing ecological condition that translate consistently across ecosystems and reporting frameworks.
+### Definitions
 
-### Key definitions
+Ecosystem condition, ecosystem health and ecosystem integrity are often used interchangeably.
 
-Ecosystem condition, ecosystem health and ecosystem intergity are often used interchangably.
+**Ecosystem condition (UN SEEA EA)**: "The quality of an ecosystem asset, measured through its biotic and abiotic characteristics, typically assessed relative to a defined reference condition and tracked over time"
 
-Ecosystem condition (UN SEEA EA): "The quality of an ecosystem asset, measured through its biotic and abiotic characteristics, typically assessed relative to a defined reference condition and tracked over time"
-
-**Ecosystem integrity ([IBPES](https://www.ipbes.net/global-assessment)):** "The ability of an ecosystem to support and maintain ecological processes and a diverse community of organisms. It is measured as the degree to which a diverse community of native organisms is maintained, and is used as a proxy for ecological resilience, intended as the capacity of an ecosystem to adapt in the face of stressors, while maintaining the functions of interest."
+**Ecosystem integrity (IBPES):** "The ability of an ecosystem to support and maintain ecological processes and a diverse community of organisms. It is measured as the degree to which a diverse community of native organisms is maintained, and is used as a proxy for ecological resilience, intended as the capacity of an ecosystem to adapt in the face of stressors, while maintaining the functions of interest."
 
 **Ecosystem Functional Group (from the Global Ecosystem Typology)**: A group of related ecosystems within a biome that share common ecological drivers, which in turn promote similar biotic traits that characterise the group. Derived from the top-down by subdivision of biomes.
 

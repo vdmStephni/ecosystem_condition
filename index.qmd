@@ -1,8 +1,14 @@
 ---
-#title: "Ecosystem Condition Assessments"
+#title: "Ecosystem Condition"
 ---
 
-Welcome to the Ecosystem Condition Assessments website. This resource provides information, and case studies about how we assess ecological condition in South Africa.
+Welcome to the Ecosystem Condition website. This resource provides information, and case studies about how we assess ecological condition in South Africa's diverse biomes.
+
+![](imgs/cover.jpg){width="692"}
+
+### Why ecosystem condition matters
+
+Ecosystem condition describes how an ecosystem’s structure, composition and functioning compare to a reference state, and how pressures are altering that state through time. Condition information supports restoration prioritisation, tracking degradation and recovery, and transparent reporting against national and global biodiversity and land degradation targets.
 
 ::: grid
 ::: g-col-4
@@ -10,7 +16,7 @@ Welcome to the Ecosystem Condition Assessments website. This resource provides i
 
 Understand the scope, definitions, and key concepts of ecosystem condition.
 
-![](imgs/2025-06-08%2015.07.27.jpg){width="495"}
+![](imgs/2025-06-08%2015.07.27.jpg){width="648"}
 :::
 
 ::: g-col-4
@@ -18,7 +24,7 @@ Understand the scope, definitions, and key concepts of ecosystem condition.
 
 Explore the general approach and analytical steps used in the assessments.
 
-![](imgs/Workflow%20diagrams.jpg){width="555"}
+![](imgs/Workflow%20diagrams.jpg){width="634"}
 :::
 
 ::: g-col-4
@@ -26,9 +32,17 @@ Explore the general approach and analytical steps used in the assessments.
 
 Explore how we approach ecosystem condition assessments in specific biomes or case studies.
 
-![](imgs/2025-07-14%2013.48.52.jpg){width="501"}
+![](imgs/golden.JPG){width="634"}
 :::
 :::
+
+### Featured case studies
+
+[Albany Thicket](content/thicket/index.qmd) – Structurally complex evergreen vegetation where degradation follows a relatively clear state and transition model compared to more disturbance-driven vegetation such as Grassland.
+
+[Nama Karoo](content/nama_karoo/index.qmd) – Natural bare ground in the Nama Karoo complicates degradation detection. Separating drought effects and natural bare ground cover from degradation is essential.
+
+### 
 
 ::: callout-note
 This is a living resource and will be updated as information becomes available. While the content for this website is collated and edited by Stephni van der Merwe, many researchers contributed to content creation and are cited in each page. The views expressed are not necessarily those of the affiliated institutions.

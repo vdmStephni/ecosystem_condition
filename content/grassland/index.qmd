@@ -3,6 +3,10 @@ title: "Grassland"
 bibliography: references.bib
 ---
 
+::: callout-note
+The ecosystem condition assessments for this biome are still in progress. We thus provide the summary of the vegetation units, what data is currently available that may inform condition assessments or potential approaches.
+:::
+
 ## Introduction
 
 This is a placeholder for the Grassland biome section.
