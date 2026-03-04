@@ -24,7 +24,7 @@ execute:
 website:
   title: "Ecosystem Condition"
   navbar:
-    left:
+    right:
       - text: Home
         href: index.qmd
       - text: Overview
