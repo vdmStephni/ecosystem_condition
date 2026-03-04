@@ -7,8 +7,12 @@ bibliography: references.bib
 The ecosystem condition assessments for this biome are still in progress. We thus provide the summary of the vegetation units, what data is currently available that may inform condition assessments or potential approaches.
 :::
 
-## Introduction
+## Ecological Context
 
-This is a placeholder for the Grassland biome section.
+## Vegetation units
 
-## 
+## Key pressures
+
+## Remote sensing approaches
+
+## Key resources

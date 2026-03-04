@@ -41,37 +41,37 @@ Define what “intact” (or benchmark) condition means for the unit, ideally ac
 
 ### Step 4 — Select ecosystem-specific indicators of condition
 
-Translate ecological understanding into measurable indicators (structure/function and—where feasible—composition). Indicators should be linked to the pressures in Step 2 and be interpretable to end users.
+Translate ecological understanding into measurable indicators (structure/function and, where feasibl, composition). Choose a small, defensible set of indicators that reflects how the focal ecosystem works (key structures and processes, and composition where feasible), and that can plausibly shift along the expected degradation or recovery pathways. A practical way to do this is to start from a conceptual ecosystem or bioregion model (Step 3), then map each major pressure (Step 2) to (i) a mechanism (what changes first), (ii) a measurable symptom, and (iii) an indicator that is sensitive, interpretable, and scalable (with a clear direction of change)[@rowland2018]. Reviews of ecosystem-condition indicator practice show that most applications converge on structural and functional indicators (e.g., vegetation cover/biomass/height, fragmentation, fire or flooding regimes, productivity/phenology stability)[@nicholsonthomas2025a], while compositional indicators are often more data-limited and used where suitable proxies[@clements2026] or monitoring data exist.
+
+There are numerous resources available to assist with indicator selection (see Key Resources below).
 
 ### Step 5 — Choose remote-sensing metrics and data sources
 
-A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for quantifying ecosystem condition, many generate outputs that can be applied directly or readily adapted for that purpose. Clear guidance on which tools and modelling platforms to use in ecosystem condition quanitification is not yet available, given the breath of the topic. Bringing together the guidance from specific use cases such as how ecosystem condition is used in ecosystem accounts and in the RLE, improves the understanding of the requirements and best practices.
+Select Earth-observation data and derived metrics that can actually detect (at the right grain and frequency) the indicators chosen in Step 4, prioritising time-series approaches wherever condition is expressed as departures from normal dynamics rather than single-date states. Guidance from ecosystem assessment frameworks emphasises making sensor and metric choices deductively and *a priori* from the conceptual model: match each indicator to the most appropriate observation type (e.g., optical indices for greenness and phenology; SAR for structure and moisture sensitivity; thermal for surface energy stress; fragmentation metrics from classified land cover)[@rowland2018a][@murray2018], then test whether the signal is separable from climate-driven variability and observation noise. Recent syntheses[@nicholsonthomas2025b] on ecosystem-condition monitoring also highlight the value of combining complementary datasets (multi-sensor, multi-resolution) and using robust summaries (seasonal metrics, anomalies relative to local baselines, trajectory and breakpoint measures), with validation against field or very-high-resolution reference data wherever possible, because many remote-sensing products were not built “for condition” but can be adapted effectively when the link to ecosystem processes is explicit and uncertainty is carried through the workflow.
 
-Select satellite/sensor data and metrics that are capable of detecting the chosen indicators at appropriate spatial and temporal scales. Time-series and phenology-based measures are often essential in seasonal systems.
+------------------------------------------------------------------------
+
+## Two complementary mapping approaches(used in Step 5)
+
+::: callout-note
+### A) Deviation-from-reference
+
+This approach treats ecosystem condition as distance from an intact benchmark. We first define reference sites (or a reference “envelope”) that represent the desired state for a given ecosystem type and environmental setting (see e.g. [@harwood2016a], then quantify how far each pixel or sampling unit deviates from the reference spectral, phenological, structural, geospatial or embedding signature. The output is typically a continuous, spatially explicit “severity” surface that is easy to interpret and communicate (higher deviation = lower condition), and can be stratified by ecosystem functional group to avoid confounding natural variation with degradation. As a simple example, ff overgrazing is the dominant pressures in a landscape, and it leads to consistent loss in perennial vegetation cover beyond the natural seasonal varaition, deviation in NDVI from sustainable grazed intact sites may be calculated. It is especially useful where clear intact reference areas exist and where you want transparency over complex model behaviour, but it depends heavily on good reference selection and careful handling of climate/seasonality effects in highly seasonal or disturbance-driven ecosystems.
+
+The [Habitat Condition Assessment System](https://research.csiro.au/biodiversity-knowledge/projects/hcas/) for Australia is good example of such an approach (see Harwood et al. 2016), where habitats that occur in similar abiotic conditions, should have similar spectral signatures, and if not, the difference may be due to non-natural disturbance and thus a difference in habitat condition. Condition is then estimated as the deviation from those expected “intact” signatures within comparable environments, where larger deviations indicate lower habitat condition for biodiversity. This type of approach does not specifically focus on key pressures (e.g. invasive species), but rather overall habitat condition.
+
+### B) Spatial modelling (predictive)
+
+Spatial modelling learns empirical relationships between remotely sensed predictors (e.g., time-series indices, SAR structure proxies, texture, disturbance metrics) plus environmental covariates (e.g., rainfall, soils, topography) and training labels that represent condition (field scores, expert points, or mapped degradation classes)[@bell2021][@sengani]. Models such as random forests can capture non-linear interactions associated with degradation states, extrapolate across large areas, and integrate multiple pressure signals into a single prediction, often with internal validation and variable-importance diagnostics. This approach is powerful when training data are reasonably representative and you need prediction beyond the sampled footprint, but it can be less interpretable than reference-based methods and is sensitive to biased training data, leakage of land-use proxies, and non-stationarity (e.g., climate-driven shifts that change relationships over time).
+:::
+
+In practice, the approaches pair well. Reference-based deviation surfaces can guide training design and provide an interpretable baseline, while predictive models can improve coverage and integrate multiple indicators, provided appropriate ecosystem stratification, validation, and uncertainty reporting is applied.
+
+------------------------------------------------------------------------
 
 ### Step 6 — Set thresholds and produce ecosystem condition maps
 
-Even if condition is mapped continuously, many applications require severity classes (e.g., intact / moderate / severe). Thresholds should be guided by the metric distributions, expert definitions, and (where available) state-and-transition understanding. Generate spatial outputs, validate against field/expert evidence, quantify uncertainty, and iterate with expert review until the product is ecologically defensible. Outputs can be continuous (0–1) or categorical depending on the use case.
-
-------------------------------------------------------------------------
-
-## Two complementary mapping approaches (used in Step 5)
-
-::: callout-note
-### A) Deviation-from-reference (reference-based)
-
-A simple, interpretable approach which quantifies deviation from intact sites' spectral or geospatial signatures[@harwood2016], either observed or modelled.
-:::
-
-::: callout-note
-### B) Spatial modelling (predictive)
-
-Spatial modelling approaches (e.g., random forests) learn relationships between RS predictors, environmental covariates, and training data representing ecosystem condition or land degradation (Bell et al., 2023; Sengani et al., 2025; Symeonakis and Higginbottom, 2014)
-:::
-
-Both approaches can be appropriate; we generally choose based on data availability, the ecosystem, pressure signals, training data availability, and interpretability requirements.
-
-------------------------------------------------------------------------
+We recommend producing continuous, spatially explicit severity surfaces (e.g., per pixel or sampling unit), and only converting these to categories when reporting requirements make this necessary. Following the RLE guidelines, continuous measures can be calibrated to relative severity by expressing change proportionally along a gradient from a defined reference state (low severity) toward a defined collapsed state (high severity), and then summarised as the proportion of the ecosystem’s distribution that exceeds specified severity thresholds. For instance, woody cover can be mapped as a continuous fractional cover layer[@venter2018], with severity represented as increasing departure from reference woody cover (e.g., near-zero in intact grassland). Where thresholds are needed, these continuous surfaces can be reclassified into severity bands using ecologically defensible breakpoints (e.g., cover levels linked to reduced herbaceous biomass or shifts in fire behaviour), ideally grounded in expert knowledge and supported by state-and-transition models rather than arbitrary statistical cut-offs.
 
 ## Known challenges
 
