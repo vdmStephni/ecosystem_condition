@@ -2,7 +2,7 @@
 #title: "Ecosystem Condition Assessments"
 ---
 
-Welcome to the Ecosystem Condition Assessments website. This resource provides information, resources and case studies about how we assess ecological condition in South Africa.
+Welcome to the Ecosystem Condition Assessments website. This resource provides information, and case studies about how we assess ecological condition in South Africa.
 
 ::: grid
 ::: g-col-4
@@ -10,7 +10,7 @@ Welcome to the Ecosystem Condition Assessments website. This resource provides i
 
 Understand the scope, definitions, and key concepts of ecosystem condition.
 
-![](imgs/2025-06-08 15.07.27.jpg){width="495"}
+![](imgs/2025-06-08%2015.07.27.jpg){width="495"}
 :::
 
 ::: g-col-4
@@ -18,15 +18,15 @@ Understand the scope, definitions, and key concepts of ecosystem condition.
 
 Explore the general approach and analytical steps used in the assessments.
 
-![](imgs/Workflow diagrams.jpg){width="496"}
+![](imgs/Workflow%20diagrams.jpg){width="555"}
 :::
 
 ::: g-col-4
 ### [Biomes](content/thicket/index.qmd)
 
-Explore specific biomes or case studies.
+Explore how we approach ecosystem condition assessments in specific biomes or case studies.
 
-![](imgs/2025-07-14 13.48.52.jpg){width="501"}
+![](imgs/2025-07-14%2013.48.52.jpg){width="501"}
 :::
 :::
 

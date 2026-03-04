@@ -210,19 +210,21 @@ div.csl-indent {
 
 <section id="general-approach" class="level2">
 <h2 class="anchored" data-anchor-id="general-approach">General Approach</h2>
-<p>This workflow was developed for the SBAPP project to facilitate efficient assessment of ecosystem condition within the project timeline. There are numerous ways to approach this probem, but our workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).</p>
-<p>A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for condition assessment, many produce outputs that can be used directly or adapted for this purpose. However, because the field is broad and methods vary by context, there is no single, widely accepted guide on which tools and platforms to use. Synthesising guidance from applied use cases, such as ecosystem accounting (SEEA EA), and the IUCN Red List of Ecosystems (RLE), helps clarify the requirements for robust condition assessment and highlights emerging best practices.</p>
+<p>This workflow was developed for the SBAPP project to facilitate efficient assessment of ecosystem condition within the project timeline. There are numerous ways to approach this problem, but our workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation.</p>
+<p>A growing range of models and tools for estimating ecosystem condition with satellite data has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for condition assessment, many produce outputs that can be used directly or adapted for this purpose. However, because the field is broad and methods vary, there is no single, widely accepted guide on which tools and platforms to use. Synthesising guidance from applied use cases, such as ecosystem accounting (SEEA EA), and the IUCN Red List of Ecosystems (RLE), helps clarify the requirements for robust condition assessment and highlights emerging best practices<span class="citation" data-cites="nicholsonthomas2025"><sup><a href="#ref-nicholsonthomas2025" role="doc-biblioref">1</a></sup></span>.</p>
+<p>Ecosystem condition is interpreted as a <strong>continuum</strong> from intact to transformed, rather than a set of rigid categories.</p>
 </section>
 <section id="the-general-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="the-general-workflow">The general workflow</h2>
 <p><img src="imgs/Workflow diagrams.jpg" class="img-fluid" width="775"></p>
 <section id="step-1-define-assessment-units-and-identify-relevant-experts" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-define-assessment-units-and-identify-relevant-experts">Step 1 — Define assessment units and identify relevant experts</h3>
-<p>Choose ecologically meaningful units (e.g., ecosystem types or functional groups) and involve experts who can co-define reference condition, key pressures, and interpret indicators.</p>
+<p>Choose ecologically meaningful units (e.g., ecosystem types or ecosystem functional groups) and involve experts who can co-define reference ecosystem condition, key pressures, and interpret indicators. Effective ecosystem condition assessments require both (i) an ecologically meaningful typology of assessment units and (ii) a spatial map of those units (their current and/or potential extent).</p>
+<p>In South Africa, we use the <a href="https://bgis.sanbi.org/vegmap">National Vegetation Map 2024</a> as the ecosystem map and typology, with ecosystem types hierarchically nested within bioregions and then biomes. In countries where such a product does not yet exist, the <a href="https://global-ecosystems.org/">Global Ecosystem Typology</a> and associated <a href="https://globalecosystemsatlas.org/">Global Ecosystem Atlas</a> provide an ideal starting point as the typology and map for this workflow, with ecosystems (at level 5) nested hierarchically within realms at the top, biomes below that and ecosystem functional groups at level 3 and regional subgroups at level 4. South African bioregions may be cross referenced to GET level 3 or 4, depending on the biome.</p>
 </section>
 <section id="step-2-identify-key-pressures-and-change-pathways" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-identify-key-pressures-and-change-pathways">Step 2 — Identify key pressures and change pathways</h3>
-<p>Screen threats using the <a href="https://www.iucnredlist.org/resources/threat-classification-scheme">IUCN Threat Classification Scheme</a> (<a href="#fig1">Fig. 1</a>) to identify the main pressures that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.</p>
+<p>Screen threats using the <a href="https://www.iucnredlist.org/resources/threat-classification-scheme">IUCN Threat Classification Scheme</a> (<a href="#fig1">Fig. 1</a>) to identify the main pressures in the assessment unit. In South Africa the South African National Land Cover or other global land cover products already capture outright transformation by the key habitat loss drivers: crop production, urban development, plantations and mining<span class="citation" data-cites="skowno2021"><sup><a href="#ref-skowno2021" role="doc-biblioref">2</a></sup></span>. Our focus targets more subtle degradation within natural land cover classes, such as in rangelands, which are typically driven by land use and other global change drivers such as unsustainable herbivory, invasive species, altered fire regimes, and climate change (von Maltitz et al.&nbsp;2024). The goal is to identify pressure gradients that may be measured with RS data, such as woodiness gradients in grasslands that may represent bush encroachment or invasive woody plant density. that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.</p>
 <div id="fig1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="imgs/pressures.png" class="img-fluid figure-img"></p>
@@ -233,6 +235,12 @@ div.csl-indent {
 <section id="step-3-define-a-reference-condition" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-define-a-reference-condition">Step 3 — Define a reference condition</h3>
 <p>Define what “intact” (or benchmark) condition means for the unit, ideally across natural variability (seasonality, disturbance/recovery cycles, rainfall gradients). Reference sites should be documented and defensible. Conceptual theoretical models in each bioregion helps to interpret and identify the ecological drivers of different stable states, to differentiate intact vegetation states from degraded states.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/valley_get.png" class="img-fluid figure-img" width="799"></p>
+<figcaption>Figure 2. Conceptual assembly model of Valley Thicket vegetation to illustrate how the key ecological traits and the drivers that shape ecosystem traits within this bioregion can be summarised in this step.</figcaption>
+</figure>
+</div>
 </section>
 <section id="step-4-select-ecosystem-specific-indicators-of-condition" class="level3">
 <h3 class="anchored" data-anchor-id="step-4-select-ecosystem-specific-indicators-of-condition">Step 4 — Select ecosystem-specific indicators of condition</h3>
@@ -261,7 +269,7 @@ A) Deviation-from-reference (reference-based)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A simple, interpretable approach which quantifies departures from intact spectral/phenological signatures, either observed or modelled.</p>
+<p>A simple, interpretable approach which quantifies deviation from intact sites’ spectral or geospatial signatures<span class="citation" data-cites="harwood2016"><sup><a href="#ref-harwood2016" role="doc-biblioref">3</a></sup></span>, either observed or modelled.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -291,8 +299,16 @@ B) Spatial modelling (predictive)
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-nicholsonthomas2025" class="csl-entry" role="listitem">
+1. Nicholson Thomas, I. et al. 2025. Towards a standardised monitoring of ecosystem condition: A literature review on indicators and their data sources. <em>Ecological Indicators</em> 178: 113952. <a href="https://doi.org/10.1016/j.ecolind.2025.113952">https://doi.org/10.1016/j.ecolind.2025.113952</a>
+</div>
+<div id="ref-skowno2021" class="csl-entry" role="listitem">
+2. Skowno, A.L. et al. 2021. Rates and patterns of habitat loss across south africa’s vegetation biomes. <em>SOUTH AFRICAN JOURNAL OF SCIENCE</em> 117: <a href="https://doi.org/10.17159/sajs.2021/8182">https://doi.org/10.17159/sajs.2021/8182</a>
+</div>
+<div id="ref-harwood2016" class="csl-entry" role="listitem">
+3. Harwood, T.D. et al. 2016. Habitat Condition Assessment System: a new way to assess the condition of natural habitats for terrestrial biodiversity across whole regions using remote sensing data. <em>Methods in Ecology and Evolution</em> 7: 1050–1059. <a href="https://doi.org/10.1111/2041-210X.12579">https://doi.org/10.1111/2041-210X.12579</a>
+</div>
 </div>
 
 

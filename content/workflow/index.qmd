@@ -5,9 +5,11 @@ bibliography: references.bib
 
 ## General Approach
 
-This workflow was developed for the SBAPP project to facilitate efficient assessment of ecosystem condition within the project timeline. There are numerous ways to approach this probem, but our workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation (end-user maps).
+This workflow was developed for the SBAPP project to facilitate efficient assessment of ecosystem condition within the project timeline. There are numerous ways to approach this problem, but our workflow provides a consistent way to map ecosystem condition across South Africa’s diverse biomes, while still allowing each biome to use indicators and remote-sensing metrics that are context dependent and make ecological sense for that system. It is designed to support ecosystem risk assessment (e.g., Red List of Ecosystems criteria focused on degradation and biotic disruption), ecosystem accounting (e.g., repeated measures relative to a reference condition), as well as protected area and restoration prioritisation.
 
-A growing range of models and tools for estimating ecosystem condition has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for condition assessment, many produce outputs that can be used directly or adapted for this purpose. However, because the field is broad and methods vary by context, there is no single, widely accepted guide on which tools and platforms to use. Synthesising guidance from applied use cases, such as ecosystem accounting (SEEA EA), and the IUCN Red List of Ecosystems (RLE), helps clarify the requirements for robust condition assessment and highlights emerging best practices.
+A growing range of models and tools for estimating ecosystem condition with satellite data has emerged over the past decade and continues to evolve rapidly. Although most biophysical models were not designed specifically for condition assessment, many produce outputs that can be used directly or adapted for this purpose. However, because the field is broad and methods vary, there is no single, widely accepted guide on which tools and platforms to use. Synthesising guidance from applied use cases, such as ecosystem accounting (SEEA EA), and the IUCN Red List of Ecosystems (RLE), helps clarify the requirements for robust condition assessment and highlights emerging best practices[@nicholsonthomas2025].
+
+Ecosystem condition is interpreted as a **continuum** from intact to transformed, rather than a set of rigid categories.
 
 ## The general workflow
 
@@ -15,17 +17,21 @@ A growing range of models and tools for estimating ecosystem condition has emerg
 
 ### Step 1 — Define assessment units and identify relevant experts
 
-Choose ecologically meaningful units (e.g., ecosystem types or functional groups) and involve experts who can co-define reference condition, key pressures, and interpret indicators.
+Choose ecologically meaningful units (e.g., ecosystem types or ecosystem functional groups) and involve experts who can co-define reference ecosystem condition, key pressures, and interpret indicators. Effective ecosystem condition assessments require both (i) an ecologically meaningful typology of assessment units and (ii) a spatial map of those units (their current and/or potential extent).
+
+In South Africa, we use the [National Vegetation Map 2024](https://bgis.sanbi.org/vegmap) as the ecosystem map and typology, with ecosystem types hierarchically nested within bioregions and then biomes. In countries where such a product does not yet exist, the [Global Ecosystem Typology](https://global-ecosystems.org/) and associated [Global Ecosystem Atlas](https://globalecosystemsatlas.org/) provide an ideal starting point as the typology and map for this workflow, with ecosystems (at level 5) nested hierarchically within realms at the top, biomes below that and ecosystem functional groups at level 3 and regional subgroups at level 4. South African bioregions may be cross referenced to GET level 3 or 4, depending on the biome.
 
 ### Step 2 — Identify key pressures and change pathways
 
-Screen threats using the [IUCN Threat Classification Scheme](https://www.iucnredlist.org/resources/threat-classification-scheme) ([Fig. 1](#fig1)) to identify the main pressures that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.
+Screen threats using the [IUCN Threat Classification Scheme](https://www.iucnredlist.org/resources/threat-classification-scheme) ([Fig. 1](#fig1)) to identify the main pressures in the assessment unit. In South Africa the South African National Land Cover or other global land cover products already capture outright transformation by the key habitat loss drivers: crop production, urban development, plantations and mining[@skowno2021]. Our focus targets more subtle degradation within natural land cover classes, such as in rangelands, which are typically driven by land use and other global change drivers such as unsustainable herbivory, invasive species, altered fire regimes, and climate change (von Maltitz et al. 2024). The goal is to identify pressure gradients that may be measured with RS data, such as woodiness gradients in grasslands that may represent bush encroachment or invasive woody plant density. that plausibly drive degradation in the unit (e.g., unsustainable herbivory, bush encroachment, invasive plants, altered fire regimes). This step should produce a shared conceptual model of “what changes when the ecosystem degrades?”.
 
 ![Figure 1. Key pressures per biome in South Africa, summarised from the full list of pressures in the IUCN Threat Classification Scheme, which include both historical and present pressures. The top rows, represent pressures that can already be measured using national land cover products, while the remaining categories, highlighted by the grey box, still require dedicated data development. Pressures were scored from zero to five, where five represents the most severe impact relative to extent and severity within each biome, while zero represents little to no impact. The scoring of the land cover categories in the top rows was based on the proportion of land covered by each class (see Skowno et al. 2019), while the remainder of classes were calculated as the median score of the authors. Scores are intended as a first-pass, biome-level synthesis. Pressures can vary among ecosystem types or bioregions within a biome. IOCB: Indian Ocean Coastal Belt.](imgs/pressures.png){#fig1}
 
 ### Step 3 — Define a reference condition
 
 Define what “intact” (or benchmark) condition means for the unit, ideally across natural variability (seasonality, disturbance/recovery cycles, rainfall gradients). Reference sites should be documented and defensible. Conceptual theoretical models in each bioregion helps to interpret and identify the ecological drivers of different stable states, to differentiate intact vegetation states from degraded states.
+
+![Figure 2. Conceptual assembly model of Valley Thicket vegetation to illustrate how the key ecological traits and the drivers that shape ecosystem traits within this bioregion can be summarised in this step.](imgs/valley_get.png){width="799"}
 
 ### Step 4 — Select ecosystem-specific indicators of condition
 
@@ -48,7 +54,7 @@ Even if condition is mapped continuously, many applications require severity cla
 ::: callout-note
 ### A) Deviation-from-reference (reference-based)
 
-A simple, interpretable approach which quantifies departures from intact spectral/phenological signatures, either observed or modelled.
+A simple, interpretable approach which quantifies deviation from intact sites' spectral or geospatial signatures[@harwood2016], either observed or modelled.
 :::
 
 ::: callout-note
