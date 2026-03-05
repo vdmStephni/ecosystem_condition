@@ -383,10 +383,6 @@ Note
 <li><strong>Already available:</strong> the National Invasive Alien Plant Survey has mapped the cover of key invasive in South Africa<span class="citation" data-cites="kotzé2025"><sup><a href="#ref-kotzé2025" role="doc-biblioref">8</a></sup></span>; <a href="https://sites.google.com/view/alanna-rebelo/mapwaps">woody invasive species</a> have been mapped in four of South Africa’s key catchments, three of which occur in Grasslands.</li>
 <li><strong>Practical note:</strong> Treat IAP mapping as a targeted layer (priority catchments/coastal belts) rather than attempting uniform national detection.</li>
 </ul>
-<blockquote class="blockquote">
-<p><strong>Callout: Embeddings + spatial modelling for mapping grassland condition</strong></p>
-<p>If training points are available that label grassland sites across a gradient of condition (e.g., intact → moderately degraded → severely degraded → transformed), we can model condition directly using <strong>satellite embedding features</strong> (e.g., annual multi-spectral/texture representations that summarise landscape appearance). Embeddings capture complex spectral–spatial patterns beyond simple indices, and can be used as predictors in <strong>supervised spatial models</strong> (e.g., Random Forest, gradient boosting, or similar classifiers/regressors), optionally combined with climate/terrain covariates to reduce confounding by natural gradients. The fitted model can then be applied wall-to-wall to produce either <strong>class probabilities</strong> for each condition state or a continuous <strong>condition score</strong> derived from those probabilities, with uncertainty quantified via bootstrapping or spatial cross-validation.</p>
-</blockquote>
 </section>
 <section id="implementation-principles-applies-across-pressures" class="level3">
 <h3 class="anchored" data-anchor-id="implementation-principles-applies-across-pressures">Implementation principles (applies across pressures)</h3>
@@ -395,6 +391,26 @@ Note
 <li>Use a reference-based lens where feasible (protected areas / least-impacted sites) to interpret deviation in cover, phenology, and structure.</li>
 <li>Prefer multi-metric evidence (e.g.&nbsp;trend + heterogeneity + fire regime) over single indices, especially in climate-variable grasslands.</li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potential new approach could map overall condition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If field-validated training points are available that label grassland sites across a gradient of condition (e.g., intact → moderately degraded → severely degraded → transformed), a potential new approach we are testing is to model ecosystem condition directly using satellite embeddings. Embeddings compress thousands of satellite data layers into annualised 64 dimensions to capture complex spectral–spatial patterns beyond simple indices, and can be used as predictors in supervised spatial models (e.g., Random Forest or gradient boosting), or combined with climate/terrain covariates to reduce confounding by natural gradients. The fitted model can then be applied wall-to-wall to produce either class probabilities for each ecosystem condition state or a continuous condition score.</p>
+<p>If training data for condition “states” are not available (e.g.&nbsp;if experts are not comfortable assigning condition to sites), embeddings could potentially also be used to map pressures, e.g.&nbsp;woody invasive might have unique embeddings signatures compared to native species. While we have not explored all the options, embeddings provide a way of efficiently utilising the unmanageable amount of satellite data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/emb.png" class="img-fluid figure-img" width="609"></p>
+<figcaption>Visualisation of how embeddings are combined and processed into a 64 dimensional vector.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="key-resources" class="level2">
