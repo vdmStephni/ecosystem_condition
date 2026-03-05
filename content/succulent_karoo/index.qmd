@@ -1,31 +1,5 @@
 ---
 title: "Succulent Karoo"
-author:
-  - name:
-      given:  
-      family:  
-    orcid: 0000-0002-2726-7886 
-    affiliations:
-      - ref:  
-      - ref: 
-  - name:
-      given:  
-      family:  
-    orcid:  
-    affiliations:
-      - ref: 
-      - ref: 
- 
-affiliations:
-  - id: 1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: 
-
-  - id: 2 # Use this as the affiliation ref with authors above
-    number: 2 # This number is used to associate authors with affiliations
-    name: 
-    
-# Remember to rename the default .bib file and change the name here
 bibliography: references.bib
 ---
 
