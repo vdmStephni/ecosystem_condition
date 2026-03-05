@@ -4,7 +4,7 @@
 
 Welcome to the Ecosystem Condition website. This resource provides information, and case studies about how we assess ecological condition in South Africa's diverse biomes.
 
-![](imgs/cover.jpg){width="692"}
+![Intact ecosystems in the High Altitude Grasslands in the Southern Drakensberg. (©Stephni van der Merwe)](imgs/cover.jpg){width="692"}
 
 ### Why ecosystem condition matters
 

@@ -23,7 +23,7 @@ While this research extends beyond developing data for ecosystem risk assessment
 
 Both rely on the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/)[@iucnglo2020] (GET) as their foundational ecosystem classification and maps. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds” (Fig. 1).
 
-![Figure 1. Conceptualisation of the Red List of Ecosystems Criterion C and D. For example woody invasive species cover might be at high density in 80% of the extent of an ecosystem, triggering a critically endangered threat status. ](rle.jpg){width="503"}
+![Figure 1. Conceptualisation of the Red List of Ecosystems Criterion C and D. For example woody invasive species cover might be at high density in 80% of the extent of an ecosystem, triggering a critically endangered threat status.](rle.jpg){width="503"}
 
 ## The SBAPP project
 
