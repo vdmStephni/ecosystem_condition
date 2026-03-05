@@ -1,8 +1,0 @@
----
-title: "Forest Approach"
-bibliography: references.bib
----
-
-## Methods
-
-This is a placeholder for the Forest approach/methods.

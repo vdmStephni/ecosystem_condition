@@ -1,8 +1,0 @@
----
-title: "Fynbos Results"
-bibliography: references.bib
----
-
-## Findings
-
-This is a placeholder for the Fynbos results.

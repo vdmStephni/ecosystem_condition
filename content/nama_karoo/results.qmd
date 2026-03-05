@@ -1,8 +1,0 @@
----
-title: "Nama Karoo Results"
-bibliography: references.bib
----
-
-## Findings
-
-This is a placeholder for the Nama Karoo results.
