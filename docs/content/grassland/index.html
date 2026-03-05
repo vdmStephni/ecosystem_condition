@@ -189,7 +189,7 @@ div.csl-indent {
   <li><a href="#invasive-alien-plants-especially-woody-invasives-and-riparian-invaders" id="toc-invasive-alien-plants-especially-woody-invasives-and-riparian-invaders" class="nav-link" data-scroll-target="#invasive-alien-plants-especially-woody-invasives-and-riparian-invaders">5) Invasive alien plants (especially woody invasives and riparian invaders)</a></li>
   <li><a href="#implementation-principles-applies-across-pressures" id="toc-implementation-principles-applies-across-pressures" class="nav-link" data-scroll-target="#implementation-principles-applies-across-pressures">Implementation principles (applies across pressures)</a></li>
   </ul></li>
-  <li><a href="#key-resources" id="toc-key-resources" class="nav-link" data-scroll-target="#key-resources">Key resources</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -321,7 +321,7 @@ Note
 </section>
 <section id="potential-remote-sensing-approaches" class="level2">
 <h2 class="anchored" data-anchor-id="potential-remote-sensing-approaches">Potential remote sensing approaches</h2>
-<p>Grassland condition (more commonly called “degradation”) is mapped in many ways, but generally the focus is on productivity for livestock production. Most remote-sensing monitoring of grassland integrity thus starts with vegetation productivity<span class="citation" data-cites="seymour2025"><sup><a href="#ref-seymour2025" role="doc-biblioref">3</a></sup></span>, estimated through greenness, like NDVI or fractional vegetation cover (FVC) or canopy metrics, like a leaf area index as a proxy for “veld condition”, i.e.&nbsp;the ability of the vegetation to provide fodder for livestock or game. Long-term trends and anomalies in NDVI/EVI or net primary productivity can be used to flag areas with persistent declines (or atypical increases) relative to their surroundings<span class="citation" data-cites="gonzalez2023"><sup><a href="#ref-gonzalez2023" role="doc-biblioref">4</a></sup></span>. To reduce climate confounding, a common pattern is to adjust productivity signals for rainfall and seasonality (e.g., residual-trend approaches such as RESTREND or related climate-normalisation methods) so that remaining trends are more indicative of human-driven degradation or recovery<span class="citation" data-cites="xing2025"><sup><a href="#ref-xing2025" role="doc-biblioref">5</a></sup></span>. Beyond productivity, many workflows add complementary indicators of structure and ground cover (bare soil, woody cover signals, fire-regime metrics, and spatial heterogeneity) to better separate degradation mechanisms that can look similar in greenness alone. Since the utility of remote sensing to detect species composition is still in its infancy, few approaches are able to differentiate whether the herbaceous vegetation is intact or not. For instance, unpalatable grasses or invasive grasses or forbs may not be detected in FVC, and erroneously be classified as primary or productive grasslands.</p>
+<p>Grassland condition is mapped in many ways, but generally the focus is on productivity for livestock production. Most remote-sensing monitoring of grassland integrity thus starts with vegetation productivity<span class="citation" data-cites="seymour2025"><sup><a href="#ref-seymour2025" role="doc-biblioref">3</a></sup></span>, estimated through greenness, like NDVI or fractional vegetation cover (FVC) or canopy metrics, like a leaf area index as a proxy for “veld condition”, i.e.&nbsp;the ability of the vegetation to provide fodder for livestock or game. Long-term trends and anomalies in NDVI/EVI or net primary productivity can be used to flag areas with persistent declines (or atypical increases) relative to their surroundings<span class="citation" data-cites="gonzalez2023"><sup><a href="#ref-gonzalez2023" role="doc-biblioref">4</a></sup></span>. To reduce climate confounding, a common pattern is to adjust productivity signals for rainfall and seasonality (e.g., residual-trend approaches such as RESTREND or related climate-normalisation methods) so that remaining trends are more indicative of human-driven degradation or recovery<span class="citation" data-cites="xing2025"><sup><a href="#ref-xing2025" role="doc-biblioref">5</a></sup></span>. Beyond productivity, many workflows add complementary indicators of structure and ground cover (bare soil, woody cover signals, fire-regime metrics, and spatial heterogeneity) to better separate degradation mechanisms that can look similar in greenness alone. Since the utility of remote sensing to detect species composition is still in its infancy, few approaches are able to differentiate whether the herbaceous vegetation is intact or not. For instance, unpalatable grasses or invasive grasses or forbs may not be detected in FVC, and erroneously be classified as primary or productive grasslands.</p>
 <section id="habitat-loss-and-fragmentation-context-layer-not-the-projects-pressure-focus" class="level3">
 <h3 class="anchored" data-anchor-id="habitat-loss-and-fragmentation-context-layer-not-the-projects-pressure-focus">1) Habitat loss and fragmentation (context layer, not the project’s pressure focus)</h3>
 <ul>
@@ -397,12 +397,16 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Potential new approach could map overall condition
+Potential new ways of using satellite embeddings to map condition
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If field-validated training points are available that label grassland sites across a gradient of condition (e.g., intact → moderately degraded → severely degraded → transformed), a potential new approach we are testing is to model ecosystem condition directly using satellite embeddings. Embeddings compress thousands of satellite data layers into annualised 64 dimensions to capture complex spectral–spatial patterns beyond simple indices, and can be used as predictors in supervised spatial models (e.g., Random Forest or gradient boosting), or combined with climate/terrain covariates to reduce confounding by natural gradients. The fitted model can then be applied wall-to-wall to produce either class probabilities for each ecosystem condition state or a continuous condition score.</p>
-<p>If training data for condition “states” are not available (e.g.&nbsp;if experts are not comfortable assigning condition to sites), embeddings could potentially also be used to map pressures, e.g.&nbsp;woody invasive might have unique embeddings signatures compared to native species. While we have not explored all the options, embeddings provide a way of efficiently utilising the unmanageable amount of satellite data.</p>
+<p>Satellite embeddings compress thousands of satellite data layers into annualised 64 dimensions to capture complex spectral–spatial patterns beyond simple indices. Google’s Alpha Earth’s satellite embeddings are available from 2017 to 2024<span class="citation" data-cites="brown"><sup><a href="#ref-brown" role="doc-biblioref">9</a></sup></span>. It includes optical and thermal data (Landsat 8 and Sentinel-2), radar data (SAR), 3D surface measurements and data from many more sources, compressed to a analysis-ready dataset. Note that the embeddings have no inherent meaning, so we cannot interpret them as “layers” or drivers of ecosystem condition. For example, layer 1 in the 64 dimensions doesn’t correspond to a specific satellite band.</p>
+<ol type="1">
+<li>Similarity search: some pressures may be mapped using the similarity of pixels that occur near each other in the embeddings space. For example to a map woody invasive species. We can calculate the cosine angle (i.e.&nbsp;distance) in the 64 dimensional embedding space. Pixels with short distances, are more similar and further more different.</li>
+<li>Supervised classification: if field-validated training points are available that label grassland sites across a gradient of condition (e.g., intact → moderately degraded → severely degraded → transformed), a potential new approach we are testing is to model ecosystem condition directly using satellite embeddings which can be used as predictors in supervised classification (e.g., Random Forest or gradient boosting), and combined with climate/terrain covariates to reduce confounding by natural gradients. The fitted model can then predict condition over the study site.</li>
+<li>Unsupervised clustering: if training data for condition “states” or pressures are not available (e.g.&nbsp;if experts are not comfortable assigning condition to sites), embeddings could also be used for unsupervised clustering of pixels with simialar embeddings values.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/emb.png" class="img-fluid figure-img" width="609"></p>
@@ -413,14 +417,9 @@ Potential new approach could map overall condition
 </div>
 </section>
 </section>
-<section id="key-resources" class="level2">
-
-
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Key resources</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-skowno2021" class="csl-entry" role="listitem">
 1. Skowno, A.L. et al. 2021. Rates and patterns of habitat loss across south africa’s vegetation biomes. <em>SOUTH AFRICAN JOURNAL OF SCIENCE</em> 117: <a href="https://doi.org/10.17159/sajs.2021/8182">https://doi.org/10.17159/sajs.2021/8182</a>
 </div>
@@ -445,7 +444,15 @@ Potential new approach could map overall condition
 <div id="ref-kotzé2025" class="csl-entry" role="listitem">
 8. Kotzé, J.D.F. et al. 2025. Changes in the cover of selected invasive alien plant taxa between 2008 and 2023 in South Africa. <em>Biological Invasions</em> 27: 98. <a href="https://doi.org/10.1007/s10530-025-03558-9">https://doi.org/10.1007/s10530-025-03558-9</a>
 </div>
-</div></section></div></main> <!-- /main -->
+<div id="ref-brown" class="csl-entry" role="listitem">
+9. Brown, C.F. et al. AlphaEarth foundations: An embedding field model for accurate and efficient global mapping from sparse label data. <a href="https://doi.org/10.48550/arXiv.2507.22291">https://doi.org/10.48550/arXiv.2507.22291</a>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
