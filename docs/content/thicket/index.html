@@ -316,14 +316,14 @@ div.csl-indent {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/fence.jpg" class="img-fluid figure-img" width="745"></p>
-<figcaption>Browsing line in Valley Thicket vegetation where it the vegetation is severely degraded on the right of the mountain, where the yellow-brown invasive <em>Atriplex (saltbush)</em> species now dominate.</figcaption>
+<figcaption>Browsing line in Valley Thicket vegetation where it the vegetation is severely degraded on the right of the mountain, where the yellow-brown invasive <em>Atriplex</em> (saltbushes) species now dominate.</figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="case-study" class="level2">
 <h2 class="anchored" data-anchor-id="case-study">Case study</h2>
-<p>Because of the evergreen nature of intact Thicket vegetation, remote sensing approaches to ecosystem condition mapping is a feasible option. The legacy of degradation research in the biome provides a strong foundation for ecosystem condition assessments. Coupled with the recent demand for condition data to prioristise restoration activities, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 1).</p>
+<p>Because of the evergreen nature of intact Thicket vegetation, remote sensing approaches to ecosystem condition mapping is a feasible option. Since the key pressures is historical (but also present) unsustainable livestock farming and ranching, it is possible to detect the resulting impact of loss in vegetation cover and subsequent increase in persisent bare soil cover with satellite imagery. In other words, if we mask the transformed land cover categories, we can focus on rangelands which cover most of the biome. Persistent loss of perennial vegetation cover can then serve as a proxy for unsustainable herbivory. The legacy of degradation research (see <a href="https://bgis.sanbi.org/STEP/project.asp">STEP</a>) in the biome provides a strong foundation for understanding ecosystem condition and key pressures [<span class="citation" data-cites="vlok2002"><sup><a href="#ref-vlok2002" role="doc-biblioref">1</a></sup></span>]<span class="citation" data-cites="lechmere-oertel2008"><sup><a href="#ref-lechmere-oertel2008" role="doc-biblioref">4</a></sup></span><span class="citation" data-cites="mills2005"><sup><a href="#ref-mills2005" role="doc-biblioref">5</a></sup></span>. Coupled with the recent demand for scientifically grounded ecosystem condition data to prioristise restoration activities<span class="citation" data-cites="mills2023"><sup><a href="#ref-mills2023" role="doc-biblioref">7</a></sup></span>, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 1).</p>
 <p><strong>The results</strong> can be browsed in this <a href="https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition">Google Earth Engine App</a>, although it is still under review.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -337,7 +337,7 @@ div.csl-indent {
 <section id="training-data" class="level3">
 <h3 class="anchored" data-anchor-id="training-data">Training data</h3>
 <p>The SBAPP project views ecological condition as a continuum from transformed (habitat loss) to intact. Training data consisted of collated data set of condition-labelled points assigned through expert interpretation and known field-validated examples of Thicket in different states across the east-west environmental gradients. Training points were targeted in piospheres around artificial watering points with clear structural changes with browsing pressure, and along fence-line contrasts because these locations provide strong, unambiguous signals of herbivore-driven degradation. The close spatial pairing of fence-line contrasts reduces confounding environmental variability and increases the confidence that observed vegetation differences are primarily the result of land use history rather than underlying abiotic gradients. Transformed points were manually digitised in Google Earth Engine using the basemap. Points were classified into four condition classes: intact, moderate, severe, and transformed.</p>
-<p>Ecological interpretation of the classes followed the <strong>state-and-transition framework</strong> used by Thompson et al.&nbsp;(2009)<span class="citation" data-cites="thompson2009"><sup><a href="#ref-thompson2009" role="doc-biblioref">7</a></sup></span> and Lechmere-Oertel (2023)<span class="citation" data-cites="lechmere-oertel2023"><sup><a href="#ref-lechmere-oertel2023" role="doc-biblioref">8</a></sup></span> as follows:</p>
+<p>Ecological interpretation of the classes followed the <strong>state-and-transition framework</strong> used by Thompson et al.&nbsp;(2009)<span class="citation" data-cites="thompson2009"><sup><a href="#ref-thompson2009" role="doc-biblioref">8</a></sup></span> and Lechmere-Oertel (2023)<span class="citation" data-cites="lechmere-oertel2023"><sup><a href="#ref-lechmere-oertel2023" role="doc-biblioref">9</a></sup></span> as follows:</p>
 <p>1. Intact</p>
 <p>Ecologically intact sites represent closed-canopy, structurally complete succulent/woody Thicket. These areas maintain the full complement of dominant woody species (e.g., <em>Portulacaria afra</em>, <em>Euclea undulata</em>, <em>Pappea capensis</em>), a deep litter layer, high aboveground biomass, and well-buffered microclimates. Soil surfaces are mostly shaded, erosion is minimal, and nutrient cycling remains functional. These sites correspond to the “untransformed” or “near-reference” state, showing no evidence of sustained herbivory-driven collapse.</p>
 <p>2. Moderate degradation</p>
@@ -349,7 +349,7 @@ div.csl-indent {
 </section>
 <section id="predictor-variables" class="level3">
 <h3 class="anchored" data-anchor-id="predictor-variables">Predictor variables</h3>
-<p>Predictor variables were derived from the Google AlphaEarth Foundation satellite embeddings 10 m resolution annual dataset (available 2017-2024). Embeddings provide a way to compress large volumes of remote-sensing information into a compact set of features that may capture meaningful ecological and spatial patterns<span class="citation" data-cites="brown"><sup><a href="#ref-brown" role="doc-biblioref">9</a></sup></span>. The AlphaEarth Foundation Model integrates multi-temporal imagery from open access sensors such as Sentinel-2, Sentinel-1 and Landsat, Land Cover data, elevation and learns a shared representation of the information contained across these sources. This allows each pixel’s spectral, spatial and temporal characteristics to be summarised in a small embedding vector of 64 values, that captures the key mutual information between the different sensors and the underlying landscape. Embedding values were sampled at each training point, which formed the input into a Random Forest model.</p>
+<p>Predictor variables were derived from the Google AlphaEarth Foundation satellite embeddings 10 m resolution annual dataset (available 2017-2024). Embeddings provide a way to compress large volumes of remote-sensing information into a compact set of features that may capture meaningful ecological and spatial patterns<span class="citation" data-cites="brown"><sup><a href="#ref-brown" role="doc-biblioref">10</a></sup></span>. The AlphaEarth Foundation Model integrates multi-temporal imagery from open access sensors such as Sentinel-2, Sentinel-1 and Landsat, Land Cover data, elevation and learns a shared representation of the information contained across these sources. This allows each pixel’s spectral, spatial and temporal characteristics to be summarised in a small embedding vector of 64 values, that captures the key mutual information between the different sensors and the underlying landscape. Embedding values were sampled at each training point, which formed the input into a Random Forest model.</p>
 </section>
 <section id="random-forest-modelling" class="level3">
 <h3 class="anchored" data-anchor-id="random-forest-modelling">Random Forest modelling</h3>
@@ -386,14 +386,17 @@ div.csl-indent {
 <div id="ref-kraaij2022" class="csl-entry" role="listitem">
 6. Kraaij, T. et al. 2022. Fuel trait effects on flammability of native and invasive alien shrubs in coastal fynbos and thicket (cape floristic region). <em>PEERJ</em> 10: <a href="https://doi.org/10.7717/peerj.13765">https://doi.org/10.7717/peerj.13765</a>
 </div>
+<div id="ref-mills2023" class="csl-entry" role="listitem">
+7. Mills, A.J. et al. 2023. Science is the fuel required for lifting ecosystem restoration into the orbit of hundreds of millions of hectares. <em>FRONTIERS IN CONSERVATION SCIENCE</em> 4: <a href="https://doi.org/10.3389/fcosc.2023.1283262">https://doi.org/10.3389/fcosc.2023.1283262</a>
+</div>
 <div id="ref-thompson2009" class="csl-entry" role="listitem">
-7. Thompson, M. et al. 2009. Mapping grazing-induced degradation in a semi-arid environment: A rapid and cost effective approach for assessment and monitoring. <em>ENVIRONMENTAL MANAGEMENT</em> 43: 585–596. <a href="https://doi.org/10.1007/s00267-008-9228-x">https://doi.org/10.1007/s00267-008-9228-x</a>
+8. Thompson, M. et al. 2009. Mapping grazing-induced degradation in a semi-arid environment: A rapid and cost effective approach for assessment and monitoring. <em>ENVIRONMENTAL MANAGEMENT</em> 43: 585–596. <a href="https://doi.org/10.1007/s00267-008-9228-x">https://doi.org/10.1007/s00267-008-9228-x</a>
 </div>
 <div id="ref-lechmere-oertel2023" class="csl-entry" role="listitem">
-8. Lechmere-Oertel, R. 2023. <em><a href="https://www.dffe.gov.za">Repair ecology of arid and valley albany thicket in south africa: A reference guideline</a></em>.
+9. Lechmere-Oertel, R. 2023. <em><a href="https://www.dffe.gov.za">Repair ecology of arid and valley albany thicket in south africa: A reference guideline</a></em>.
 </div>
 <div id="ref-brown" class="csl-entry" role="listitem">
-9. Brown, C.F. et al. AlphaEarth foundations: An embedding field model for accurate and efficient global mapping from sparse label data. <a href="https://doi.org/10.48550/arXiv.2507.22291">https://doi.org/10.48550/arXiv.2507.22291</a>
+10. Brown, C.F. et al. AlphaEarth foundations: An embedding field model for accurate and efficient global mapping from sparse label data. <a href="https://doi.org/10.48550/arXiv.2507.22291">https://doi.org/10.48550/arXiv.2507.22291</a>
 </div>
 </div>
 
