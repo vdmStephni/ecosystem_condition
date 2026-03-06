@@ -90,7 +90,7 @@ Because of the evergreen nature of intact Thicket vegetation, remote sensing app
 
 ![Figure 1. Ecological condition of Arid Thicket vegetation demonstrated by a fence-line contrast where vegetation has been heavily overbrowsed. The map in a) shows the location of the proof-of-concept site in South Africa, b) shows a drone photograph of the same site, with c) showing satellite imagery (ESRI basemap) and d) the ecological condition for the same area.](imgs/condition.png)
 
-## **Results** 
+## **Results**
 
 The mapped results of ecosystem condition can be browsed in this [Google Earth Engine App](https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition), although it is still under review.
 
