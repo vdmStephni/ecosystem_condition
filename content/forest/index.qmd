@@ -3,6 +3,16 @@ title: "Forest"
 bibliography: references.bib
 ---
 
-## Introduction
+::: callout-note
+The ecosystem condition assessments for this biome are still in progress. We thus provide the summary of the vegetation units, what data is currently available that may inform condition assessments or potential approaches.
+:::
 
-This is a placeholder for the Forest biome section.
+## Ecological Context
+
+## Vegetation units
+
+## Key pressures
+
+## Remote sensing approaches
+
+## Key resources

@@ -9,15 +9,13 @@ The ecosystem condition assessments for this biome are still in progress. We thu
 
 ## Ecological Context
 
-The Grassland biome is the second largest of the nine biomes, occupying *c.* 29% of the land surface[@skowno2021]. Grasslands underpin human well-being by providing a range of ecosystem goods and services such as food, water, shelter, carbon storage, forage production, erosion control, and recreation. South Africa’s grasslands are fire-prone, grazing-adapted ecosystems where condition is tightly linked to the coupling (or uncoupling) of fire, herbivory, and rainfall variability.
-
 ## Vegetation units
 
-Using the broader grassland ecosystem groupings (bioregions), we structure analyses and interpretation around: Dry Highveld, Mesic Highveld, High-Altitude (Drakensberg), Sub-Escarpment, and Coastal Grasslands. We provide summaries below adapted from the [Grassland Ecosystem Guidelines](https://bgis.sanbi.org/Projects/Detail/193).
+The Grassland biome is the second largest of the nine biomes in South Africa, occupying *c.* 29% of the land surface[@skowno2021]. Grasslands underpin human well-being by providing a range of ecosystem goods and services such as food, water, shelter, carbon storage, forage production, erosion control, and recreation. South Africa’s grasslands are fire-prone, grazing-adapted ecosystems where ecosystem condition is tightly linked to the coupling (or uncoupling) of fire, herbivory, and rainfall variability. Using the broader grassland ecosystem groupings (bioregions), we structure analyses and interpretation around: Dry Highveld, Mesic Highveld, High-Altitude (Drakensberg), Sub-Escarpment, and Coastal Grasslands. We provide summaries below adapted from the [Grassland Ecosystem Guidelines](https://bgis.sanbi.org/Projects/Detail/193).
 
 ### Dry Highveld Grassland
 
-This ecosystem group occurs mainly across South Africa’s central plateau, spanning much of the Free State and extending into North West, with smaller patches in Gauteng and parts of the Northern and Eastern Cape. The vegetation is largely semi-arid, drought-adapted sweetveld, with many grasses persisting year to year but strong post-drought recruitment from a dormant seed bank. It typically occurs on flat to gently undulating terrain at mid-altitudes (1 300–1 600 m), under summer rainfall conditions (400–550 mm per year) and cold winters with frequent frost.
+This ecosystem group occurs mainly across South Africa’s central plateau, spanning much of the Free State and extending into North West, with smaller patches in Gauteng and parts of the Northern and Eastern Cape. The vegetation is largely semi-arid, drought-adapted sweetveld, with many grasses persisting year to year but strong post-drought recruitment from a dormant seed bank. It typically occurs on flat to gently undulating terrain at mid-altitudes (1 300–1 600 m), under summer rainfall conditions (400–550 mm per year) and cold winters with frequent frost.![]()
 
 [Potential degradation indicators:]{.underline} loss of basal cover with a shift from palatable perennial grasses to patchy, short “grazing lawn” areas and bare soil, often with more karroid shrubs.
 
@@ -57,23 +55,23 @@ Most pressures in South Africa converge in the Grasslands. The dominant historic
 
 -   Woody encroachment: reduced grazeable grass layer and altered vegetation structure (an example of greening meaning “bad” in this context)
 
-![Where fire is excluded, trees may expand out of their natural fire protected sites into the grasslands. Photo used to illustrate, although the fire history of this location was not known. (©Stephni van der Merwe)](imgs/encroach.jpg){width="660"}
+    ![Fire exclusion may lead to woody encroachment such as this native Leucosidea sericea (Outhout) that has expanded in the Mesic Highveld and High Altitude Grassland\[\@gwate2024\] in sites where fire regimes have not been managed appropriately. (©Stephni van der Merwe)](imgs/fireexclusion.jpg){width="497"}
 
 -   Overuse of rangelands: declining basal cover, compositional shifts, patchiness, and increased erosion susceptibility (often climate-confounded)
 
-![Chronic overgrazing can lead to declining basal cover, increase in bare soil, compositional shifts, patchiness, and increased erosion susceptibility. (©Stephni van der Merwe)](imgs/overgrazed.jpg){width="666"}
+![Chronic overgrazing can lead to declining basal cover, increase in bare soil, compositional shifts, patchiness, and increased erosion susceptibility. (©Stephni van der Merwe)](imgs/overgrazed.jpg){width="511"}
 
 -   Invasive alien plants: competitive displacement and hydrological impacts
 
-![Pines have escaped from the plantation kilometers away into this high altitude grassland. (©Stephni van der Merwe)](imgs/invasive.jpg){width="666"}
+![Pines have escaped from the plantation kilometers away into this high altitude grassland. (©Stephni van der Merwe)](imgs/invasive.jpg){width="503"}
 
 -   Fire regime disruption: structural change, increased erosion risk, invasive establishment, and facilitation of woody thickening
 
-![Fire exclusion may lead to woody encroachment such as this native *Leucosidea sericea* (Outhout) that has expanded in the Mesic Highveld and High Altitude Grassland[@gwate2024] in sites where fire regimes have not been managed appropriately. (©Stephni van der Merwe)](imgs/fireexclusion.jpg)
-
 ## Potential remote sensing approaches
 
-Grassland condition is mapped in many ways, but generally the focus is on productivity for livestock production. Most remote-sensing monitoring of grassland integrity thus starts with vegetation productivity[@seymour2025], estimated through greenness, like NDVI or fractional vegetation cover (FVC) or canopy metrics, like a leaf area index as a proxy for "veld condition", i.e. the ability of the vegetation to provide fodder for livestock or game. Long-term trends and anomalies in NDVI/EVI or net primary productivity can be used to flag areas with persistent declines (or atypical increases) relative to their surroundings[@gonzalez2023]. To reduce climate confounding, a common pattern is to adjust productivity signals for rainfall and seasonality (e.g., residual-trend approaches such as RESTREND or related climate-normalisation methods) so that remaining trends are more indicative of human-driven degradation or recovery[@xing2025]. Beyond productivity, many workflows add complementary indicators of structure and ground cover (bare soil, woody cover signals, fire-regime metrics, and spatial heterogeneity) to better separate degradation mechanisms that can look similar in greenness alone. Since the utility of remote sensing to detect species composition is still in its infancy, few approaches are able to differentiate whether the herbaceous vegetation is intact or not. For instance, unpalatable grasses or invasive grasses or forbs may not be detected in FVC, and erroneously be classified as primary or productive grasslands.
+Grassland condition is mapped in many ways, but generally the focus is on productivity for livestock production[@rapiya2026]. Most remote-sensing monitoring of grassland integrity thus starts with productivity[@seymour2025], estimated through vegetation greenness, e.g. NDVI or fractional vegetation cover (FVC) or canopy metrics, like a leaf area index as a proxy for "veld condition". The key goal is to assess the ability of the vegetation to provide fodder for livestock or game, i.e. grass biomass, with less attention placed on forbs and unpalatable species.
+
+Long-term trends and anomalies in NDVI/EVI or net primary productivity can be used to flag areas with persistent declines (or atypical increases) relative to their surroundings[@gonzalez2023]. To reduce climate confounding, a common approach is to adjust productivity signals for rainfall and seasonality (e.g., residual-trend approaches such as RESTREND or related climate-normalisation methods) so that remaining trends are more indicative of human-driven degradation or recovery[@xing2025]. Beyond productivity, many workflows add complementary indicators of structure and ground cover (bare soil, woody cover signals, fire-regime metrics, and spatial heterogeneity) to better separate degradation mechanisms that can look similar in greenness alone. Since the utility of remote sensing to detect species composition is still in its infancy, few approaches are able to differentiate whether the herbaceous vegetation is intact or not. For instance, unpalatable grasses or invasive grasses or forbs may not be detected in FVC, and erroneously be classified as primary or productive grasslands.
 
 ### 1) Habitat loss and fragmentation (context layer, not the project's pressure focus)
 
@@ -100,7 +98,7 @@ Grassland condition is mapped in many ways, but generally the focus is on produc
 -   The goal is a fire regime layer per bioregion that flags areas likely outside typical bounds (e.g. long unburnt mesic grasslands, or overly frequent burns in erosion-prone settings).
 -   **Already available:** numerous fire management products are available, such as [FIRMS](https://firms.modaps.eosdis.nasa.gov/map/#d:24hrs;@0.0,0.0,3.0z).
 
-### 4) Woody encroachment / woody thickening
+### 4) Woody encroachment / thickening
 
 -   **What to map:** Increasing woody cover within historically open grassland; shifts toward more evergreen/woody phenology; structural change.
 -   **Approach (multi-sensor):**
