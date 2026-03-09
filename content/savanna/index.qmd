@@ -1,33 +1,12 @@
 ---
 title: "Savanna"
-author:
-  - name:
-      given: Andrew 
-      family: Skowno 
-    orcid: 0000-0002-2726-7886 
-    affiliations:
-      - ref: 1 
-      - ref: 2
-  - name:
-      given: Stephni 
-      family: van der Merwe 
-    orcid: 0000-0002-6385-8536  
-    affiliations:
-      - ref: 1 
-      - ref: 2
- 
-affiliations:
-  - id: 1 # Use this as the affiliation ref with authors above
-    number: 1 # This number is used to associate authors with affiliations
-    name: South African National Biodiversity Institute
-
-  - id: 2 # Use this as the affiliation ref with authors above
-    number: 2 # This number is used to associate authors with affiliations
-    name: University of Cape Town
-    
 # Remember to rename the default .bib file and change the name here
 bibliography: references.bib
 ---
+
+::: callout-note
+The ecosystem condition assessments for this biome are still in progress.
+:::
 
 ## Ecological Context
 
