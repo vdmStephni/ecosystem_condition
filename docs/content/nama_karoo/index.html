@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -153,11 +172,51 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link active" data-scroll-target="#ecological-context">Ecological Context</a></li>
-  <li><a href="#vegetation-units" id="toc-vegetation-units" class="nav-link" data-scroll-target="#vegetation-units">Vegetation units</a></li>
-  <li><a href="#key-pressures" id="toc-key-pressures" class="nav-link" data-scroll-target="#key-pressures">Key pressures</a></li>
-  <li><a href="#remote-sensing-approaches" id="toc-remote-sensing-approaches" class="nav-link" data-scroll-target="#remote-sensing-approaches">Remote sensing approaches</a></li>
-  <li><a href="#key-resources" id="toc-key-resources" class="nav-link" data-scroll-target="#key-resources">Key resources</a></li>
+  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link active" data-scroll-target="#ecological-context">Ecological context</a>
+  <ul>
+  <li><a href="#vegetation-units" id="toc-vegetation-units" class="nav-link" data-scroll-target="#vegetation-units">Vegetation units</a>
+  <ul class="collapse">
+  <li><a href="#lower-karoo" id="toc-lower-karoo" class="nav-link" data-scroll-target="#lower-karoo">Lower Karoo</a></li>
+  <li><a href="#upper-karoo" id="toc-upper-karoo" class="nav-link" data-scroll-target="#upper-karoo">Upper Karoo</a></li>
+  <li><a href="#bushmanland" id="toc-bushmanland" class="nav-link" data-scroll-target="#bushmanland">Bushmanland</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#key-pressures" id="toc-key-pressures" class="nav-link" data-scroll-target="#key-pressures">Key pressures</a>
+  <ul>
+  <li><a href="#overuse-of-rangelands" id="toc-overuse-of-rangelands" class="nav-link" data-scroll-target="#overuse-of-rangelands">Overuse of rangelands</a></li>
+  <li><a href="#woody-encroachment" id="toc-woody-encroachment" class="nav-link" data-scroll-target="#woody-encroachment">Woody encroachment</a></li>
+  <li><a href="#invasive-alien-species" id="toc-invasive-alien-species" class="nav-link" data-scroll-target="#invasive-alien-species">Invasive alien species</a></li>
+  <li><a href="#climate-change" id="toc-climate-change" class="nav-link" data-scroll-target="#climate-change">Climate change</a></li>
+  </ul></li>
+  <li><a href="#potential-remote-sensing-approaches" id="toc-potential-remote-sensing-approaches" class="nav-link" data-scroll-target="#potential-remote-sensing-approaches">Potential remote sensing approaches</a>
+  <ul>
+  <li><a href="#woody-encroachment-1" id="toc-woody-encroachment-1" class="nav-link" data-scroll-target="#woody-encroachment-1">Woody encroachment</a>
+  <ul class="collapse">
+  <li><a href="#candidate-metrics" id="toc-candidate-metrics" class="nav-link" data-scroll-target="#candidate-metrics">Candidate metrics</a></li>
+  <li><a href="#existing-products-and-datasets" id="toc-existing-products-and-datasets" class="nav-link" data-scroll-target="#existing-products-and-datasets">Existing products and datasets</a></li>
+  </ul></li>
+  <li><a href="#overuse-of-rangelands-1" id="toc-overuse-of-rangelands-1" class="nav-link" data-scroll-target="#overuse-of-rangelands-1">Overuse of rangelands</a>
+  <ul class="collapse">
+  <li><a href="#pressure-or-condition-signal" id="toc-pressure-or-condition-signal" class="nav-link" data-scroll-target="#pressure-or-condition-signal">Pressure or condition signal</a></li>
+  <li><a href="#mapping-degradation-symptoms" id="toc-mapping-degradation-symptoms" class="nav-link" data-scroll-target="#mapping-degradation-symptoms">Mapping degradation symptoms</a>
+  <ul class="collapse">
+  <li><a href="#candidate-metrics-1" id="toc-candidate-metrics-1" class="nav-link" data-scroll-target="#candidate-metrics-1">Candidate metrics</a></li>
+  <li><a href="#existing-products-and-datasets-1" id="toc-existing-products-and-datasets-1" class="nav-link" data-scroll-target="#existing-products-and-datasets-1">Existing products and datasets</a></li>
+  </ul></li>
+  <li><a href="#mapping-grazing-pressure" id="toc-mapping-grazing-pressure" class="nav-link" data-scroll-target="#mapping-grazing-pressure">Mapping grazing pressure</a>
+  <ul class="collapse">
+  <li><a href="#candidate-metrics-2" id="toc-candidate-metrics-2" class="nav-link" data-scroll-target="#candidate-metrics-2">Candidate metrics</a></li>
+  <li><a href="#existing-products-and-datasets-2" id="toc-existing-products-and-datasets-2" class="nav-link" data-scroll-target="#existing-products-and-datasets-2">Existing products and datasets</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#invasive-alien-species-1" id="toc-invasive-alien-species-1" class="nav-link" data-scroll-target="#invasive-alien-species-1">Invasive alien species</a>
+  <ul class="collapse">
+  <li><a href="#pressure-or-condition-signal-1" id="toc-pressure-or-condition-signal-1" class="nav-link" data-scroll-target="#pressure-or-condition-signal-1">Pressure or condition signal</a></li>
+  <li><a href="#candidate-metrics-3" id="toc-candidate-metrics-3" class="nav-link" data-scroll-target="#candidate-metrics-3">Candidate metrics</a></li>
+  <li><a href="#existing-products-and-datasets-3" id="toc-existing-products-and-datasets-3" class="nav-link" data-scroll-target="#existing-products-and-datasets-3">Existing products and datasets</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -207,20 +266,140 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ecological-context" class="level2">
-<h2 class="anchored" data-anchor-id="ecological-context">Ecological Context</h2>
-</section>
+<section id="ecological-context" class="level1">
+<h1>Ecological context</h1>
 <section id="vegetation-units" class="level2">
 <h2 class="anchored" data-anchor-id="vegetation-units">Vegetation units</h2>
+<p>The Nama-Karoo biome is located in the western inland of South Africa, covering approximately 20% of the country’s land area. Being a water-limited, semi-arid to arid environment (70–500 mm annual rainfall), ecological dynamics in the biome are strongly regulated by erratic rainfall, most of which falls during the late summer months. A sparse mix of dwarf shrub and grass species adapted to harsh conditions is typical of the vegetation in the biome, while considerable variation in vegetation cover, structure, and composition occurs across the biome<span class="citation" data-cites="mucina2006 esler2006"><sup><a href="#ref-mucina2006" role="doc-biblioref"><strong>mucina2006?</strong></a>,<a href="#ref-esler2006" role="doc-biblioref"><strong>esler2006?</strong></a></sup></span>. Most of the land is used as rangeland, particularly for sheep farming by commercial farmers for more than a century<span class="citation" data-cites="hoffman2018"><sup><a href="#ref-hoffman2018" role="doc-biblioref"><strong>hoffman2018?</strong></a></sup></span>. Three broad bioregions are recognised in the biome, largely corresponding to topographic and geological features.</p>
+<p><img src="imgs/grazing.jpeg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Sheep grazing in rangelands near Fraserburg, Northern Cape. Sparse, grassy shrubland characterises Nama-Karoo vegetation.</p>
+</blockquote>
+<section id="lower-karoo" class="level3">
+<h3 class="anchored" data-anchor-id="lower-karoo">Lower Karoo</h3>
+<p>The Lower Karoo occurs in the lowlands (~300–1,000 m) south of the Great Escarpment. Intact rangelands in the Lower Karoo are characterised by a diverse mixture of dwarf shrubs and perennial grasses, including palatable species<span class="citation" data-cites="esler2006"><sup><a href="#ref-esler2006" role="doc-biblioref"><strong>esler2006?</strong></a></sup></span>. These systems respond to seasonal and interannual rainfall fluctuations, representing dynamic yet generally resilient systems with varying vegetation cover and structure. Woodland occurs locally along seasonal river lines.</p>
+<p>Degraded rangelands are characterised by increased bare patches, reduced vegetation cover, and dominance of unpalatable species, often resulting from selective grazing and trampling by livestock<span class="citation" data-cites="esler2006"><sup><a href="#ref-esler2006" role="doc-biblioref"><strong>esler2006?</strong></a></sup></span>. These impacts may appear as contrasts across fence lines or near water points. However, it is often difficult to distinguish grazing-induced degradation from natural variation. In the drier parts of the bioregion, rainfall fluctuations have a stronger influence on vegetation dynamics, and the impacts of excessive grazing may be weak or difficult to detect in a single temporal snapshot<span class="citation" data-cites="saayman2022"><sup><a href="#ref-saayman2022" role="doc-biblioref"><strong>saayman2022?</strong></a></sup></span>.</p>
 </section>
-<section id="key-pressures" class="level2">
-<h2 class="anchored" data-anchor-id="key-pressures">Key pressures</h2>
+<section id="upper-karoo" class="level3">
+<h3 class="anchored" data-anchor-id="upper-karoo">Upper Karoo</h3>
+<p>The Upper Karoo occurs on the uplands (~1,000–1,900 m) north of the Great Escarpment. The landscape is characterised by koppies scattered across extensive flat plains. Similar to the Lower Karoo, intact rangelands are characterised by a diverse mixture of shrub and perennial grass species that naturally fluctuate with rainfall variability<span class="citation" data-cites="esler2006"><sup><a href="#ref-esler2006" role="doc-biblioref"><strong>esler2006?</strong></a></sup></span>.</p>
+<p>Degraded rangelands are characterised by increased bare patches, reduced vegetation cover, and dominance of unpalatable species. In susceptible areas, reductions in vegetation cover may also increase soil erosion risk. In some regions, dominance by woody shrub species such as <em>Rhigozum trichotomum</em> is perceived as a legacy effect of historical grazing, although the underlying mechanisms remain poorly understood.</p>
+<p><img src="imgs/image2.jpeg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Upper Karoo landscape with extensive flat plains and koppies between Fraserburg and Leeu Gamka along the R353, Northern Cape.</p>
+</blockquote>
 </section>
-<section id="remote-sensing-approaches" class="level2">
-<h2 class="anchored" data-anchor-id="remote-sensing-approaches">Remote sensing approaches</h2>
+<section id="bushmanland" class="level3">
+<h3 class="anchored" data-anchor-id="bushmanland">Bushmanland</h3>
+<p>Bushmanland occurs in the northernmost part of the biome. It represents the harshest environment among the three bioregions, with lower and less predictable rainfall and higher mean temperatures. Relatively little field-based information is available for this bioregion. Like the other bioregions in the biome, intact vegetation is typically grassy dwarf shrubland dominated by drought-adapted species, including <em>Stipagrostis</em> species. However, vegetation structure is also strongly influenced by biophysical factors such as landforms, soil depth, and soil properties<span class="citation" data-cites="mucina2006"><sup><a href="#ref-mucina2006" role="doc-biblioref"><strong>mucina2006?</strong></a></sup></span>.</p>
+<p>Although evidence is limited, degraded rangelands in Bushmanland likely share similar diagnostic characteristics with those in other bioregions<span class="citation" data-cites="esler2006"><sup><a href="#ref-esler2006" role="doc-biblioref"><strong>esler2006?</strong></a></sup></span>. In addition to grazing-induced changes, riverine habitats are often affected by invasive woody plants such as <em>Prosopis</em> spp., which transform vegetation structure by forming dense stands along drainage lines<span class="citation" data-cites="vandenberg2013"><sup><a href="#ref-vandenberg2013" role="doc-biblioref"><strong>vandenberg2013?</strong></a></sup></span>. Similarly, increased woody cover by <em>Rhigozum trichotomum</em> and <em>Senegalia mellifera</em> is associated with degraded rangelands<span class="citation" data-cites="hoffman1999"><sup><a href="#ref-hoffman1999" role="doc-biblioref"><strong>hoffman1999?</strong></a></sup></span>.</p>
+<p><img src="imgs/image3.jpeg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Dramatic increases in vegetation cover between the dry season (November 2024) and rainy season (April 2025) demonstrate strong seasonal variation in Bushmanland vegetation near Kenhardt, Northern Cape.</p>
+</blockquote>
 </section>
-<section id="key-resources" class="level2">
-<h2 class="anchored" data-anchor-id="key-resources">Key resources</h2>
+</section>
+</section>
+<section id="key-pressures" class="level1">
+<h1>Key pressures</h1>
+<p>The Nama-Karoo biome has experienced relatively limited large-scale land-use change, with approximately 98% of the biome remaining classified as natural extent<span class="citation" data-cites="skowno2021"><sup><a href="#ref-skowno2021" role="doc-biblioref"><strong>skowno2021?</strong></a></sup></span>. This is substantially higher than the national average (78%), indicating that declining ecological condition in the biome is generally not associated with conversion to cropland, urban development, or mining. Instead, degradation is more often associated with subtle changes in vegetation composition and structure within natural rangelands.</p>
+<section id="overuse-of-rangelands" class="level2">
+<h2 class="anchored" data-anchor-id="overuse-of-rangelands">Overuse of rangelands</h2>
+<p>The long history of grazing in the biome has shaped agricultural policy and degradation research in South Africa<span class="citation" data-cites="hoffman2018 hoffman1999"><sup><a href="#ref-hoffman2018" role="doc-biblioref"><strong>hoffman2018?</strong></a>,<a href="#ref-hoffman1999" role="doc-biblioref"><strong>hoffman1999?</strong></a></sup></span>. Karoo vegetation is generally considered adapted to grazing pressure because it evolved alongside indigenous herbivores. However, debates continue regarding how to evaluate the ecological effects of continuous sheep grazing relative to historical baseline conditions prior to European settlement.</p>
+<p>Overuse of rangelands may lead to declining vegetation cover, shifts from palatable to less palatable species, replacement of perennial species by short-lived species, and increases in bare ground. These changes may further increase susceptibility to soil erosion. Interpreting degradation patterns is complicated by strong rainfall variability, because increases in vegetation cover may reflect favourable rainfall conditions rather than ecological recovery<span class="citation" data-cites="esler2006 dutoit2018"><sup><a href="#ref-esler2006" role="doc-biblioref"><strong>esler2006?</strong></a>,<a href="#ref-dutoit2018" role="doc-biblioref"><strong>dutoit2018?</strong></a></sup></span>.</p>
+<p><img src="imgs/image5.jpeg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Well-managed rangelands near Colesberg, Northern Cape, typically support diverse mixtures of dwarf shrubs and perennial grasses following good rainfall.</p>
+</blockquote>
+</section>
+<section id="woody-encroachment" class="level2">
+<h2 class="anchored" data-anchor-id="woody-encroachment">Woody encroachment</h2>
+<p>Woody encroachment has been reported across parts of the biome, although recent updates on its extent remain limited. Increased canopy cover of tall woody shrub species such as <em>Senegalia mellifera</em> and <em>Rhigozum trichotomum</em> is commonly observed. Encroachment is widely perceived to be associated with historical grazing pressure, although the underlying ecological mechanisms are not fully understood. Woody encroachment may reduce grazing capacity and alter vegetation structure, with cascading effects on biodiversity, soil properties, and carbon storage.</p>
+<p><img src="imgs/image4.jpeg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Rangelands dominated by <em>Rhigozum trichotomum</em> (driedoring), characterised by low species richness and reduced grazing capacity, between Britstown and Prieska, Northern Cape.</p>
+</blockquote>
+</section>
+<section id="invasive-alien-species" class="level2">
+<h2 class="anchored" data-anchor-id="invasive-alien-species">Invasive alien species</h2>
+<p>Alien plant species richness in the Nama-Karoo biome is relatively low, although <em>Prosopis</em> spp. are notable because of their invasiveness, extent, and ecological impacts. Among several species and hybrids, <em>P. velutina</em> and <em>P. glandulosa var. torreyana</em> are of particular concern.</p>
+<p>The impacts of <em>Prosopis</em> spp. on ecosystem services and biodiversity are well documented. Dense stands with deep root systems may contribute to groundwater depletion through high water use. From a rangeland management perspective, <em>Prosopis</em> reduces forage availability by outcompeting indigenous species and limiting accessibility through dense thicket formation. Negative effects on biodiversity, including impacts on plants, insects, and birds, have also been documented, as these species can transform open shrublands into thicket-like vegetation<span class="citation" data-cites="shackleton2015"><sup><a href="#ref-shackleton2015" role="doc-biblioref"><strong>shackleton2015?</strong></a></sup></span>. Despite these impacts, <em>Prosopis</em> species also provide benefits to people, including fodder, fuelwood, and shade.</p>
+<p><img src="imgs/image6.jpeg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Dense stands of <em>Prosopis</em> spp. along riverine habitats near Sakrivier, Northern Cape.</p>
+</blockquote>
+</section>
+<section id="climate-change" class="level2">
+<h2 class="anchored" data-anchor-id="climate-change">Climate change</h2>
+<p>Climate change is expected to interact with existing pressures in the Nama-Karoo biome by altering rainfall variability, increasing drought frequency, and intensifying temperature extremes. These changes may further complicate efforts to distinguish natural variability from long-term ecological degradation.</p>
+</section>
+</section>
+<section id="potential-remote-sensing-approaches" class="level1">
+<h1>Potential remote sensing approaches</h1>
+<section id="woody-encroachment-1" class="level2">
+<h2 class="anchored" data-anchor-id="woody-encroachment-1">Woody encroachment</h2>
+<p>Satellite remote sensing offers considerable potential for monitoring woody encroachment in the Nama-Karoo biome.</p>
+<section id="candidate-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="candidate-metrics">Candidate metrics</h3>
+<p>Approaches for mapping woody cover from satellite imagery are relatively well established. Rangeland degradation associated with increasing cover of tall woody shrubs can potentially be quantified using time-series analyses of woody vegetation cover.</p>
+</section>
+<section id="existing-products-and-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="existing-products-and-datasets">Existing products and datasets</h3>
+<p>Several global and regional woody cover products are available. However, most models were not specifically developed for arid shrublands, and their accuracy and spatial resolution vary substantially. Evaluating the suitability and accuracy of these products for Nama-Karoo vegetation remains important.</p>
+</section>
+</section>
+<section id="overuse-of-rangelands-1" class="level2">
+<h2 class="anchored" data-anchor-id="overuse-of-rangelands-1">Overuse of rangelands</h2>
+<section id="pressure-or-condition-signal" class="level3">
+<h3 class="anchored" data-anchor-id="pressure-or-condition-signal">Pressure or condition signal</h3>
+<p>Overuse of rangelands can potentially be monitored through two complementary approaches: mapping degradation symptoms and estimating grazing pressure. Symptoms such as increased bare ground, reduced vegetation cover, and changes in vegetation functional types may potentially be inferred using satellite remote sensing. In contrast, direct estimation of grazing pressure from remote sensing remains challenging.</p>
+</section>
+<section id="mapping-degradation-symptoms" class="level3">
+<h3 class="anchored" data-anchor-id="mapping-degradation-symptoms">Mapping degradation symptoms</h3>
+<section id="candidate-metrics-1" class="level4">
+<h4 class="anchored" data-anchor-id="candidate-metrics-1">Candidate metrics</h4>
+<p>Arid and semi-arid rangelands have historically been challenging environments for remote sensing because indices such as NDVI perform poorly in sparsely vegetated drylands. However, recent advances in remote sensing approaches have improved the operational monitoring of degradation indicators.</p>
+<p>Methods for identifying bare ground and estimating vegetation cover are now relatively established, and large-scale mapping of vegetation life-form classes is increasingly feasible, although it generally requires large training datasets. In contrast, mapping species composition directly from satellite imagery remains challenging.</p>
+<p>The effectiveness of remote sensing-based assessments depends on the ecological relevance of the selected degradation indicators (e.g., vegetation cover, bare ground, or life-form composition), the accuracy of the predictions, and the correspondence between the indicators and degradation processes. Another major challenge is accounting for climatic variability in these arid systems. Rainfall variability is typically analysed using long-term time-series data to separate degradation signals from short-term climatic fluctuations. Ground validation and contextual interpretation remain essential for reliable assessments.</p>
+</section>
+<section id="existing-products-and-datasets-1" class="level4">
+<h4 class="anchored" data-anchor-id="existing-products-and-datasets-1">Existing products and datasets</h4>
+<p>Several products for estimating bare surface cover are available, although many provide binary outputs and may therefore have limited utility for detecting subtle changes. Detailed functional-type mapping products are not yet available for South Africa. Fractional cover products derived from spectral unmixing approaches, such as the Digital Earth Africa Fractional Cover product, may offer useful alternatives, although their applicability in the Nama-Karoo biome remains largely untested.</p>
+</section>
+</section>
+<section id="mapping-grazing-pressure" class="level3">
+<h3 class="anchored" data-anchor-id="mapping-grazing-pressure">Mapping grazing pressure</h3>
+<section id="candidate-metrics-2" class="level4">
+<h4 class="anchored" data-anchor-id="candidate-metrics-2">Candidate metrics</h4>
+<p>Livestock numbers may serve as a proxy for grazing pressure.</p>
+</section>
+<section id="existing-products-and-datasets-2" class="level4">
+<h4 class="anchored" data-anchor-id="existing-products-and-datasets-2">Existing products and datasets</h4>
+<p>Global satellite-derived livestock density datasets are available, such as the Gridded Livestock of the World (GLW4) dataset. However, their accuracy in South Africa has not been comprehensively evaluated. Alternative data sources, including agricultural census statistics or locally calibrated livestock datasets, may provide more reliable estimates<span class="citation" data-cites="hoffman2018"><sup><a href="#ref-hoffman2018" role="doc-biblioref"><strong>hoffman2018?</strong></a></sup></span>.</p>
+</section>
+</section>
+</section>
+<section id="invasive-alien-species-1" class="level2">
+<h2 class="anchored" data-anchor-id="invasive-alien-species-1">Invasive alien species</h2>
+<section id="pressure-or-condition-signal-1" class="level3">
+<h3 class="anchored" data-anchor-id="pressure-or-condition-signal-1">Pressure or condition signal</h3>
+<p>Satellite remote sensing offers potential for identifying areas infested by problematic invasive alien species in the Nama-Karoo biome.</p>
+</section>
+<section id="candidate-metrics-3" class="level3">
+<h3 class="anchored" data-anchor-id="candidate-metrics-3">Candidate metrics</h3>
+<p>The cover and extent of <em>Prosopis</em> spp. can represent degraded rangeland and riverine habitat associated with invasive alien plants. <em>Prosopis</em> stands may produce distinct spectral signatures relative to surrounding open shrublands, although distinguishing them from indigenous woody species such as <em>Vachellia karroo</em> can be difficult using multispectral imagery alone.</p>
+</section>
+<section id="existing-products-and-datasets-3" class="level3">
+<h3 class="anchored" data-anchor-id="existing-products-and-datasets-3">Existing products and datasets</h3>
+<p>Several efforts have focused on mapping <em>Prosopis</em> spp. using remote sensing in the Nama-Karoo biome<span class="citation" data-cites="vandenberg2013"><sup><a href="#ref-vandenberg2013" role="doc-biblioref"><strong>vandenberg2013?</strong></a></sup></span>. More recently, national-scale mapping products for major invasive alien plants, including <em>Prosopis</em> spp., have become available<span class="citation" data-cites="kotze2025"><sup><a href="#ref-kotze2025" role="doc-biblioref"><strong>kotze2025?</strong></a></sup></span>.</p>
+</section>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" role="list">
+
+</div>
 
 
 </section>
