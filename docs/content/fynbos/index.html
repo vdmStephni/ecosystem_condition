@@ -6,6 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Curtley Tonkin">
+<meta name="author" content="Stephni van der Merwe">
 
 <title>Fynbos – Ecosystem Condition</title>
 <style>
@@ -94,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../content/overview/index.html"> 
-<span class="menu-text">Overview</span></a>
+<span class="menu-text">Key concepts</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../content/workflow/index.html"> 
@@ -151,7 +153,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link active" data-scroll-target="#ecological-context"><strong>Ecological Context</strong></a>
+  <ul>
+  <li><a href="#vegetation-units" id="toc-vegetation-units" class="nav-link" data-scroll-target="#vegetation-units"><strong>Vegetation Units</strong></a>
+  <ul class="collapse">
+  <li><a href="#sandstone-fynbos-mountain-fynbos" id="toc-sandstone-fynbos-mountain-fynbos" class="nav-link" data-scroll-target="#sandstone-fynbos-mountain-fynbos"><strong>Sandstone Fynbos (Mountain Fynbos)</strong></a></li>
+  <li><a href="#sand-fynbos" id="toc-sand-fynbos" class="nav-link" data-scroll-target="#sand-fynbos"><strong>Sand Fynbos</strong></a></li>
+  <li><a href="#limestone-fynbos" id="toc-limestone-fynbos" class="nav-link" data-scroll-target="#limestone-fynbos"><strong>Limestone Fynbos</strong></a></li>
+  <li><a href="#shale-and-grassy-fynbos" id="toc-shale-and-grassy-fynbos" class="nav-link" data-scroll-target="#shale-and-grassy-fynbos"><strong>Shale and Grassy Fynbos</strong></a></li>
+  </ul></li>
+  <li><a href="#key-pressures" id="toc-key-pressures" class="nav-link" data-scroll-target="#key-pressures"><strong>Key Pressures</strong></a>
+  <ul class="collapse">
+  <li><a href="#invasive-alien-plants-iaps" id="toc-invasive-alien-plants-iaps" class="nav-link" data-scroll-target="#invasive-alien-plants-iaps"><strong>1. Invasive Alien Plants (IAPs)</strong></a></li>
+  <li><a href="#fire-regime-disruptions" id="toc-fire-regime-disruptions" class="nav-link" data-scroll-target="#fire-regime-disruptions"><strong>2. Fire Regime Disruptions</strong></a></li>
+  <li><a href="#climate-change" id="toc-climate-change" class="nav-link" data-scroll-target="#climate-change"><strong>3. Climate Change</strong></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#potential-remote-sensing-approaches" id="toc-potential-remote-sensing-approaches" class="nav-link" data-scroll-target="#potential-remote-sensing-approaches">Potential remote sensing approaches</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -164,10 +183,34 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Curtley Tonkin </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Cape Town
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Stephni van der Merwe <a href="https://orcid.org/0000-0002-6385-8536" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            South African National Biodiversity Institute
+          </p>
+        <p class="affiliation">
+            University of Cape Town
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -177,9 +220,120 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This is a placeholder for the Fynbos biome section.</p>
+<section id="ecological-context" class="level1">
+<h1><strong>Ecological Context</strong></h1>
+<p>The Fynbos biome is the primary vegetation of the Cape Floristic Region (CFR), which is the smallest but relatively richest of the world’s six floral kingdoms. Characterised by its exceptional endemism and diversity, Fynbos occurs where there is a Mediterranean climate (predominantly winter rainfall, though some eastern areas receive year-round rain) and nutrient-poor soils.</p>
+<p>Fynbos is a Mediterranean fire-dependent shrubland and restioland, distinguished by three main plant families’ groups: Proteaceae, Restionaceae, and Ericaceae. Ecosystem condition is inextricably linked to the appropriate fire return intervals, habitat loss, transformation, fragmentation, and the presence and abundance of key functional groups (Proteaceae, Restionaceae, and Ericaceae) and absence of competitive invasive alien plant species (Rebelo et al.&nbsp;2006; Holmes et al.&nbsp;2020).</p>
+<section id="vegetation-units" class="level2">
+<h2 class="anchored" data-anchor-id="vegetation-units"><strong>Vegetation Units</strong></h2>
+<p>Using the broader ecosystem groupings (bioregions), we structure analyses and interpretation around the following primary Fynbos ecosystem groups:</p>
+<section id="sandstone-fynbos-mountain-fynbos" class="level3">
+<h3 class="anchored" data-anchor-id="sandstone-fynbos-mountain-fynbos"><strong>Sandstone Fynbos (Mountain Fynbos)</strong></h3>
+<p>Occurring across the rugged mountain ranges of the Cape Fold Belt, this unit represents the largest remaining continuous tracts of Fynbos. It grows on acidic, nutrient-poor, sandy soils derived from sandstone and quartzite. Because the terrain is difficult to cultivate, it has largely escaped agricultural transformation but acts as a critical water catchment area.</p>
+<ul>
+<li><p><strong>Environment:</strong> Rugged terrain, steep slopes, and rocky outcrops. Rainfall varies drastically with topography.</p></li>
+<li><p><strong>Degradation indicators:</strong> Density of invasive alien trees (such as <em>Pinus</em> and <em>Hakea</em> species) and a lack of mature, slow-growing obligate reseeders (such as large Proteas) due to overly frequent fires.</p></li>
+</ul>
+</section>
+<section id="sand-fynbos" class="level3">
+<h3 class="anchored" data-anchor-id="sand-fynbos"><strong>Sand Fynbos</strong></h3>
+<p>Found on the deep, acidic, wind-blown coastal sands of the West Coast and Agulhas plains. This low-elevation Fynbos is highly threatened, as the flat terrain has historically made it easy to convert to agriculture or urban development.</p>
+<ul>
+<li><p><strong>Environment:</strong> Flat to undulating coastal plains at low altitudes. Subject to strong coastal winds and dry, hot summers.</p></li>
+<li><p><strong>Degradation indicators:</strong> Habitat transformation and fragmentation, heavy invasion by Australian Acacias (e.g., Port Jackson and Rooikrans), which fix nitrogen and alter soil chemistry, making it difficult for native Fynbos to return even after clearing.</p></li>
+</ul>
+</section>
+<section id="limestone-fynbos" class="level3">
+<h3 class="anchored" data-anchor-id="limestone-fynbos"><strong>Limestone Fynbos</strong></h3>
+<p>A unique and restricted vegetation type that occurs exclusively on calcareous (alkaline) marine deposits, primarily concentrated in the Agulhas Plain. It hosts highly specialized, endemic plant species adapted to high-pH soils, contrasting sharply with the acidic nature of typical Fynbos.</p>
+<ul>
+<li><p><strong>Environment:</strong> Gently undulating coastal plains and stabilized dunes with shallow soils over limestone bedrock.</p></li>
+<li><p><strong>Degradation indicators:</strong> Coastal development, localised agricultural expansion, and displacement by invasive alien plants.</p></li>
+</ul>
+</section>
+<section id="shale-and-grassy-fynbos" class="level3">
+<h3 class="anchored" data-anchor-id="shale-and-grassy-fynbos"><strong>Shale and Grassy Fynbos</strong></h3>
+<p>Occurring on relatively more fertile, clay-rich soils derived from shale. Grassy Fynbos represents a transition zone toward the eastern parts of the biome where summer rainfall increases, allowing grasses to co-dominate with Fynbos shrubs in shallow soils.</p>
+<ul>
+<li><p><strong>Environment:</strong> Lower mountain slopes and rolling hills. Soils are more nutrient-rich than sandstone or sand fynbos.</p></li>
+<li><p><strong>Degradation indicators:</strong> Invasive alien plant density, fire return intervals</p></li>
+</ul>
+</section>
+</section>
+<section id="key-pressures" class="level2">
+<h2 class="anchored" data-anchor-id="key-pressures"><strong>Key Pressures</strong></h2>
+<p>While the main historical drivers of biodiversity loss include agricultural expansion (wheat, orchards, vineyards) and urban development, the remaining intact Fynbos faces a unique set of cascading pressures. The biggest threats to Fynbos condition are invasive alien plants, fire regime disruptions, and climate change (Midgley et al.&nbsp;2002; Slingsby et al.&nbsp;2017; Skowno et al.&nbsp;2019). While biome-scale impacts of climate change on Fynbos have not yet been comprehensively assessed or mapped, it is firmly positioned as the third largest threat. This is justified by the extreme sensitivity of endemic Fynbos species to micro-climatic shifts (Midgley 2002). Increased temperatures and altered rainfall patterns (longer, more intense droughts) directly threaten species with narrow ranges, cause widespread mortality during extreme heat events, and critically compound the top two threats by accelerating invasive plant growth and increasing the frequency and intensity of wildfires (Slingsby et al.2017).</p>
+<section id="invasive-alien-plants-iaps" class="level3">
+<h3 class="anchored" data-anchor-id="invasive-alien-plants-iaps"><strong>1. Invasive Alien Plants (IAPs)</strong></h3>
+<p>This is the key threat to Fynbos. Woody invasives, particularly <em>Pinus</em>, <em>Hakea</em>, and <em>Acacia</em> species, competitively displace native flora. Furthermore, they drastically alter hydrology by absorbing significantly more water than native shrubs, reducing runoff into critical catchment dams, and they increase fuel loads, leading to unnaturally hot fires that damage the soil seed bank.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/IAP.PNG" class="img-fluid figure-img"></p>
+<figcaption>A dense thicket of <em>Acacia saligna</em> seedlings rapidly germinating following a fire in the critically endangered Elim Ferricrete Fynbos. These fast-growing nitrogen fixers outcompetes local endemics for light and water, fundamentally altering the soil chemistry resulting in poor Fynbos recovery and negatively affecting the native seed bank.</figcaption>
+</figure>
+</div>
+</section>
+<section id="fire-regime-disruptions" class="level3">
+<h3 class="anchored" data-anchor-id="fire-regime-disruptions"><strong>2. Fire Regime Disruptions</strong></h3>
+<p>Fynbos is fire-dependant, but it must be the right kind of fire. Too frequent fires (e.g., every 2-5 years) kill slow-growing obligate reseeders before they can produce seeds, leading to local extinctions and structural collapse. Conversely, long-term fire exclusion leads to senescence (die-off) of the vegetation. Fires in the wrong season (e.g., winter or spring instead of late summer/autumn) also result in poor seed germination. Nutrient cycling in the nutrient-poor soils is dependent on fire, to return nutrients to the soil as ash.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/Unburnt Fynbos.PNG" class="img-fluid figure-img"></p>
+<figcaption>Agulhas Limestone Fynbos with overgrown <em>Leucadendron meridianum</em> showing signs of overgrowth within the Agulhas National Park, due to infrequent fires. As an obligate reseeder with a canopy-stored seed bank, this species relies on regular fire to trigger seed release (serotiny). Without it, these populations become moribund, shading out the species-rich understory of geophytes and <em>Erica</em>s.</figcaption>
+</figure>
+</div>
+</section>
+<section id="climate-change" class="level3">
+<h3 class="anchored" data-anchor-id="climate-change"><strong>3. Climate Change</strong></h3>
+<p>Increasing temperatures and more frequent, severe droughts lead to direct physiological stress and die-back of native species (Slingsby et al.&nbsp;2017). As mentioned above, it acts as a threat multiplier, exacerbating fire risks and shifting competitive advantages toward hardy invasive species.</p>
+</section>
+</section>
+</section>
+<section id="potential-remote-sensing-approaches" class="level1">
+<h1>Potential remote sensing approaches</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pressure target</th>
+<th>What to map</th>
+<th>Approach</th>
+<th>Already available</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Invasive Alien</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Plants</td>
+<td>Woody invasive</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>presence, density, and spread; post-clearing recovery.</td>
+<td>Supervised</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>   </code></pre>
+<div class="line-block">2. Fire Regime Disruption | Fire return intervals; fire seasonality; fire intensity/severity (dNBR). | Burned-area products (MODIS/VIIRS/Sentinel-2) to track time-since-fire and season-of-burn. Flagging areas with exceptionally short intervals (&lt;8 years) or long intervals (&gt;20 years). | CapeNature fire records. |<br>
+3. Climate Change Impacts | Long-term browning trends; drought mortality; altered post-fire recovery rates. | Long-term vegetation index trends (NDVI/EVI). Monitoring the rate at which Fynbos greens up post-fire compared to historical baselines to detect drought-induced recovery failures. This must be paired with in field long-term vegetation surveys. | Base satellite archives (Landsat/MODIS time series). |</div>
+<p>Using functional traits to predict vegetation state</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
 
 
 </section>

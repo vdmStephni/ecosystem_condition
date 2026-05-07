@@ -51,19 +51,19 @@ A heterogeneous belt of grasslands in a narrow strip from Maputaland southwards 
 
 ## Key pressures
 
-Most pressures in South Africa converge in the Grasslands. The dominant historical drivers of biodiversity loss are annual and perrenial crop production, plantation forestry, urban expansion and infrastructure, mining, and dams [@skowno2021], which fragment remaining primary grassland and remove or alter soils and hydrology. Changes due to these pressure are already monitored in the [National Biodiversity Assessment](https://sanbi-nba.github.io/nba-website/content/terrestrial/ter_overview.html) by using the [South African National Land Cover](https://www.dffe.gov.za/egis) data sets, cross referenced to the ecosystem types of the [National Vegetation Map](https://bgis.sanbi.org/vegmap) to calculate the extent of each land cover class. The remaining areas are mostly used for livestock production and ranching, i.e. are working rangelands, where degradation is subtle, such as shifts in species composition, change in vegetation structure, basal cover, erosion risk, and woody thickening, often without a clear land-cover change signal.
+Most pressures in South Africa converge in the Grasslands. The dominant historical drivers of biodiversity loss are annual and perennial crop production, plantation forestry, urban expansion and infrastructure, mining, and dams [@skowno2021], which fragment remaining primary grassland and remove or alter soils and hydrology. Changes due to these pressure are already monitored in the [National Biodiversity Assessment](https://sanbi-nba.github.io/nba-website/content/terrestrial/ter_overview.html) by using the [South African National Land Cover](https://www.dffe.gov.za/egis) data sets, cross referenced to the ecosystem types of the [National Vegetation Map](https://bgis.sanbi.org/vegmap) to calculate the extent of each land cover class. The remaining areas are mostly used for livestock production and ranching, i.e. are working rangelands, where degradation is subtle, such as shifts in species composition, change in vegetation structure, basal cover, erosion risk, and woody thickening, often without a clear land-cover change signal.
 
 -   Woody encroachment: reduced grazeable grass layer and altered vegetation structure (an example of greening meaning “bad” in this context)
 
-    ![Fire exclusion may lead to woody encroachment such as this native Leucosidea sericea (Outhout) that has expanded in the Mesic Highveld and High Altitude Grassland\[\@gwate2024\] in sites where fire regimes have not been managed appropriately. (©Stephni van der Merwe)](imgs/fireexclusion.jpg){width="497"}
+    ![Fire exclusion may lead to woody encroachment such as this native *Leucosidea sericea* (Outhout) that has expanded in the Mesic Highveld and High Altitude Grassland\[\@gwate2024\] in sites where fire regimes have not been managed appropriately. (©Stephni van der Merwe)](imgs/fireexclusion.jpg){width="640"}
 
 -   Overuse of rangelands: declining basal cover, compositional shifts, patchiness, and increased erosion susceptibility (often climate-confounded)
 
-![Chronic overgrazing can lead to declining basal cover, increase in bare soil, compositional shifts, patchiness, and increased erosion susceptibility. (©Stephni van der Merwe)](imgs/overgrazed.jpg){width="511"}
+![Chronic overgrazing can lead to declining basal cover, increase in bare soil, compositional shifts, patchiness, and increased erosion susceptibility. (©Stephni van der Merwe)](imgs/overgrazed.jpg){width="651"}
 
 -   Invasive alien plants: competitive displacement and hydrological impacts
 
-![Pines have escaped from the plantation kilometers away into this high altitude grassland. (©Stephni van der Merwe)](imgs/invasive.jpg){width="503"}
+![Pines have escaped from the plantation kilometers away into this high altitude grassland. (©Stephni van der Merwe)](imgs/invasive.jpg){width="648"}
 
 -   Fire regime disruption: structural change, increased erosion risk, invasive establishment, and facilitation of woody thickening
 

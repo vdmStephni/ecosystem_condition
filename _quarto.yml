@@ -27,7 +27,7 @@ website:
     left:
       - text: Home
         href: index.qmd
-      - text: Overview
+      - text: Key concepts
         href: content/overview/index.qmd
       - text: Workflow
         href: content/workflow/index.qmd

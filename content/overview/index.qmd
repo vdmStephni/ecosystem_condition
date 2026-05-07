@@ -9,9 +9,39 @@ While there are various interpretations, "ecological condition" is a general eco
 
 ## Why map ecosystem condition?
 
-To accurately assess the state of biodiversity, we need to monitor the expansion and contractions of natural habitat. Therefore, the spatial extent is the contextual unit for understanding ecological condition. Once we have the remaining extent, the unit of which is ecosystem type for our purposes, we can assess and monitor the integrity of the natural remnants. South Africa has a longstanding ecosystem map and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural area.* For example, unsustainable grazing, woody encroachment, invasive species or altered fire regimes which can reduce ecosystem integrity even when land cover still looks “natural” on a map.
+To accurately assess the state of biodiversity, we need to monitor the expansion and contractions of natural habitat. Therefore, the spatial extent is the contextual unit for understanding ecological condition. Once we have the remaining extent, the unit of which is ecosystem type for our purposes, we can assess and monitor the ecological integrity of the natural remnants. South Africa has a longstanding ecosystem map and land-cover products for tracking **habitat loss**, but many pressures occur *within remaining natural area.* For example, unsustainable grazing, woody encroachment, invasive species or altered fire regimes which can reduce ecosystem integrity even when land cover still looks “natural” on a map.
 
-We thus developed a general repeatable, context-specific approach to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting (see Workflow).
+Ecosystem condition maps help identify where ecosystems remain relatively intact and where degradation is occurring within natural areas. They provide critical information for conservation planning, restoration prioritisation, and monitoring progress towards global biodiversity and land degradation targets. Spatially explicit condition assessments also improve our ability to understand ecosystem change over time and support more informed environmental decision-making.
+
+We summarised a general repeatable, context-specific approach to map ecosystem condition so that it can be used for conservation planning, restoration prioritisation, ecological research and national reporting (see Workflow).
+
+## Challenges in defining reference state
+
+#### Why is it challenging?
+
+Defining ecosystem reference states remains one of the most challenging aspects of ecosystem condition assessment. Ecosystems are inherently dynamic, varying naturally across environmental gradients, disturbance regimes, climatic conditions, and time. Even ecosystems considered to be in “intact” condition may differ substantially in structure, composition, and function across regions or seasons. This makes it difficult to define a single universal benchmark for what constitutes a healthy or intact ecosystem.
+
+In addition, remotely sensed signals are strongly influenced by natural variability such as phenology, rainfall fluctuations, topography, and climate context, which can obscure degradation signals or lead to incorrect interpretations of ecosystem condition. For example, increases in vegetation cover following favourable rainfall after droughts may reflect short‐term climatic responses of weedy species rather than ecological recovery. This challenge is particularly important in arid and semi-arid ecosystems, where climatic variability strongly influences vegetation dynamics.
+
+Defining reference states in grassy biomes presents additional challenges because these ecosystems are naturally highly dynamic and strongly shaped by disturbance regimes such as fire, grazing, drought, and seasonal rainfall variability. Fire in particular can dramatically alter vegetation cover, biomass, and spectral characteristics over short time periods, resulting in substantial temporal variability in remotely sensed signals even in relatively intact ecosystems. Consequently, recently burnt areas may appear degraded when interpreted from single-date imagery, despite representing a natural and essential ecological process. In these systems, long-term time-series analyses and contextual interpretation are especially important to distinguish natural disturbance dynamics from persistent ecological degradation.
+
+#### How can we define reference states?
+
+Because of these complexities, defining ecologically meaningful reference states requires strong integration of ecological expertise and spatial data analysis. Experts with decades of field experience often have a well-developed understanding of what relatively intact ecosystems look like within a specific biome, including expected vegetation structure, composition, ecological processes, and variability across environmental gradients. This knowledge should form the foundation of reference-state selection.
+
+1\) Make use of published vegetation descriptions
+
+Descriptions from ecosystem classification systems such as the South African [National Vegetation Map](https://www.sanbi.org/biodiversity/foundations/national-vegetation-map/) and the [IUCN Global Ecosystem Typology (GET)](https://global-ecosystems.org/) can also provide an important foundation for defining reference states. These descriptions often summarise the expected vegetation structure, dominant growth forms and species, ecological processes, environmental setting, and disturbance regimes associated with relatively intact ecosystems, helping to contextualise both field observations and remotely sensed patterns.
+
+2\) Involve biome experts to operationalise "intact state"
+
+A practical way to operationalise reference states into assessments is through expert identification of intact or minimally degraded field sites that can serve as reference locations for model calibration and validation. Remote sensing metrics can then be extracted from these sites to characterise the spectral, structural, and temporal properties associated with intact condition to accompany the conceptual descriptions.
+
+Importantly, reference states should not be represented by a single snapshot in time. Instead, multiple years of remotely sensed observations should be incorporated to capture natural temporal variability, particularly in highly dynamic ecosystems. Long-term time-series data are therefore critical for distinguishing persistent degradation trends from short-term climatic fluctuations.
+
+Sampling multiple reference sites across environmental gradients and summarising their variability in remote sensing metrics using measures such as means, ranges, and variance can help develop more realistic and ecologically defensible reference models. In cases where truly intact reference sites no longer exist, historical information, expert knowledge, and ecological understanding of ecosystem dynamics become particularly important for reconstructing plausible reference conditions.
+
+The concepts associated with reference state or reference condition (what we call "intact") is well embedded in the restoration ecology literature, and can be used to understand and define reference states in terms of ecosystem condition as well [@durbecq2020]. [Standards](https://www.ser.org/page/serstandards/international-standards-for-the-practice-of-ecological-restoration.htm) or best practices already exist for defining reference "communities"[@gann2019] in restoration ecology, and may also be used as a starting point to inform "intact" condition for ecosystem condition assessments.
 
 ## Key guidelines for this work
 
@@ -21,13 +51,13 @@ While this research extends beyond developing data for ecosystem risk assessment
 
 -   [UN System of Environmental-Economic Accounting Ecosystem Accounting](https://seea.un.org/)[@edens2022] (SEEA EA),
 
-Both rely on the [IUCN Global Ecosystem Typology](https://global-ecosystems.org/)[@iucnglo2020] (GET) as their foundational ecosystem classification and maps. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds” (Fig. 1).
+Both make use of the [IUCN ](https://global-ecosystems.org/)GET[@iucnglo2020] as their foundational ecosystem classification and maps. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds” (Fig. 1).
 
-![Figure 1. Conceptualisation of the Red List of Ecosystems Criterion C and D. For example woody invasive species cover might be at high density in 80% of the extent of an ecosystem, triggering a critically endangered threat status.](rle.jpg){width="503"}
+![Figure 1. Conceptualisation of the Red List of Ecosystems Criterion C and D. For example woody invasive species cover might be at high density in 80% of the extent of an ecosystem, triggering a critically endangered threat status.](imgs/rle.jpg)
 
 ## The SBAPP project
 
-This research was initiated as part of a regional project that ends in 2027 called the [Spatial Biodiversity Assessment, Prioritization, and Planning (SBAPP)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/the-sbapp-regional-project/) in South Africa, Namibia, Malawi and Mozambique. Objective 4 of this project aims to map ecosystem condition and this website provides the workflows and first case studies produced during this project.
+Some research presented on this website were initiated and funded as part of a regional project that ends in 2027 called the [Spatial Biodiversity Assessment, Prioritization, and Planning (SBAPP)](https://www.sanbi.org/biodiversity/building-knowledge/biodiversity-monitoring-assessment/the-sbapp-regional-project/) in South Africa, Namibia, Malawi and Mozambique. Objective 4 of this project aims to map ecosystem condition and this website provides the workflows and first case studies produced during this project.
 
 These databases will be used to inform how we monitor and report on:
 

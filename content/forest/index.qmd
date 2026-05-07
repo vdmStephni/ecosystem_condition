@@ -1,6 +1,6 @@
 ---
 title: "Forest"
-bibliography: references.bib
+bibliography: forest_references.bib
 ---
 
 ::: callout-note
