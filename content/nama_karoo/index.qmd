@@ -104,8 +104,7 @@ The effectiveness of remote sensing-based assessments depends on the ecological 
 
 #### Existing products and datasets
 
-Several products for estimating bare surface cover are available, although many provide binary outputs and may therefore have limited utility for detecting subtle changes. Detailed functional-type mapping products are not yet available for South Africa. Fractional cover products derived from spectral unmixing approaches, such as the [Digital Earth Africa Fractional
-Cover product](https://docs.digitalearthafrica.org/en/latest/data_specs/Fractional_Cover_specs.html), may offer useful alternatives, although their applicability in the Nama-Karoo biome r
+Several products for estimating bare surface cover are available, although many provide binary outputs and may therefore have limited utility for detecting subtle changes. Detailed functional-type mapping products are not yet available for South Africa. Fractional cover products derived from spectral unmixing approaches, such as the [Digital Earth Africa Fractional Cover product](https://docs.digitalearthafrica.org/en/latest/data_specs/Fractional_Cover_specs.html), may offer useful alternatives, although their applicability in the Nama-Karoo biome r
 
 ### b. Mapping grazing pressure
 

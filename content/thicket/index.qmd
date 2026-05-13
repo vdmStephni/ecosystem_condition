@@ -127,7 +127,7 @@ Because of the evergreen nature of intact Thicket vegetation, remote sensing app
 
 ## **Results**
 
-The mapped results of ecosystem condition can be browsed in this [Google Earth Engine App](https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition), although it is still under review.
+The mapped results of ecosystem condition can be browsed in this [Google Earth Engine App](https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition).
 
 ## Methods
 

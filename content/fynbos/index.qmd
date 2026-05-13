@@ -92,19 +92,7 @@ Increasing temperatures and more frequent, severe droughts lead to direct physio
 
 # Potential remote sensing approaches
 
-| Pressure target                                        | What to map    | Approach | Already available |
-|---------------|---------------|---------------|-----------------------------|
-| 1\. Invasive Alien                                     |                |          |                   |
-| Plants                                                 | Woody invasive |          |                   |
-| presence, density, and spread; post-clearing recovery. | Supervised     |          |                   |
-
-```         
-   
-```
-
-| 2. Fire Regime Disruption \| Fire return intervals; fire seasonality; fire intensity/severity (dNBR). \| Burned-area products (MODIS/VIIRS/Sentinel-2) to track time-since-fire and season-of-burn. Flagging areas with exceptionally short intervals (\<8 years) or long intervals (\>20 years). \| CapeNature fire records. \|
-| 3. Climate Change Impacts \| Long-term browning trends; drought mortality; altered post-fire recovery rates. \| Long-term vegetation index trends (NDVI/EVI). Monitoring the rate at which Fynbos greens up post-fire compared to historical baselines to detect drought-induced recovery failures. This must be paired with in field long-term vegetation surveys. \| Base satellite archives (Landsat/MODIS time series). \|
-
-Using functional traits to predict vegetation state
+|     |
+|-----|
 
 # References
