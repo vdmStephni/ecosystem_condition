@@ -29,11 +29,11 @@ Defining reference states in grassy biomes presents additional challenges becaus
 
 Because of these complexities, defining ecologically meaningful reference states requires strong integration of ecological expertise and spatial data analysis. Experts with decades of field experience often have a well-developed understanding of what relatively intact ecosystems look like within a specific biome, including expected vegetation structure, composition, ecological processes, and variability across environmental gradients. This knowledge should form the foundation of reference-state selection.
 
-1\) Make use of published vegetation descriptions
+**1) Make use of published vegetation descriptions**
 
 Descriptions from ecosystem classification systems such as the South African [National Vegetation Map](https://www.sanbi.org/biodiversity/foundations/national-vegetation-map/) and the [IUCN Global Ecosystem Typology (GET)](https://global-ecosystems.org/) can also provide an important foundation for defining reference states. These descriptions often summarise the expected vegetation structure, dominant growth forms and species, ecological processes, environmental setting, and disturbance regimes associated with relatively intact ecosystems, helping to contextualise both field observations and remotely sensed patterns.
 
-2\) Involve biome experts to operationalise "intact state"
+**2) Involve biome experts to operationalise "intact state"**
 
 A practical way to operationalise reference states into assessments is through expert identification of intact or minimally degraded field sites that can serve as reference locations for model calibration and validation. Remote sensing metrics can then be extracted from these sites to characterise the spectral, structural, and temporal properties associated with intact condition to accompany the conceptual descriptions.
 
@@ -51,7 +51,7 @@ While this research extends beyond developing data for ecosystem risk assessment
 
 -   [UN System of Environmental-Economic Accounting Ecosystem Accounting](https://seea.un.org/)[@edens2022] (SEEA EA),
 
-Both make use of the [IUCN ](https://global-ecosystems.org/)GET[@iucnglo2020] as their foundational ecosystem classification and maps. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds” (Fig. 1).
+Both make use of the [IUCN](https://global-ecosystems.org/)GET[@iucnglo2020] as their foundational ecosystem classification and maps. The RLE assesses biodiversity loss of ecosystems by quantifying the risk of ecosystem collapse, whereas the SEEA EA associates ecosystem change with the services provided to the economy or people. Both serve as headline indicators for the GBF for national and global reporting, with South Africa being a pioneer in implementing both standards. In SEEA EA, condition accounts record selected biophysical characteristics of ecosystems through time, typically relative to a reference condition, which provides the bridge between extent and services accounts. In the RLE, ecosystem condition is operationalised via Criteria C (environmental degradation) and D (disruption of biotic processes), which assess the severity and extent of degradation relative to “collapse thresholds” (Fig. 1).
 
 ![Figure 1. Conceptualisation of the Red List of Ecosystems Criterion C and D. For example woody invasive species cover might be at high density in 80% of the extent of an ecosystem, triggering a critically endangered threat status.](imgs/rle.jpg)
 

@@ -11,7 +11,7 @@ A growing range of models and tools for estimating ecosystem condition with sate
 
 Ecosystem condition is interpreted as a **continuum** from transformed to intact (Fig. 1), rather than a set of rigid categories.
 
-![](imgs/continuum.png)
+![](imgs/SBAPP_workflow.jpg)
 
 ## What makes this approach different?
 
