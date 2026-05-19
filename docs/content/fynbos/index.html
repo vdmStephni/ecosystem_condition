@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/IAP.PNG" class="img-fluid figure-img"></p>
-<figcaption>A dense thicket of <em>Acacia saligna</em> seedlings rapidly germinating following a fire in the critically endangered Elim Ferricrete Fynbos. These fast-growing nitrogen fixers outcompetes local endemics for light and water, fundamentally altering the soil chemistry resulting in poor Fynbos recovery and negatively affecting the native seed bank.</figcaption>
+<figcaption>A dense thicket of <em>Acacia saligna</em> seedlings rapidly germinating following a fire in the critically endangered Elim Ferricrete Fynbos. These fast-growing nitrogen fixers outcompetes local endemics for light and water, fundamentally altering the soil chemistry resulting in poor Fynbos recovery and negatively affecting the native seed bank. (©Curtley Tonkin)</figcaption>
 </figure>
 </div>
 </section>
@@ -279,20 +279,47 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/Unburnt Fynbos.PNG" class="img-fluid figure-img"></p>
-<figcaption>Agulhas Limestone Fynbos with overgrown <em>Leucadendron meridianum</em> showing signs of overgrowth within the Agulhas National Park, due to infrequent fires. As an obligate reseeder with a canopy-stored seed bank, this species relies on regular fire to trigger seed release (serotiny). Without it, these populations become moribund, shading out the species-rich understory of geophytes and <em>Erica</em>s.</figcaption>
+<figcaption>Agulhas Limestone Fynbos with overgrown <em>Leucadendron meridianum</em> showing signs of overgrowth within the Agulhas National Park, due to infrequent fires. As an obligate reseeder with a canopy-stored seed bank, this species relies on regular fire to trigger seed release (serotiny). Without it, these populations become moribund, shading out the species-rich understory of geophytes and <em>Erica</em>s. (©Curtley Tonkin)</figcaption>
 </figure>
 </div>
 </section>
 <section id="climate-change" class="level3">
 <h3 class="anchored" data-anchor-id="climate-change"><strong>3. Climate Change</strong></h3>
-<p>Increasing temperatures and more frequent, severe droughts lead to direct physiological stress and die-back of native species (Slingsby et al.&nbsp;2017). As mentioned above, it acts as a threat multiplier, exacerbating fire risks and shifting competitive advantages toward hardy invasive species.</p>
+<p>Increasing temperatures and more frequent, severe droughts lead to direct physiological stress and die-back of native species. As mentioned above, it acts as a threat multiplier, exacerbating fire risks and shifting competitive advantages toward hardy invasive species.</p>
 </section>
 </section>
 </section>
 <section id="potential-remote-sensing-approaches" class="level1">
 <h1>Potential remote sensing approaches</h1>
-<table class="caption-top">
+<p>Unlike Grasslands, where productivity is the main proxy for condition, Fynbos ecosystem condition mapping relies on detecting structural anomalies (such as invasive trees standing above the shrub layer) and monitoring the trajectory of post-fire recovery.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Pressure Target</th>
+<th>What to Map</th>
+<th>Approach</th>
+<th>Already Available</th>
+</tr>
+</thead>
 <tbody>
+<tr class="odd">
+<td><strong>1. Invasive Alien Plants</strong></td>
+<td>Woody invasive presence, density, and spread; post-clearing recovery.</td>
+<td>Supervised classification using Sentinel-2. Analysing phenology to detect evergreen invasives against seasonally dynamic Fynbos.</td>
+<td><a href="https://dffeportal.environment.gov.za/portal/home/item.html?id=17de13c509ef4d3caf279d84e77312c3">National Invasive Alien Plant Survey</a> for South Africa; <a href="https://scholardata.sun.ac.za/articles/dataset/BioSCape_Invasive_Alien_Plant_map_for_the_Cape_Floristic_Region/27377211">BioSCape IAP</a> maps for the CFR.</td>
+</tr>
+<tr class="even">
+<td><strong>2. Fire Regime Disruption</strong></td>
+<td>Fire return intervals; fire seasonality; fire intensity/severity (dNBR).</td>
+<td>Burned-area products (MODIS/VIIRS/Sentinel-2) to track time-since-fire and season-of-burn. Flagging areas with exceptionally short intervals (&lt;8 years) or long intervals (&gt;20 years).</td>
+<td>CapeNature fire records.</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Climate Change Impacts</strong></td>
+<td>Long-term browning trends; drought mortality; altered post-fire recovery rates.</td>
+<td>Long-term vegetation index trends (NDVI/EVI). Monitoring the rate at which Fynbos greens up post-fire compared to historical baselines to detect drought-induced recovery failures. This must be paired with in-field long-term vegetation surveys.</td>
+<td>Base satellite archives (Landsat/MODIS time series).</td>
+</tr>
 </tbody>
 </table>
 </section>

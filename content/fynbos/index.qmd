@@ -78,21 +78,26 @@ While the main historical drivers of biodiversity loss include agricultural expa
 
 This is the key threat to Fynbos. Woody invasives, particularly *Pinus*, *Hakea*, and *Acacia* species, competitively displace native flora. Furthermore, they drastically alter hydrology by absorbing significantly more water than native shrubs, reducing runoff into critical catchment dams, and they increase fuel loads, leading to unnaturally hot fires that damage the soil seed bank.
 
-![A dense thicket of *Acacia saligna* seedlings rapidly germinating following a fire in the critically endangered Elim Ferricrete Fynbos. These fast-growing nitrogen fixers outcompetes local endemics for light and water, fundamentally altering the soil chemistry resulting in poor Fynbos recovery and negatively affecting the native seed bank.](imgs/IAP.PNG)
+![A dense thicket of *Acacia saligna* seedlings rapidly germinating following a fire in the critically endangered Elim Ferricrete Fynbos. These fast-growing nitrogen fixers outcompetes local endemics for light and water, fundamentally altering the soil chemistry resulting in poor Fynbos recovery and negatively affecting the native seed bank. (©Curtley Tonkin)](imgs/IAP.PNG)
 
 ### **2. Fire Regime Disruptions**
 
 Fynbos is fire-dependant, but it must be the right kind of fire. Too frequent fires (e.g., every 2-5 years) kill slow-growing obligate reseeders before they can produce seeds, leading to local extinctions and structural collapse. Conversely, long-term fire exclusion leads to senescence (die-off) of the vegetation. Fires in the wrong season (e.g., winter or spring instead of late summer/autumn) also result in poor seed germination. Nutrient cycling in the nutrient-poor soils is dependent on fire, to return nutrients to the soil as ash.
 
-![Agulhas Limestone Fynbos with overgrown *Leucadendron meridianum* showing signs of overgrowth within the Agulhas National Park, due to infrequent fires. As an obligate reseeder with a canopy-stored seed bank, this species relies on regular fire to trigger seed release (serotiny). Without it, these populations become moribund, shading out the species-rich understory of geophytes and *Erica*s.](imgs/Unburnt%20Fynbos.PNG)
+![Agulhas Limestone Fynbos with overgrown *Leucadendron meridianum* showing signs of overgrowth within the Agulhas National Park, due to infrequent fires. As an obligate reseeder with a canopy-stored seed bank, this species relies on regular fire to trigger seed release (serotiny). Without it, these populations become moribund, shading out the species-rich understory of geophytes and *Erica*s. (©Curtley Tonkin)](imgs/Unburnt%20Fynbos.PNG)
 
 ### **3. Climate Change**
 
-Increasing temperatures and more frequent, severe droughts lead to direct physiological stress and die-back of native species (Slingsby et al. 2017). As mentioned above, it acts as a threat multiplier, exacerbating fire risks and shifting competitive advantages toward hardy invasive species.
+Increasing temperatures and more frequent, severe droughts lead to direct physiological stress and die-back of native species. As mentioned above, it acts as a threat multiplier, exacerbating fire risks and shifting competitive advantages toward hardy invasive species.
 
 # Potential remote sensing approaches
 
-|     |
-|-----|
+Unlike Grasslands, where productivity is the main proxy for condition, Fynbos ecosystem condition mapping relies on detecting structural anomalies (such as invasive trees standing above the shrub layer) and monitoring the trajectory of post-fire recovery.
+
+| Pressure Target               | What to Map                                                                     | Approach                                                                                                                                                                                                                                            | Already Available                                                                                                                                                                                                                                                                                                     |
+|------------------|------------------|----------------------|------------------|
+| **1. Invasive Alien Plants**  | Woody invasive presence, density, and spread; post-clearing recovery.           | Supervised classification using Sentinel-2. Analysing phenology to detect evergreen invasives against seasonally dynamic Fynbos.                                                                                                                    | [National Invasive Alien Plant Survey](https://dffeportal.environment.gov.za/portal/home/item.html?id=17de13c509ef4d3caf279d84e77312c3) for South Africa; [BioSCape IAP](https://scholardata.sun.ac.za/articles/dataset/BioSCape_Invasive_Alien_Plant_map_for_the_Cape_Floristic_Region/27377211) maps for the CFR.   |
+| **2. Fire Regime Disruption** | Fire return intervals; fire seasonality; fire intensity/severity (dNBR).        | Burned-area products (MODIS/VIIRS/Sentinel-2) to track time-since-fire and season-of-burn. Flagging areas with exceptionally short intervals (\<8 years) or long intervals (\>20 years).                                                            | CapeNature fire records.                                                                                                                                                                                                                                                                                              |
+| **3. Climate Change Impacts** | Long-term browning trends; drought mortality; altered post-fire recovery rates. | Long-term vegetation index trends (NDVI/EVI). Monitoring the rate at which Fynbos greens up post-fire compared to historical baselines to detect drought-induced recovery failures. This must be paired with in-field long-term vegetation surveys. | Base satellite archives (Landsat/MODIS time series).                                                                                                                                                                                                                                                                  |
 
 # References
