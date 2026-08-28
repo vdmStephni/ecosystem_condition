@@ -45,8 +45,6 @@ website:
             href: content/fynbos/index.qmd
           - text: Forest
             href: content/forest/index.qmd
-          - text: Savanna
-            href: content/savanna/index.qmd
 format:
   html:
     theme:

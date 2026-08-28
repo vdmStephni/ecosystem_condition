@@ -13,6 +13,7 @@
 <meta name="author" content="Michael Powell">
 <meta name="author" content="Timm Hoffman">
 <meta name="author" content="Anothony Palmer">
+<meta name="author" content="Geethen Singh">
 
 <title>Albany Thicket Biome – Ecosystem Condition</title>
 <style>
@@ -155,10 +156,6 @@ div.csl-indent {
     <a class="dropdown-item" href="../../content/forest/index.html">
  <span class="dropdown-text">Forest</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../content/savanna/index.html">
- <span class="dropdown-text">Savanna</span></a>
-  </li>  
     </ul>
   </li>
 </ul>
@@ -177,7 +174,9 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link active" data-scroll-target="#ecological-context">Ecological Context</a>
+  <li><a href="#summary-of-findings" id="toc-summary-of-findings" class="nav-link active" data-scroll-target="#summary-of-findings">Summary of findings</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#ecological-context" id="toc-ecological-context" class="nav-link" data-scroll-target="#ecological-context">Ecological Context</a>
   <ul>
   <li><a href="#vegetation-units" id="toc-vegetation-units" class="nav-link" data-scroll-target="#vegetation-units">Vegetation units</a></li>
   <li><a href="#valley-thicket-river-systems-and-topographic-hollows" id="toc-valley-thicket-river-systems-and-topographic-hollows" class="nav-link" data-scroll-target="#valley-thicket-river-systems-and-topographic-hollows">Valley Thicket (river systems and topographic hollows)</a></li>
@@ -185,16 +184,20 @@ div.csl-indent {
   <li><a href="#mesic-thicket-fire-protected-refugia-in-higher-rainfall-zones" id="toc-mesic-thicket-fire-protected-refugia-in-higher-rainfall-zones" class="nav-link" data-scroll-target="#mesic-thicket-fire-protected-refugia-in-higher-rainfall-zones">Mesic Thicket (fire-protected refugia in higher rainfall zones)</a></li>
   <li><a href="#dune-thicket-coastal-fringe" id="toc-dune-thicket-coastal-fringe" class="nav-link" data-scroll-target="#dune-thicket-coastal-fringe">Dune Thicket (coastal fringe)</a></li>
   <li><a href="#thicket-mosaics-with-other-biomes" id="toc-thicket-mosaics-with-other-biomes" class="nav-link" data-scroll-target="#thicket-mosaics-with-other-biomes">Thicket mosaics with other biomes</a></li>
-  <li><a href="#key-pressures-in-thicket" id="toc-key-pressures-in-thicket" class="nav-link" data-scroll-target="#key-pressures-in-thicket">Key pressures in Thicket</a></li>
   </ul></li>
-  <li><a href="#remote-sensing-approach" id="toc-remote-sensing-approach" class="nav-link" data-scroll-target="#remote-sensing-approach">Remote sensing approach</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><strong>Results</strong></a></li>
+  <li><a href="#key-pressures-in-thicket" id="toc-key-pressures-in-thicket" class="nav-link" data-scroll-target="#key-pressures-in-thicket">Key pressures in Thicket</a></li>
+  <li><a href="#expert-guided-remote-sensing-approach" id="toc-expert-guided-remote-sensing-approach" class="nav-link" data-scroll-target="#expert-guided-remote-sensing-approach">Expert-guided remote sensing approach</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
   <ul>
   <li><a href="#training-data" id="toc-training-data" class="nav-link" data-scroll-target="#training-data">Training data</a></li>
   <li><a href="#predictor-variables" id="toc-predictor-variables" class="nav-link" data-scroll-target="#predictor-variables">Predictor variables</a></li>
-  <li><a href="#random-forest-modelling" id="toc-random-forest-modelling" class="nav-link" data-scroll-target="#random-forest-modelling">Random Forest modelling</a></li>
+  <li><a href="#machine-learning-approach" id="toc-machine-learning-approach" class="nav-link" data-scroll-target="#machine-learning-approach">Machine learning approach</a></li>
   <li><a href="#model-validation" id="toc-model-validation" class="nav-link" data-scroll-target="#model-validation">Model validation</a></li>
+  <li><a href="#expert-validation-and-design-based-area-estimation" id="toc-expert-validation-and-design-based-area-estimation" class="nav-link" data-scroll-target="#expert-validation-and-design-based-area-estimation">Expert validation and design-based area estimation</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><strong>Results</strong></a></li>
+  <li><a href="#preliminary-discussion" id="toc-preliminary-discussion" class="nav-link" data-scroll-target="#preliminary-discussion">Preliminary discussion</a>
+  <ul>
   <li><a href="#key-resources" id="toc-key-resources" class="nav-link" data-scroll-target="#key-resources">Key resources</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -229,9 +232,6 @@ div.csl-indent {
     <p class="author">Andrew Skowno <a href="https://orcid.org/0000-0002-2726-7886" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
   </div>
   <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            South African National Biodiversity Institute
-          </p>
         <p class="affiliation">
             University of Cape Town
           </p>
@@ -276,6 +276,14 @@ div.csl-indent {
             Rhodes University
           </p>
       </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Geethen Singh <a href="https://orcid.org/0000-0003-4743-3172" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Norwegian Institute for Nature Research
+          </p>
+      </div>
   </div>
 
 <div class="quarto-title-meta">
@@ -290,13 +298,48 @@ div.csl-indent {
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Important: The ecosystem condition assessments for this biome are still in progress. We thus provide the summary of our approach and preliminary results (peer review is still underway). The findings of this case study are being prepared as a manuscript together with Thicket experts and must not be interpreted as the final results.</p>
+</div>
+</div>
+<section id="summary-of-findings" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-findings">Summary of findings</h2>
+<p>Much of the degradation in Albany Thicket occurred before satellite monitoring and modern national land cover datasets became available. Because these datasets mainly identify recent conversion to artificial land covers, areas degraded long ago may still be classified as natural, leaving substantial variation in ecological condition unrepresented in biodiversity assessments. To close this gap, our approach combines expert ecological knowledge with remote sensing and machine learning: experts defined the reference and degraded states and provided condition-labelled observations, while the models extended these ecological interpretations across solid Arid, Mesic and Valley Thicket. The resulting maps can be explored in the <a href="https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition">Google Earth Engine App</a>.</p>
+<p>Preliminary area estimates showed clear differences among the ecosystem groups. Of the 800,340 ha assessed in <strong>Arid Thicket, only 79,080 ha (9.9%) was classified as intact</strong>, 548,898 ha (68.6%) as severely degraded, 162,036 ha (20.2%) as moderately degraded, and 10,326 ha (1.3%) as transformed. Of the 291,534 ha assessed in Mesic Thicket, 146,507 ha (50.3%) was classified as intact, 76,031 ha (26.1%) as moderately degraded, 42,665 ha (14.6%) as severely degraded and 26,331 ha (9.0%) as transformed. Valley Thicket had a more even distribution: of the 906,463 ha assessed, 310,158 ha (34.2%) was classified as severely degraded, 283,744 ha (31.3%) as intact, 255,391 ha (28.2%) as moderately degraded and 57,170 ha (6.3%) as transformed. These direct pixel counts are being compared with design-based estimates that account for classification error (see <a href="https://www.sciencedirect.com/science/article/pii/S2212041624000056?via%3Dihub">Venter et al.&nbsp;2024</a>). The resulting condition data can help prioritise protected area expansion and restoration, including identifying degraded areas where spekboom planting is ecologically appropriate, while also supporting ecosystem red-listing and accounting.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/plot.png" class="img-fluid figure-img"></p>
+<figcaption>A permanent restoration plot near Kleinpoort, Eastern Cape, established in 2008/2009 to support long term monitoring of spekboom planting and the recovery in severely degraded Arid Thicket vegetation, here resembling a “pseudo-Savanna” state once palatable species were removed by chronic browsing. Only trees above the browse-line survive within a matrix of non-native ephemeral species in the areas surrounding the restoration plot. Notice the pink <em>Mesembryanthemum</em> species, an indicator of degradation in Arid Thicket vegetation, flowering after the first rainfall following a drought. The flowering event in 2023 was even visible in satellite imagery. (©Alastair Potts)</figcaption>
+</figure>
+</div>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Reliable information on ecosystem condition is increasingly needed to guide conservation, restoration and environmental reporting. Land cover maps can show where natural vegetation has been converted to croplands, settlements or other land uses, but they often do not detect degradation within vegetation that remains classified as “natural”. Ecosystem condition assessments address this gap by evaluating how much of an ecosystem’s characteristic composition, structure and functioning remains within the “natural” land cover and how much is considered degraded. This information is needed to identify intact areas requiring protection, locate degraded areas suitable for restoration, and measure progress towards national and international biodiversity targets.</p>
+<p>This need is particularly urgent in Albany Thicket, where long-term browsing has degraded large areas and interest in <em>Portulacaria afra</em> (spekboom) restoration has grown rapidly<span class="citation" data-cites="mills2023a"><sup><a href="#ref-mills2023a" role="doc-biblioref">1</a></sup></span>. Carbon-credit markets could provide substantial funding for restoration, but credible projects require reliable baseline information, appropriate site selection and long-term monitoring of ecological recovery. Spatial condition data can help distinguish areas where intact thicket should be protected, where reducing pressures may allow recovery, and where active intervention may be necessary. Importantly, spekboom planting should be directed towards degraded ecosystems <strong>in which the species formed part of the natural reference vegetation, rather than applied uniformly across the biome.</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/fence3.png" class="img-fluid figure-img"></p>
+<figcaption>A fence-line contrast showing more intact spekboom-rich Arid Thicket to the left and the “pseudo-savanna” degraded state on the right where chronic browsing has removed palatable species and only trees above the browse-line survive within a matrix of bare ground (in non-rainy season shown here) or non-native ephemeral species (during rainy season). (©Alastair Potts)</figcaption>
+</figure>
+</div>
+</section>
 <section id="ecological-context" class="level2">
 <h2 class="anchored" data-anchor-id="ecological-context">Ecological Context</h2>
 <section id="vegetation-units" class="level3">
 <h3 class="anchored" data-anchor-id="vegetation-units">Vegetation units</h3>
-<p>The Thicket Biome is a structurally complex and compositionally diverse vegetation that occupies a transitional zone between the country’s arid interior and its more mesic coastal region<span class="citation" data-cites="vlok2002"><sup><a href="#ref-vlok2002" role="doc-biblioref">1</a></sup></span>. Thicket vegetation varies along key environmental gradients of moisture availability, soil type, topography, and rainfall seasonality, giving rise to a variety of growth forms occurring in a mosaic of distinct vegetation clumps<span class="citation" data-cites="vlok2003"><sup><a href="#ref-vlok2003" role="doc-biblioref">2</a></sup></span>. The Albany Thicket Biome is notable for maintaining high standing woody biomass and relatively carbon-rich soils despite occurring in semi-arid to arid climates, alongside exceptional diversity of plant growth forms and many endemic taxa<span class="citation" data-cites="cowling2005"><sup><a href="#ref-cowling2005" role="doc-biblioref">3</a></sup></span>. Albany Thicket is recognised as a centre of plant endemism, the Albany Centre of Endemism, and forms part of the Maputaland-Pondoland-Albany biodiversity hotspot. Intact thicket tends to be structurally dense and comparatively stable through drought, showing less short-term fluctuation in biomass than many other arid systems, an important property when distinguishing natural variability from degradation signals.</p>
-<p>Herbivory is a defining ecological driver in Albany Thicket. Historically the biome supported a diverse herbivores, from small antelope to megaherbivores. While intact thicket can be resilient to natural levels of indigenous browsing, elevated herbivore pressure, especially where animals concentrate, can push the system into a degraded, open-canopy state with slow recovery<span class="citation" data-cites="lechmere-oertel2008"><sup><a href="#ref-lechmere-oertel2008" role="doc-biblioref">4</a></sup></span>. This sensitivity is strongly shaped by context, including water availability (natural or artificial), accessibility and topography, and the distribution of grazing/browsing across the landscape, all of which need to be considered when interpreting condition patterns and planning restoration.</p>
-<p>We summarised the “intact” ecosystem functioning of the four main bioregions as conceptual functional models under each description below.</p>
+<p>The Thicket Biome is a structurally complex and compositionally diverse vegetation that occupies a transitional zone between the country’s arid interior and its more mesic coastal region<span class="citation" data-cites="vlok2002"><sup><a href="#ref-vlok2002" role="doc-biblioref">2</a></sup></span>. Thicket vegetation varies along key environmental gradients of moisture availability, soil type, topography, and rainfall seasonality, giving rise to a variety of growth forms occurring in a mosaic of distinct vegetation clumps<span class="citation" data-cites="vlok2003"><sup><a href="#ref-vlok2003" role="doc-biblioref">3</a></sup></span>. The Albany Thicket Biome is notable for maintaining high standing woody biomass and relatively carbon-rich soils despite occurring in semi-arid to arid climates, alongside exceptional diversity of plant growth forms and many endemic taxa<span class="citation" data-cites="cowling2005"><sup><a href="#ref-cowling2005" role="doc-biblioref">4</a></sup></span>. Albany Thicket is recognised as a centre of plant endemism, the Albany Centre of Endemism, and forms part of the Maputaland-Pondoland-Albany biodiversity hotspot. Intact thicket tends to be structurally dense and comparatively stable through drought, showing less short-term fluctuation in biomass than many other arid systems, an important property when distinguishing natural variability from degradation signals.</p>
+<p>Herbivory is a defining ecological driver in Albany Thicket. Historically the biome supported diverse herbivores, from small antelope to megaherbivores. While intact thicket can be resilient to natural levels of indigenous browsing, elevated herbivore pressure, especially where animals concentrate, can push the system into a degraded, open-canopy state with slow recovery<span class="citation" data-cites="lechmere-oertel2008"><sup><a href="#ref-lechmere-oertel2008" role="doc-biblioref">5</a></sup></span>. This sensitivity is strongly shaped by context, including water availability (natural or artificial), accessibility and topography, and the distribution of grazing/browsing across the landscape, all of which need to be considered when interpreting condition patterns and planning restoration.</p>
+<p>We summarised the “intact” ecosystem functioning of the four main ecosystem groups as conceptual functional models under each description below.</p>
 </section>
 <section id="valley-thicket-river-systems-and-topographic-hollows" class="level3">
 <h3 class="anchored" data-anchor-id="valley-thicket-river-systems-and-topographic-hollows">Valley Thicket (river systems and topographic hollows)</h3>
@@ -319,7 +362,7 @@ div.csl-indent {
 <p>Arid Thicket dominates the drier interior valleys and escarpment foothills where rainfall is low and erratic and water limitation strongly shapes ecosystem structure. Intact Arid Thicket (Fig. 2) is typically characterised by a prominent succulent component and a variable, sometimes less continuous woody layer, with communities often dominated by <em>Portulacaria afra</em> (Spekboomveld) or by other succulents such as <em>Euphorbia</em> species (e.g., Noorsveld). Because these systems are strongly shaped by chronic grazing pressure and slow regeneration of key canopy-forming species, degradation often presents as loss of canopy cohesion, reduced succulent cover, and increasing bare ground and erosion risk. Once the structural “solid thicket” state is disrupted, recovery requirs active restoration interventions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="imgs/GET_arid.jpg" class="img-fluid figure-img"></p>
+<p><img src="imgs/arid_get.png" class="img-fluid figure-img"></p>
 <figcaption>Figure 2. Conceptual ecosystem assembly diagram for intact Arid Thicket.</figcaption>
 </figure>
 </div>
@@ -342,7 +385,7 @@ div.csl-indent {
 </section>
 <section id="dune-thicket-coastal-fringe" class="level3">
 <h3 class="anchored" data-anchor-id="dune-thicket-coastal-fringe">Dune Thicket (coastal fringe)</h3>
-<p>Dune Thicket occurs along the coastal margin on deep aeolian sands, where plants experience strong winds, salt spray, shifting substrates, and frequent disturbance. Intact Dune Thicket (Fig. 4) typically forms a dense, wind-pruned woody canopy with strong lateral growth, creating sheltered microsites that stabilise sand and support high structural complexity at fine scales. Compared to inland thicket types it generally has fewer succulents, with species and growth forms adapted to burial, abrasion, and nutrient-poor sandy soils. These systems commonly occur as mosaics with coastal fynbos, and patches of forest in sheltered ravines, making landscape context important when interpreting condition.</p>
+<p>Dune Thicket occurs along the coastal margin on deep aeolian sands, where plants experience strong winds, salt spray, shifting substrates, and frequent disturbance. Intact Dune Thicket (Fig. 4) typically forms a dense, wind-pruned woody canopy with strong lateral growth, creating sheltered microsites that stabilise sand and support high structural complexity at fine scales. Compared to inland thicket vegetation types it generally has fewer succulents, with species and growth forms adapted to burial, abrasion, and nutrient-poor sandy soils. These systems commonly occur as mosaics with coastal fynbos, and patches of forest in sheltered ravines, making landscape context important when interpreting condition.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/GET_dune.jpg" class="img-fluid figure-img"></p>
@@ -354,11 +397,12 @@ div.csl-indent {
 <h3 class="anchored" data-anchor-id="thicket-mosaics-with-other-biomes">Thicket mosaics with other biomes</h3>
 <p>All thicket bioregions also occur as mosaics with neighbouring biomes and vegetation types, forming patchy landscapes where thicket clumps, shrublands, grasslands, karoo vegetation, forests, wetlands, or riparian zones mix. These mosaics are ecologically meaningful rather than “messy noise” and reflect environmental gradients, disturbance history, and land-use legacies. For mapping, this means reference conditions and expected variability should be defined within comparable landscape contexts, and “intactness” should be evaluated relative to the appropriate thicket–mosaic setting rather than a single idealised thicket state.</p>
 </section>
-<section id="key-pressures-in-thicket" class="level3">
-<h3 class="anchored" data-anchor-id="key-pressures-in-thicket">Key pressures in Thicket</h3>
+</section>
+<section id="key-pressures-in-thicket" class="level2">
+<h2 class="anchored" data-anchor-id="key-pressures-in-thicket">Key pressures in Thicket</h2>
 <ul>
 <li><strong>Chronic overbrowsing (primary pressure)</strong><br>
-The dominant driver of thicket degradation is long-term, repeated browsing, especially by high densities of domestic stock (goats) or extralimital game. Sustained browsing opens the formerly dense canopy, removes palatable shrubs and succulents (notably <em>Portulacaria afra</em> in Spekboomveld), and exposes bare soil<span class="citation" data-cites="lechmere-oertel2005"><sup><a href="#ref-lechmere-oertel2005" role="doc-biblioref">5</a></sup></span>. This can trigger a shift from a resilient, closed-canopy “solid thicket” state to a more open, degraded state with slow or limited natural recovery, particularly once topsoil is lost and seedling establishment fails. Canopy opening and trampling increase runoff and erosion, leading to topsoil loss, reduced infiltration, and declining soil stability. Because thicket stores substantial carbon in woody biomass and soils, degradation commonly results in reduced carbon stocks and diminished ecosystem functioning, reinforcing a negative feedback where poor soils further limit regeneration<span class="citation" data-cites="mills2005"><sup><a href="#ref-mills2005" role="doc-biblioref">6</a></sup></span>.</li>
+The dominant driver of thicket degradation is long-term, repeated browsing, especially by high densities of domestic stock (goats) or extralimital game. Sustained browsing opens the formerly dense canopy, removes palatable shrubs and succulents (notably <em>Portulacaria afra</em> in Spekboomveld), and exposes bare soil<span class="citation" data-cites="lechmere-oertel2005"><sup><a href="#ref-lechmere-oertel2005" role="doc-biblioref">6</a></sup></span>. This can trigger a shift from a resilient, closed-canopy “solid thicket” state to a more open, degraded state with slow or limited natural recovery, particularly once topsoil is lost and seedling establishment fails. Canopy opening and trampling increase runoff and erosion, leading to topsoil loss, reduced infiltration, and declining soil stability. Because thicket stores substantial carbon in woody biomass and soils, degradation commonly results in reduced carbon stocks and diminished ecosystem functioning, reinforcing a negative feedback where poor soils further limit regeneration<span class="citation" data-cites="mills2005"><sup><a href="#ref-mills2005" role="doc-biblioref">7</a></sup></span>.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -379,27 +423,36 @@ In protected areas, elephants and other browsers can modify thicket structure, s
 While invasive plants may not dominate the biome’s total area, dense invasions (e.g., Australian wattles, <em>Opuntia</em> spp.) can locally suppress native regeneration and alter hydrology and nutrient cycling. In heavily browsed landscapes, invasives can further shift the system away from thicket recovery trajectories.</p></li>
 </ul>
 </section>
-</section>
-<section id="remote-sensing-approach" class="level2">
-<h2 class="anchored" data-anchor-id="remote-sensing-approach">Remote sensing approach</h2>
-<p>Because of the evergreen nature of intact Thicket vegetation, remote sensing approaches to ecosystem condition mapping is a feasible option. Since the key pressures is historical (but also present) unsustainable livestock farming and ranching, it is possible to detect the resulting impact of loss in vegetation cover and subsequent increase in persistent bare soil cover with satellite imagery. In other words, if we mask the transformed land cover categories, we can focus on rangelands which cover most of the biome. Persistent loss of perennial vegetation cover can then serve as a proxy for unsustainable herbivory. The legacy of degradation research (see <a href="https://bgis.sanbi.org/STEP/project.asp">STEP</a>) in the biome provides a strong foundation for understanding ecosystem condition and key pressures [<span class="citation" data-cites="vlok2002"><sup><a href="#ref-vlok2002" role="doc-biblioref">1</a></sup></span>]<span class="citation" data-cites="lechmere-oertel2008"><sup><a href="#ref-lechmere-oertel2008" role="doc-biblioref">4</a></sup></span><span class="citation" data-cites="mills2005"><sup><a href="#ref-mills2005" role="doc-biblioref">6</a></sup></span>. Coupled with the recent demand for scientifically grounded ecosystem condition data to prioristise restoration activities<span class="citation" data-cites="mills2023"><sup><a href="#ref-mills2023" role="doc-biblioref">7</a></sup></span>, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 5).</p>
+<section id="expert-guided-remote-sensing-approach" class="level2">
+<h2 class="anchored" data-anchor-id="expert-guided-remote-sensing-approach">Expert-guided remote sensing approach</h2>
+<p>Thicket ecologists who have worked in the same ecosystems for many years, accumulate knowledge and a deep understanding of ecosystem condition. Combining this knowledge with satellite imagery and machine learning, may provide a powerful approach to better map ecosystem condition. Albany Thicket is particularly well suited to testing this approach. First, the legacy of degradation research (see <a href="https://bgis.sanbi.org/STEP/project.asp">STEP</a>) in the biome provides a strong foundation for understanding ecosystem condition and key pressures [<span class="citation" data-cites="vlok2002"><sup><a href="#ref-vlok2002" role="doc-biblioref">2</a></sup></span>]<span class="citation" data-cites="lechmere-oertel2008"><sup><a href="#ref-lechmere-oertel2008" role="doc-biblioref">5</a></sup></span><span class="citation" data-cites="mills2005"><sup><a href="#ref-mills2005" role="doc-biblioref">7</a></sup></span>. Second, unlike South Africa’s strongly seasonal grasslands, intact Thicket remains evergreen for much of the year, and fire is not part of its natural disturbance regime. Changes detected in satellite imagery are therefore less likely to reflect normal seasonal cycles or fire and be mistaken for degradation.</p>
+<p>Third, because passive recovery in Arid Thicket vegetation is unlikely or extremely slow once it has been heavily degraded by chronic browsing, the impacts from the past (prior to satellite monitoring became available <em>c.</em> 1980s) are still easily detectable using fence lines contrasts where one side of the fence has been heavily browsed and the other side not (Fig, 5b). We can also observe this along gradients extending from livestock watering points (Fig. 6). Because these neighbouring areas experience similar rainfall, soils and topography, differences in their vegetation can be linked more confidently to browsing pressure.</p>
+<p>Decades of field research and knowledge accumulated by local ecologists therefore provided a strong basis for testing whether expert interpretation and satellite imagery can be combined to identify degradation that conventional land cover maps may overlook. Coupled with the recent demand for scientifically grounded ecosystem condition data to prioristise restoration activities<span class="citation" data-cites="mills2023"><sup><a href="#ref-mills2023" role="doc-biblioref">8</a></sup></span>, Albany Thicket provided an ideal first case study to our SBAPP project (Fig. 5).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/condition.png" class="img-fluid figure-img"></p>
 <figcaption>Figure 5. Ecological condition of Arid Thicket vegetation demonstrated by a fence-line contrast where vegetation has been heavily overbrowsed. The map in a) shows the location of the proof-of-concept site in South Africa, b) shows a drone photograph of the same site, with c) showing satellite imagery (ESRI basemap) and d) the ecological condition for the same area.</figcaption>
 </figure>
 </div>
-</section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results"><strong>Results</strong></h2>
-<p>The mapped results of ecosystem condition can be browsed in this <a href="https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition">Google Earth Engine App</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/gradient.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 6. Satellite imagery shows observable hebirvory gradients extending from livestock watering points. Because these neighbouring areas experience similar rainfall, soils and topography, differences in their vegetation can be linked more confidently to browsing pressure. Clear fence-line contrasts that differ in herbivory pressure are also indicated.</figcaption>
+</figure>
+</div>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <section id="training-data" class="level3">
 <h3 class="anchored" data-anchor-id="training-data">Training data</h3>
-<p>The SBAPP project views ecological condition as a continuum from transformed (habitat loss) to intact. Training data thus consisted of collated data set of condition-labelled points assigned through expert interpretation and known field-validated examples of Thicket vegetation in different states of degradation (i.e.&nbsp;grazing or browsing pressure) along fence-line contrasts and across the east-west environmental gradients. Additional training points were also targeted in piospheres around artificial watering points with clear structural changes with browsing pressure, and along fence-line contrasts because these locations provide strong, unambiguous signals of herbivore-driven degradation. The close spatial pairing of fence-line contrasts and piospheres reduces confounding environmental variability and increases the confidence that observed vegetation differences are primarily the result of land use rather than underlying abiotic gradients. Transformed points were manually digitised within transformed land cover classes in Google Earth Engine using the basemap. Points were classified into four condition classes: intact, moderate, severe, and transformed.</p>
-<p>Ecological interpretation of the classes followed the state-and-transition framework used for Albany Thicket by Thompson et al.&nbsp;(2009)<span class="citation" data-cites="thompson2009"><sup><a href="#ref-thompson2009" role="doc-biblioref">8</a></sup></span> and Lechmere-Oertel (2023)<span class="citation" data-cites="lechmere-oertel2023"><sup><a href="#ref-lechmere-oertel2023" role="doc-biblioref">9</a></sup></span> as follows:</p>
+<p>The SBAPP project views ecological condition as a continuum from transformed habitat to an intact reference state (Fig. 7). Within remaining natural vegetation, mostly used as rangelands, the modelling used three expert-interpreted condition classes: intact, moderately degraded and severely degraded. Training data comprised condition-labelled points collated from field-validated examples and/or expert interpretation across the east-west environmental gradient. Points targeted piospheres around artificial watering points and fence-line contrasts with clear structural changes associated with browsing pressure. The close spatial pairing of these contrasts helps reduce confounding environmental variability and increases confidence that observed vegetation differences primarily reflect land use rather than underlying abiotic gradients. Areas converted to agriculture, settlements, mines, plantations and other transformed land covers were identified separately from the South African National Land Cover 2022 dataset and were excluded from model training and prediction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/training.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 7. Representation of training data showing in-field representations and satellite imagery from above along the “condition continuum”.</figcaption>
+</figure>
+</div>
+<p>Ecological interpretation of the classes followed the state-and-transition framework used for Albany Thicket by Thompson et al.&nbsp;(2009)<span class="citation" data-cites="thompson2009"><sup><a href="#ref-thompson2009" role="doc-biblioref">9</a></sup></span> and Lechmere-Oertel (2023)<span class="citation" data-cites="lechmere-oertel2023"><sup><a href="#ref-lechmere-oertel2023" role="doc-biblioref">10</a></sup></span> as follows:</p>
 <p>1. Intact</p>
 <p>Ecologically intact sites represent closed-canopy, structurally complete succulent/woody Thicket. These areas maintain the full complement of dominant woody species (e.g., <em>Portulacaria afra</em>, <em>Euclea undulata</em>, <em>Pappea capensis</em>), a deep litter layer, high aboveground biomass, and well-buffered microclimates. Soil surfaces are mostly shaded, erosion is minimal, and nutrient cycling remains functional. These sites correspond to the “untransformed” or “near-reference” state, showing no evidence of sustained herbivory-driven collapse.</p>
 <p>2. Moderate degradation</p>
@@ -411,60 +464,92 @@ While invasive plants may not dominate the biome’s total area, dense invasions
 </section>
 <section id="predictor-variables" class="level3">
 <h3 class="anchored" data-anchor-id="predictor-variables">Predictor variables</h3>
-<p>Predictor variables were derived from the Google AlphaEarth Foundation satellite embeddings 10 m resolution annual dataset (available 2017-2024). Embeddings provide a way to compress large volumes of remote-sensing information into a compact set of features that may capture meaningful ecological and spatial patterns<span class="citation" data-cites="brown"><sup><a href="#ref-brown" role="doc-biblioref">10</a></sup></span>. The AlphaEarth Foundation Model integrates multi-temporal imagery from open access sensors such as Sentinel-2, Sentinel-1 and Landsat, Land Cover data, elevation and learns a shared representation of the information contained across these sources. This allows each pixel’s spectral, spatial and temporal characteristics to be summarised in a small embedding vector of 64 values, that captures the key mutual information between the different sensors and the underlying landscape (Fig. 6). Embedding values were sampled at each training point, which formed the input into a Random Forest model.</p>
+<p>Predictor variables were derived from the Google AlphaEarth Foundation satellite embeddings 10 m resolution annual dataset (available 2017-2024). Embeddings provide a way to compress large volumes of remote-sensing information into a compact set of features that may capture meaningful ecological and spatial patterns<span class="citation" data-cites="brown"><sup><a href="#ref-brown" role="doc-biblioref">11</a></sup></span>. The AlphaEarth Foundation Model integrates multi-temporal imagery from open access sensors such as Sentinel-2, Sentinel-1 and Landsat, Land Cover data, elevation and learns a shared representation of the information contained across these sources. This allows each pixel’s spectral, spatial and temporal characteristics to be summarised in a small embedding vector of 64 values, that captures the key mutual information between the different sensors and the underlying landscape (Fig. 8). Embedding values were sampled at each training point, which formed the input into a Random Forest model.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="imgs/emb.png" class="img-fluid figure-img"></p>
-<figcaption>Figure 6. Visualisation of how multiple satellite data are compressed into a 64 dimension embeddings vector.</figcaption>
+<figcaption>Figure 8. Visualisation of how multiple satellite data are compressed into a 64 dimension embeddings vector.</figcaption>
 </figure>
 </div>
 </section>
-<section id="random-forest-modelling" class="level3">
-<h3 class="anchored" data-anchor-id="random-forest-modelling">Random Forest modelling</h3>
-<p>A supervised Random Forest&nbsp;(RF) regression model was trained separately for Arid, Valley, and Mesic Thicket using AlphaEarth embeddings as predictors and condition-labeled training data. The models were fitted using 300 trees with class-balanced sampling. Instead of mapping a single “best” class from the Random Forest, we use the model’s per-class probabilities for four states: intact, moderately degraded, severely degraded, and transformed (i.e., the probability the pixel belongs to each class). We then collapse these into one continuous 0–1 condition score with a weighted sum, for example: Score = 1·P(intact) + 0.66·P(moderate) + 0.33·P(severe) + 0·P(transformed). Because the probabilities sum to 1, this score is automatically bounded between 0 and 1, where values close to 1 indicate high confidence of intact condition and values close to 0 indicate high confidence of transformed or severely degraded condition. The numeric scaling facilitates downstream analyses, comparison across bioregions, and integration with condition frameworks, which require a continuous measure of relative degradation intensity. The final condition gradient was exported at 10 m resolution for expert review.</p>
+<section id="machine-learning-approach" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-approach">Machine learning approach</h3>
+<p>Supervised Random Forest classifiers were trained separately for Arid, Valley and Mesic Thicket using AlphaEarth embeddings as predictors and the three condition labels as the response, in Google Earth Engine. Model hyperparameters were tuned and selected separately for each ecosystem group using five-fold spatial cross-validation. The final models produce three probability surfaces: P(intact), P(moderate) and P(severe), as well as the most probable class and its probability. These outputs retain information about uncertainty and show where models were split between adjacent condition states. A single continuous condition index is still being evaluated and is therefore not presented here as a final product.</p>
 </section>
 <section id="model-validation" class="level3">
 <h3 class="anchored" data-anchor-id="model-validation">Model validation</h3>
-<p>Model performance was evaluated using a combination of internal cross-validation and independent expert-mapped degradation maps. First, the condition-labelled points were randomly partitioned into an 80/20 train-test split, stratified by condition class to retain balanced representation of intact, moderate, severe and transformed sites. The model was trained on the 80% subset and predictions were evaluated against the held-out 20% using overall accuracy, class-specific precision and recall, and confusion matrices to quantify how well the RF distinguished different degradation states. To provide an external, ecologically independent assessment of model realism, we further validated predictions against farm-level degradation maps supplied by Thicket experts, mapped between 2020-2022, which contain spatially explicit delineations of moderate and severely degraded and intact areas. Points were randomly placed in areas that overlap with the expert-mapped polygons, where the RF predictions values were extracted, and agreement was assessed using mean predicted condition per polygon, class-wise accuracy, and visual consistency with known degradation patterns.</p>
+<p>A spatial cross-validation approach was used to estimate model accuracy to account for the spatial autocorrelation in the data. Model performance was evaluated using five-fold spatial block cross-validation rather than a random train-test split. Training samples were assigned to a regular 0.02° spatial grid, and all samples within a grid cell were kept in the same fold. This reduces inflated accuracy estimates caused by spatial autocorrelation and tests whether models can generalise to new areas. We reported overall and balanced accuracy, precision, recall and F1 scores. Uncalibrated probabilities were compared with multinomial, isotonic and temperature-scaled probabilities using spatial out-of-fold predictions; none of the post-hoc calibration methods consistently improved Brier score or log loss, so the uncalibrated Random Forest probabilities were retained. Independent farm-level degradation maps produced by Thicket experts between 2020 and 2022 provided an additional assessment of broad spatial agreement and ecological realism.</p>
 </section>
+<section id="expert-validation-and-design-based-area-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="expert-validation-and-design-based-area-estimation">Expert validation and design-based area estimation</h3>
+<p>We developed an online validation app to test how closely the mapped condition classes agreed with expert ecological interpretation. The predicted ecosystem condition map was divided by ecosystem group and predicted condition class, and validation points were selected at random within every combination. This ensured that intact, moderately degraded and severely degraded predictions were assessed across the different solid-thicket ecosystem types, rather than concentrating validation in the largest or most accessible areas. Experts examined each sampled location and assigned their own condition label. Comparing these expert labels with the model predictions provides a measure of model–expert agreement and helps identify the ecosystem types or condition classes in which predictions are less reliable.</p>
+<p>The same probability-based sample provides the reference information needed for design-based area estimation. Simply counting the pixels assigned to each condition class assumes that every model prediction is correct (i.e.&nbsp;no classification errors). Even a model with good overall accuracy will confuse some classes, particularly the less distinct moderate class, and direct pixel counts may therefore overestimate some condition classes while underestimating others. Design-based estimation uses the expert-labelled sample to quantify these classification errors and adjusts the mapped areas according to the proportion of the landscape represented by each sampling group<span class="citation" data-cites="venter2024"><sup><a href="#ref-venter2024" role="doc-biblioref">12</a></sup></span>. This produces accuracy-adjusted estimates of the areas of intact, moderately degraded and severely degraded Thicket, together with confidence intervals that show the remaining sampling uncertainty (a second round of this validation is underway and the first round’s results are presented below).</p>
+<p>For comparison with the design-based estimates, we also calculated class areas using the conventional pixel-counting approach commonly applied in ecosystem condition accounts<span class="citation" data-cites="edens2022"><sup><a href="#ref-edens2022" role="doc-biblioref">13</a></sup></span>. This involved summing the area of all pixels assigned to each predicted condition class within each ecosystem type.</p>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results"><strong>Results</strong></h2>
+<p><strong>Please note these are preliminary findings (area estimates may change slightly with the next round of expert validation).</strong></p>
+<p>The preliminary results of the ecosystem condition maps can be browsed in this <a href="https://ee-stephnivdm.projects.earthengine.app/view/thicket-ecological-condition">Google Earth Engine App</a>.</p>
+<p>The unadjusted pixel-counting results showed clear differences among the three solid-thicket ecosystem groups. Arid Thicket was dominated by pixels classified as severely degraded (548,898 ha; 68.6% of its total assessed extent), followed by moderate (20.2%), intact (9.9%) and transformed (1.3%) areas. Mesic Thicket was predominantly intact (146,507 ha; 50.3%), with 26.1% classified as moderate, 14.6% as severe and 9.0% as transformed. Valley Thicket had a more even condition distribution, with 34.2% classified as severe, 31.3% as intact and 28.2% as moderate, while 6.3% was transformed. These figures represent direct counts of mapped pixels and have not been adjusted for classification error (Fig. 9).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imgs/stacked_results.png" class="img-fluid figure-img" width="695"></p>
+<figcaption>Figure 9. Condition composition of solid Arid, Mesic and Valley Thicket ecosystem types calculated using the traditional map-based pixel-counting method. Each pixel was assigned to the condition class with the highest predicted probability, while transformed areas were identified from the South African National Land Cover 2022 dataset. The bars show the percentage of each ecosystem type mapped as transformed, severely degraded, moderately degraded or intact. These are unadjusted mapped proportions and assume that every pixel was classified correctly; they do not account for classification errors. Accuracy-adjusted, design-based estimates are therefore used for reporting the final areas of the three condition classes.</figcaption>
+</figure>
+</div>
+<p>The first round of design-based area estimates indicated that 547,651 ha (28.8%; 95% CI: 503,934–591,368 ha) of mapped solid Thicket remained in an intact condition, 524,439 ha (27.6%; 95% CI: 457,013–591,865 ha) was moderately degraded, and 826,510 ha (43.5%; 95% CI: 767,899–885,121 ha) was severely degraded. Patterns differed among ecosystem functional groups. Arid Thicket was the most degraded, with 62% (466,698 ± 43,000 ha) estimated to be in severe condition and only 13% (94,937 ± 22,000 ha) remaining intact. In contrast, Mesic Thicket retained the highest proportion of intact vegetation (56%; 158,313 ± 15,000 ha) and the lowest proportion of severe degradation (18%; 51,863 ± 16,000 ha), while Valley Thicket exhibited a more even distribution among intact (34%; 293,624 ± 35,000 ha), moderately degraded (30%; 259,136 ± 45,000 ha), and severely degraded (36%; 312,492 ± 37,000 ha) conditions. <strong>Note these estimates may change pending the second round of expert labeling. We will also be reporting ecosystem type-level design-based area estimates after the next round.</strong></p>
+</section>
+<section id="preliminary-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="preliminary-discussion">Preliminary discussion</h2>
+<p>The preliminary results show that degradation is not distributed evenly across solid Albany Thicket. Severe degradation is concentrated in Arid Thicket and parts of Valley Thicket, whereas Mesic Thicket retains a greater proportion of intact vegetation. By identifying variation within areas that conventional land cover maps still classify as “natural”, the condition map provides a clearer basis for deciding where intact vegetation should be protected and where restoration may be needed. For example, if the SANLC data were used to assess the risk of ecosystem collapse, as is done for the Red List of Ecosystems in South Africa, only the 1.3% of Arid Thicket that is currently converted to artificial land cover (croplands, built-up areas or plantations) would have been detected. The remaining 98.7% may still be classified as “Natural” land cover, although we show that 67% is of this remaining natural area that is used as rangelands, is severely degraded and less than 10% remains intact.</p>
+<p>The ecosystem condition maps were developed to support biodiversity planning. Intact areas should be protected from further degradation, while moderately degraded areas may benefit from reduced browsing pressure and assisted natural recovery. Severely degraded areas may require active restoration, including planting spekboom where it formed part of the natural reference ecosystem. However, <strong>not all Thicket vegetation types naturally supports spekboom</strong>, and the map should therefore guide field assessment rather than be used as a blanket prescription for spekboom planting. Local vegetation type, soils, topography, historical species composition and the causes of degradation must all inform restoration decisions. Beyond restoration planning, the data can now support Red List of Ecosystems assessments by quantifying disruption to biotic processes and can improve ecosystem accounts by representing degradation within remaining natural vegetation.</p>
 <section id="key-resources" class="level3">
 <h3 class="anchored" data-anchor-id="key-resources">Key resources</h3>
 <p>Ecosystem guidelines, thicket vegetation research and links to important papers can be found at the <a href="https://www.thicketforum.org.za/resources/knowledge">Thicket Forum’s website</a>.</p>
-<p>The findings of this case study are being prepared as a manuscript.</p>
 </section>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-mills2023a" class="csl-entry" role="listitem">
+1. Mills, A.J. et al. 2023. Science is the fuel required for lifting ecosystem restoration into the orbit of hundreds of millions of hectares. <em>Frontiers in Conservation Science</em> 4: 1283262. <a href="https://doi.org/10.3389/fcosc.2023.1283262">https://doi.org/10.3389/fcosc.2023.1283262</a>
+</div>
 <div id="ref-vlok2002" class="csl-entry" role="listitem">
-1. Vlok, J.H.J. &amp; D.I.W. Euston-Brown. 2002. <em>The patterns within, and the ecological processes that sustain, the subtropical thicket vegetation in the planning domain for the subtropical thicket ecosystem planning (STEP) project</em>. Port Elizabeth.
+2. Vlok, J.H.J. &amp; D.I.W. Euston-Brown. 2002. <em>The patterns within, and the ecological processes that sustain, the subtropical thicket vegetation in the planning domain for the subtropical thicket ecosystem planning (STEP) project</em>. Port Elizabeth.
 </div>
 <div id="ref-vlok2003" class="csl-entry" role="listitem">
-2. Vlok, J. et al. 2003. Acocks’ valley bushveld 50 years on: New perspectives on the delimitation, characterisation and origin of subtropical thicket vegetation. <em>SOUTH AFRICAN JOURNAL OF BOTANY</em> 69: 27–51. <a href="https://doi.org/10.1016/S0254-6299(15)30358-6">https://doi.org/10.1016/S0254-6299(15)30358-6</a>
+3. Vlok, J. et al. 2003. Acocks’ valley bushveld 50 years on: New perspectives on the delimitation, characterisation and origin of subtropical thicket vegetation. <em>SOUTH AFRICAN JOURNAL OF BOTANY</em> 69: 27–51. <a href="https://doi.org/10.1016/S0254-6299(15)30358-6">https://doi.org/10.1016/S0254-6299(15)30358-6</a>
 </div>
 <div id="ref-cowling2005" class="csl-entry" role="listitem">
-3. Cowling, R. et al. 2005. On the origin of southern african subtropical thicket vegetation. <em>SOUTH AFRICAN JOURNAL OF BOTANY</em> 71: 1–23. <a href="https://doi.org/10.1016/S0254-6299(15)30144-7">https://doi.org/10.1016/S0254-6299(15)30144-7</a>
+4. Cowling, R. et al. 2005. On the origin of southern african subtropical thicket vegetation. <em>SOUTH AFRICAN JOURNAL OF BOTANY</em> 71: 1–23. <a href="https://doi.org/10.1016/S0254-6299(15)30144-7">https://doi.org/10.1016/S0254-6299(15)30144-7</a>
 </div>
 <div id="ref-lechmere-oertel2008" class="csl-entry" role="listitem">
-4. Lechmere-Oertel, R.G. et al. 2008. Litter dynamics across browsing-induced fenceline contrasts in succulent thicket, south africa. <em>SOUTH AFRICAN JOURNAL OF BOTANY</em> 74: 651–659. <a href="https://doi.org/10.1016/j.sajb.2008.04.002">https://doi.org/10.1016/j.sajb.2008.04.002</a>
+5. Lechmere-Oertel, R.G. et al. 2008. Litter dynamics across browsing-induced fenceline contrasts in succulent thicket, south africa. <em>SOUTH AFRICAN JOURNAL OF BOTANY</em> 74: 651–659. <a href="https://doi.org/10.1016/j.sajb.2008.04.002">https://doi.org/10.1016/j.sajb.2008.04.002</a>
 </div>
 <div id="ref-lechmere-oertel2005" class="csl-entry" role="listitem">
-5. Lechmere-Oertel, R.G. et al. 2005. Landscape dysfunction and reduced spatial heterogeneity in soil resources and fertility in semi-arid succulent thicket, South Africa. <em>Austral Ecology</em> 30: 615–624. <a href="https://doi.org/10.1111/j.1442-9993.2005.01495.x">https://doi.org/10.1111/j.1442-9993.2005.01495.x</a>
+6. Lechmere-Oertel, R.G. et al. 2005. Landscape dysfunction and reduced spatial heterogeneity in soil resources and fertility in semi-arid succulent thicket, South Africa. <em>Austral Ecology</em> 30: 615–624. <a href="https://doi.org/10.1111/j.1442-9993.2005.01495.x">https://doi.org/10.1111/j.1442-9993.2005.01495.x</a>
 </div>
 <div id="ref-mills2005" class="csl-entry" role="listitem">
-6. Mills, A.J. et al. 2005. Effects of goat pastoralism on ecosystem carbon storage in semiarid thicket, Eastern Cape, South Africa. <em>Austral Ecology</em> 30: 797–804. <a href="https://doi.org/10.1111/j.1442-9993.2005.01523.x">https://doi.org/10.1111/j.1442-9993.2005.01523.x</a>
+7. Mills, A.J. et al. 2005. Effects of goat pastoralism on ecosystem carbon storage in semiarid thicket, Eastern Cape, South Africa. <em>Austral Ecology</em> 30: 797–804. <a href="https://doi.org/10.1111/j.1442-9993.2005.01523.x">https://doi.org/10.1111/j.1442-9993.2005.01523.x</a>
 </div>
 <div id="ref-mills2023" class="csl-entry" role="listitem">
-7. Mills, A.J. et al. 2023. Science is the fuel required for lifting ecosystem restoration into the orbit of hundreds of millions of hectares. <em>FRONTIERS IN CONSERVATION SCIENCE</em> 4: <a href="https://doi.org/10.3389/fcosc.2023.1283262">https://doi.org/10.3389/fcosc.2023.1283262</a>
+8. Mills, A.J. et al. 2023. Science is the fuel required for lifting ecosystem restoration into the orbit of hundreds of millions of hectares. <em>FRONTIERS IN CONSERVATION SCIENCE</em> 4: <a href="https://doi.org/10.3389/fcosc.2023.1283262">https://doi.org/10.3389/fcosc.2023.1283262</a>
 </div>
 <div id="ref-thompson2009" class="csl-entry" role="listitem">
-8. Thompson, M. et al. 2009. Mapping grazing-induced degradation in a semi-arid environment: A rapid and cost effective approach for assessment and monitoring. <em>ENVIRONMENTAL MANAGEMENT</em> 43: 585–596. <a href="https://doi.org/10.1007/s00267-008-9228-x">https://doi.org/10.1007/s00267-008-9228-x</a>
+9. Thompson, M. et al. 2009. Mapping grazing-induced degradation in a semi-arid environment: A rapid and cost effective approach for assessment and monitoring. <em>ENVIRONMENTAL MANAGEMENT</em> 43: 585–596. <a href="https://doi.org/10.1007/s00267-008-9228-x">https://doi.org/10.1007/s00267-008-9228-x</a>
 </div>
 <div id="ref-lechmere-oertel2023" class="csl-entry" role="listitem">
-9. Lechmere-Oertel, R. 2023. <em><a href="https://www.dffe.gov.za">Repair ecology of arid and valley albany thicket in south africa: A reference guideline</a></em>.
+10. Lechmere-Oertel, R. 2023. <em><a href="https://www.dffe.gov.za">Repair ecology of arid and valley albany thicket in south africa: A reference guideline</a></em>.
 </div>
 <div id="ref-brown" class="csl-entry" role="listitem">
-10. Brown, C.F. et al. AlphaEarth foundations: An embedding field model for accurate and efficient global mapping from sparse label data. <a href="https://doi.org/10.48550/arXiv.2507.22291">https://doi.org/10.48550/arXiv.2507.22291</a>
+11. Brown, C.F. et al. AlphaEarth foundations: An embedding field model for accurate and efficient global mapping from sparse label data. <a href="https://doi.org/10.48550/arXiv.2507.22291">https://doi.org/10.48550/arXiv.2507.22291</a>
+</div>
+<div id="ref-venter2024" class="csl-entry" role="listitem">
+12. Venter, Z.S. et al. 2024. <span>‘</span>Uncertainty audit<span>’</span> for ecosystem accounting: Satellite-based ecosystem extent is biased without design-based area estimation and accuracy assessment. <em>Ecosystem Services</em> 66: 101599. <a href="https://doi.org/10.1016/j.ecoser.2024.101599">https://doi.org/10.1016/j.ecoser.2024.101599</a>
+</div>
+<div id="ref-edens2022" class="csl-entry" role="listitem">
+13. Edens, B. et al. 2022. Establishing the SEEA ecosystem accounting as a global standard. <em>Ecosystem Services</em> 54: 101413. <a href="https://doi.org/10.1016/j.ecoser.2022.101413">https://doi.org/10.1016/j.ecoser.2022.101413</a>
 </div>
 </div>
 
