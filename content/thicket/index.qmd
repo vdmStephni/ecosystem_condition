@@ -17,31 +17,31 @@ author:
   - name:
       given: Vernon 
       family: Visser 
-    orcid: 0000-0002-2726-7886   
+    orcid: 0000-0003-2444-5015  
     affiliations:
       - ref: 2         
   - name:
       given: Alastair 
       family: Potts 
-    orcid: 0000-0002-2726-7886   
+    orcid: 0000-0003-0919-7279   
     affiliations:
       - ref: 3 
   - name:
       given: Michael
       family: Powell 
-    orcid: 0000-0002-2726-7886   
+    orcid:   
     affiliations:
       - ref: 4
   - name:
       given: Timm
       family: Hoffman 
-    orcid: 0000-0002-2726-7886   
+    orcid: 0000-0002-5843-2397   
     affiliations:
       - ref: 2
   - name:
       given: Anthony
       family: Palmer 
-    orcid: 0000-0002-2726-7886   
+    orcid: 0000-0001-9179-2725   
     affiliations:
       - ref: 4
   - name:
