@@ -39,7 +39,7 @@ author:
     affiliations:
       - ref: 2
   - name:
-      given: Anothony
+      given: Anthony
       family: Palmer 
     orcid: 0000-0002-2726-7886   
     affiliations:
