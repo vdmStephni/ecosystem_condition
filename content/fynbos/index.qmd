@@ -14,7 +14,21 @@ author:
     affiliations:
       - ref: 1 
       - ref: 2
- 
+  - name:
+      given: Ashleigh
+      family: Smith 
+    orcid:  
+    affiliations:
+      - ref: 2 
+      - ref: 3
+  - name:
+      given: Jasper
+      family: Slingsby
+    orcid:  
+    affiliations:
+      - ref: 2
+      - ref: 3
+      
 affiliations:
   - id: 1 # Use this as the affiliation ref with authors above
     number: 1 # This number is used to associate authors with affiliations
@@ -22,7 +36,10 @@ affiliations:
 
   - id: 2 # Use this as the affiliation ref with authors above
     number: 2 # This number is used to associate authors with affiliations
-    name: University of Cape Town
+    name: Centre for Statistics in Ecology, the Environment and Conservation; University of Cape Town
+  - id: 3 # Use this as the affiliation ref with authors above
+    number: 3 # This number is used to associate authors with affiliations
+    name:  Fynbos node, South African Environmental Observation Network
     
 # Remember to rename the default .bib file and change the name here
 bibliography: references.bib
@@ -32,7 +49,7 @@ bibliography: references.bib
 
 The Fynbos biome is the primary vegetation of the Cape Floristic Region (CFR), which is the smallest but relatively richest of the world's six floral kingdoms. Characterised by its exceptional endemism and diversity, Fynbos occurs where there is a Mediterranean climate (predominantly winter rainfall, though some eastern areas receive year-round rain) and nutrient-poor soils.
 
-Fynbos is a Mediterranean fire-dependent shrubland and restioland, distinguished by three main plant families’ groups: Proteaceae, Restionaceae, and Ericaceae. Ecosystem condition is inextricably linked to the appropriate fire return intervals, habitat loss, transformation, fragmentation, and the presence and abundance of key functional groups (Proteaceae, Restionaceae, and Ericaceae) and absence of competitive invasive alien plant species (Rebelo et al. 2006; Holmes et al. 2020).
+Fynbos is a Mediterranean fire-dependent shrubland and restioland, distinguished by three main plant families’ groups: Proteaceae, Restionaceae, and Ericaceae. Ecosystem condition is linked to the appropriate fire return intervals, habitat loss, transformation, fragmentation, and the presence and abundance of key plant functional groups (Proteaceae, Restionaceae, and Ericaceae) and absence of competitive invasive alien plant species (Rebelo et al. 2006; Holmes et al. 2020).
 
 ## **Vegetation Units**
 
@@ -95,9 +112,41 @@ Increasing temperatures and more frequent, severe droughts lead to direct physio
 Unlike Grasslands, where productivity is the main proxy for condition, Fynbos ecosystem condition mapping relies on detecting structural anomalies (such as invasive trees standing above the shrub layer) and monitoring the trajectory of post-fire recovery.
 
 | Pressure Target               | What to Map                                                                     | Approach                                                                                                                                                                                                                                            | Already Available                                                                                                                                                                                                                                                                                                   |
-|-------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|-------------|---------------------|---------------------------|
 | **1. Invasive Alien Plants**  | Woody invasive presence, density, and spread; post-clearing recovery.           | Supervised classification using Sentinel-2. Analysing phenology to detect evergreen invasives against seasonally dynamic Fynbos.                                                                                                                    | [National Invasive Alien Plant Survey](https://dffeportal.environment.gov.za/portal/home/item.html?id=17de13c509ef4d3caf279d84e77312c3) for South Africa; [BioSCape IAP](https://scholardata.sun.ac.za/articles/dataset/BioSCape_Invasive_Alien_Plant_map_for_the_Cape_Floristic_Region/27377211) maps for the CFR. |
 | **2. Fire Regime Disruption** | Fire return intervals; fire seasonality; fire intensity/severity (dNBR).        | Burned-area products (MODIS/VIIRS/Sentinel-2) to track time-since-fire and season-of-burn. Flagging areas with exceptionally short intervals (\<8 years) or long intervals (\>20 years).                                                            | CapeNature fire records.                                                                                                                                                                                                                                                                                            |
 | **3. Climate Change Impacts** | Long-term browning trends; drought mortality; altered post-fire recovery rates. | Long-term vegetation index trends (NDVI/EVI). Monitoring the rate at which Fynbos greens up post-fire compared to historical baselines to detect drought-induced recovery failures. This must be paired with in-field long-term vegetation surveys. | Base satellite archives (Landsat/MODIS time series).                                                                                                                                                                                                                                                                |
 
-# References
+# Case study: Detecting persistent degradation after invasive alien plant clearing
+
+*Ashleigh Smith and Jasper Slingsby*
+
+## Background
+
+Community composition is a potentially useful indicator for assessing degradation of Fynbos vegetation invaded by IAPS. After the removal of IAPS, legacy effects can inhibit native species from establishing and facilitate secondary invasion thus limiting the recovery potential of these areas. Community composition can also be useful to monitor restoration and identify areas that remain degraded.
+
+This case study explores a new way of assessing Fynbos ecosystem condition: using remotely sensed **canopy foliar traits (CFTs)** as proxies for differences in plant community composition and post-clearing recovery. The November 2023 [BioSCape](https://www.bioscape.io/) airborne imaging spectroscopy campaign produced maps of structural and chemical canopy traits linked to plant morphology, physiology and functional strategies. These traits offer a potential means of detecting ecological differences that may not be apparent from vegetation cover alone.
+
+## Methods
+
+Matched sites across the CFR were identified and matched based on several environmental variables. Each site had one reference plot (no invasion or management intervention), two mechanically clear-felled passively-recovering plots of different ages since clearing (ASC), and an invaded plot (primary invasion). The clear-felled plots were binned into three age classes: recently clear-felled (\< eight years); intermediate (\< eighteen years); old: (\>= eighteen years). These age classes were combined with invaded and natural classes to create a five-class ecological degradation variable. Maps of 29 CFT from BioSCape imaging spectroscopy data were retrieved for each matched site. A Bayesian model was fitted using the `brms` package in R with the five-class categorical response variable and predictor variables including the 29 CFTs and several environmental variables.
+
+## Results
+
+The Bayesian model achieved good predictive performance with posterior estimates indicating that CFTs captured the variation between the five degradation classes (@fig-fynbos-silvermine). The predictions of the most likely degradation class for small regions show promise for using CFT maps to identify ecological degradation. For example, the highlighted area in Silvermine Nature Reserve (Figure 1) appears to be recovering well as some clear-felled areas resemble surrounding reference areas. However, some areas were predicted to have been cleared more recently (intermediate) than they were in reality (old), which suggests that these areas are not recovering as well as others.
+
+Some previously cleared areas were predicted to resemble the surrounding natural reference vegetation, consistent with more successful passive recovery. Other areas, despite having been cleared more than 18 years earlier, were predicted as **intermediate** rather than **old**. This mismatch between known clearing history and the trait-based prediction suggests that parts of the site may be recovering more slowly, potentially reflecting persistent ecological legacy effects of invasion.
+
+![Figure 1. Predicted invasion and post-clearing recovery classes at Silvermine Nature Reserve, Cape Town (left), alongside aerial imagery from 1968 (top right) and 2023 (bottom right). The site includes an exotic plantation that persisted for more than 30 years before being clear-felled in 2002. Predictions show the most likely class from the Bayesian model, rather than direct measurements of vegetation composition.](imgs/fig1.png){#fig-fynbos-silvermine}
+
+## Next steps 
+
+Spatial prediction models are dependent on the training data used for model fitting. The above predictions were limited to within the Area of Applicability, which uses the training data and spatial cross-validation to calculate a dissimilarity threshold beyond which predictions are based on test data which differ too much from the training data. Thus, more training data with known ecological degradation status are required to fill in these gaps, specifically for other vegetation types as well as areas which have been previously under sparse invasions of alien plants.
+
+## Contribution to ecosystem condition assessment
+
+This approach extends conventional remote sensing assessments of invasive alien plant cover by examining **what happens after clearing**. It uses uninvaded vegetation as a reference, canopy traits as potential indicators of ecological characteristics, and known invasion and management histories to interpret whether recovering vegetation resembles that reference. Comparing predicted recovery classes with actual time since clearing could help identify places where restoration outcomes lag behind expectations and where field assessment or additional intervention may be warranted.
+
+The results are **preliminary**. The mapped classes describe invasion and recovery histories, not a directly measured or calibrated condition-severity scale yet; similarly, canopy traits are indirect proxies for community composition. Prediction reliability depends on the available training data, and the map was therefore limited to the Area of Applicability. Additional sites with known degradation histories are needed, particularly across other Fynbos vegetation types and areas that experienced relatively sparse alien plant invasion, before the approach can be applied more broadly.
+
+# 
